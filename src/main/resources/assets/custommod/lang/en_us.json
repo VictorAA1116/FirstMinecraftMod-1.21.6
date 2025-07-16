@@ -7,5 +7,9 @@
   "block.custommod.template_stone_ore": "Template Stone Ore",
   "block.custommod.template_deepslate_ore": "Template Deepslate Ore",
 
+  "block.custommod.calcite_stairs": "Calcite Stairs",
+  "block.custommod.calcite_slab": "Calcite Slab",
+  "block.custommod.calcite_wall": "Calcite Wall",
+
   "itemgroup.custommod.template_item_group": "Template Item Group"
 }

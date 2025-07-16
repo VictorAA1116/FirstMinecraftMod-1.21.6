@@ -32,8 +32,15 @@ public class ModBlocks {
             properties ->new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
                     properties.strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
-    public static final Block CALCITE_STAIRS = registerBlock("template_raw_ore_block",
-            properties ->new Block(properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+    public static final Block CALCITE_STAIRS = registerBlock("calcite_stairs",
+            properties ->new StairsBlock(ModBlocks.TEMPLATE_BLOCK.getDefaultState(),
+                    properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+
+    public static final Block CALCITE_SLAB = registerBlock("calcite_slab",
+            properties ->new SlabBlock(properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+
+    public static final Block CALCITE_WALL = registerBlock("calcite_wall",
+            properties ->new WallBlock(properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
 
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
@@ -60,6 +67,8 @@ public class ModBlocks {
             entries.add(ModBlocks.TEMPLATE_DEEPSLATE_ORE);
 
             entries.add(ModBlocks.CALCITE_STAIRS);
+            entries.add(ModBlocks.CALCITE_SLAB);
+            entries.add(ModBlocks.CALCITE_WALL);
         });
     }
 }
