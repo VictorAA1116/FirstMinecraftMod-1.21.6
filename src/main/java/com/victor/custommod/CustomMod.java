@@ -5,6 +5,7 @@ import com.victor.custommod.item.ModItemGroups;
 import com.victor.custommod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,5 +24,9 @@ public class CustomMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		FuelRegistryEvents.BUILD.register((builder, context) -> {
+			builder.add(ModItems.TEMPLATE_FUEL, 600);
+		});
 	}
 }

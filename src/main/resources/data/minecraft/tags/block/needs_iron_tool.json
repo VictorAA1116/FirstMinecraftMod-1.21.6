@@ -1,4 +1,5 @@
 {
+  "replace": false,
   "values": [
     "custommod:template_block",
     "custommod:template_raw_ore_block",

@@ -1,10 +1,11 @@
 {
+  "replace": false,
   "values": [
     "custommod:template_block",
     "custommod:template_raw_ore_block",
     "custommod:template_stone_ore",
     "custommod:template_deepslate_ore",
-    "custommod.calcite_stairs",
-    "custommod.calcite_slab"
+    "custommod:calcite_stairs",
+    "custommod:calcite_slab"
   ]
 }

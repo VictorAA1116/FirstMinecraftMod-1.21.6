@@ -19,6 +19,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TEMPLATE_ITEM);
                         entries.add(ModItems.TEMPLATE_RAW_ORE);
                         entries.add(ModItems.TEMPLATE_FOOD);
+                        entries.add(ModItems.TEMPLATE_FUEL);
 
                         entries.add(ModBlocks.TEMPLATE_BLOCK);
                         entries.add(ModBlocks.TEMPLATE_RAW_ORE_BLOCK);
