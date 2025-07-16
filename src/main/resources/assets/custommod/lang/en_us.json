@@ -11,6 +11,9 @@
 
   "block.custommod.calcite_stairs": "Calcite Stairs",
   "block.custommod.calcite_slab": "Calcite Slab",
+  "block.custommod.calcite_wall": "Calcite Wall",
+  "block.custommod.calcite_button": "Calcite Button",
+  "block.custommod.calcite_pressure_plate": "Calcite Pressure Plate",
 
   "itemgroup.custommod.template_item_group": "Template Item Group"
 }

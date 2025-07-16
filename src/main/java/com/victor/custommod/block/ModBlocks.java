@@ -39,6 +39,16 @@ public class ModBlocks {
     public static final Block CALCITE_SLAB = registerBlock("calcite_slab",
             properties ->new SlabBlock(properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
+    public static final Block CALCITE_WALL = registerBlock("calcite_wall",
+            properties ->new WallBlock(properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+
+    public static final Block CALCITE_BUTTON = registerBlock("calcite_wall",
+            properties ->new ButtonBlock(BlockSetType.STONE, 10,
+                    properties.strength(2f).sounds(BlockSoundGroup.CALCITE).noCollision()));
+
+    public static final Block CALCITE_PRESSURE_PLATE = registerBlock("calcite_pressure_plate",
+            properties ->new PressurePlateBlock(BlockSetType.STONE,
+                    properties.strength(2f).sounds(BlockSoundGroup.CALCITE)));
 
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
         Block toRegister = function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CustomMod.MOD_ID, name))));
@@ -64,6 +74,9 @@ public class ModBlocks {
             entries.add(ModBlocks.TEMPLATE_DEEPSLATE_ORE);
             entries.add(ModBlocks.CALCITE_STAIRS);
             entries.add(ModBlocks.CALCITE_SLAB);
+            entries.add(ModBlocks.CALCITE_WALL);
+            entries.add(ModBlocks.CALCITE_BUTTON);
+            entries.add(ModBlocks.CALCITE_PRESSURE_PLATE);
         });
     }
 }
