@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "group": "template_item",
+  "ingredient": "custommod:template_stone_ore",
+  "result": {
+    "id": "custommod:template_item"
+  }
+}

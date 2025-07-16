@@ -17,7 +17,11 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.custommod.template_item_group"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.TEMPLATE_ITEM);
+                        entries.add(ModItems.TEMPLATE_RAW_ORE);
                         entries.add(ModBlocks.TEMPLATE_BLOCK);
+                        entries.add(ModBlocks.TEMPLATE_RAW_ORE_BLOCK);
+                        entries.add(ModBlocks.TEMPLATE_DEEPSLATE_ORE);
+                        entries.add(ModBlocks.TEMPLATE_STONE_ORE);
                     })
                     .build());
 
