@@ -15,6 +15,8 @@ import java.util.function.Function;
 public class ModItems {
     public static final Item TEMPLATE_ITEM = registerItem("template_item", Item::new);
     public static final Item TEMPLATE_RAW_ORE = registerItem("template_raw_ore", Item::new);
+    public static final Item TEMPLATE_FOOD = registerItem("template_food",
+            setting -> new Item(setting.food(ModFoodComponents.TEMPLATE_FOOD, ModFoodComponents.TEMPLATE_FOOD_EFFECT)));
 
     private static Item registerItem(String name, Function<Item.Settings, Item> function)
     {
@@ -30,6 +32,7 @@ public class ModItems {
         {
             entries.add(TEMPLATE_ITEM);
             entries.add(TEMPLATE_RAW_ORE);
+            entries.add(TEMPLATE_FOOD);
         });
     }
 }

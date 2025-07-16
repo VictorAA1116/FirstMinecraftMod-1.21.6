@@ -1,6 +1,7 @@
 {
   "item.custommod.template_item": "Template Item",
   "item.custommod.template_raw_ore": "Template Raw Ore",
+  "item.custommod.template_food": "Template Food",
 
   "block.custommod.template_block": "Template Block",
   "block.custommod.template_raw_ore_block": "Template Raw Ore Block",
@@ -9,7 +10,6 @@
 
   "block.custommod.calcite_stairs": "Calcite Stairs",
   "block.custommod.calcite_slab": "Calcite Slab",
-  "block.custommod.calcite_wall": "Calcite Wall",
 
   "itemgroup.custommod.template_item_group": "Template Item Group"
 }
