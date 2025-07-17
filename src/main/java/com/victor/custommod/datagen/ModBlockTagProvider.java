@@ -19,14 +19,24 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         valueLookupBuilder(ModTags.Blocks.CUSTOM_BLOCKS)
                 .add(ModBlocks.CALCITE_STAIRS)
-                .add(ModBlocks.CALCITE_SLAB);
+                .add(ModBlocks.CALCITE_SLAB)
+
+                .add(ModBlocks.POLISHED_CALCITE)
+                .add(ModBlocks.POLISHED_CALCITE_SLAB)
+                .add(ModBlocks.POLISHED_CALCITE_STAIRS);
 
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.TEMPLATE_STONE_ORE)
                 .add(ModBlocks.TEMPLATE_DEEPSLATE_ORE)
                 .add(ModBlocks.TEMPLATE_RAW_ORE_BLOCK)
+
                 .add(ModBlocks.CALCITE_SLAB)
                 .add(ModBlocks.CALCITE_STAIRS)
+
+                .add(ModBlocks.POLISHED_CALCITE)
+                .add(ModBlocks.POLISHED_CALCITE_SLAB)
+                .add(ModBlocks.POLISHED_CALCITE_STAIRS)
+
                 .add(ModBlocks.TEMPLATE_BLOCK);
 
         valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL)
@@ -42,6 +52,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         valueLookupBuilder(BlockTags.FENCE_GATES);
 
         valueLookupBuilder(BlockTags.WALLS)
-                .add(ModBlocks.CALCITE_WALL);
+                .add(ModBlocks.CALCITE_WALL)
+                .add(ModBlocks.POLISHED_CALCITE_WALL);
     }
 }

@@ -16,6 +16,8 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         BlockStateModelGenerator.BlockTexturePool calcitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(net.minecraft.block.Blocks.CALCITE);
+        BlockStateModelGenerator.BlockTexturePool polishedCalcitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_CALCITE);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEMPLATE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEMPLATE_STONE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEMPLATE_DEEPSLATE_ORE);
@@ -26,6 +28,10 @@ public class ModModelProvider extends FabricModelProvider {
         calcitePool.wall(ModBlocks.CALCITE_WALL);
         calcitePool.button(ModBlocks.CALCITE_BUTTON);
         calcitePool.pressurePlate(ModBlocks.CALCITE_PRESSURE_PLATE);
+
+        polishedCalcitePool.stairs(ModBlocks.POLISHED_CALCITE_STAIRS);
+        polishedCalcitePool.slab(ModBlocks.POLISHED_CALCITE_SLAB);
+        polishedCalcitePool.wall(ModBlocks.POLISHED_CALCITE_WALL);
     }
 
     @Override

@@ -15,5 +15,10 @@
   "block.custommod.calcite_button": "Calcite Button",
   "block.custommod.calcite_pressure_plate": "Calcite Pressure Plate",
 
+  "block.custommod.polished_calcite": "Polished Calcite",
+  "block.custommod.polished_calcite_stairs": "Polished Calcite Stairs",
+  "block.custommod.polished_calcite_slab": "Polished Calcite Slab",
+  "block.custommod.polished_calcite_wall": "Polished Calcite Wall",
+
   "itemgroup.custommod.template_item_group": "Template Item Group"
 }

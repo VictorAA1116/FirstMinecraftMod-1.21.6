@@ -34,11 +34,17 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.TEMPLATE_BLOCK);
         addDrop(ModBlocks.TEMPLATE_RAW_ORE_BLOCK);
+
         addDrop(ModBlocks.CALCITE_SLAB, slabDrops(ModBlocks.CALCITE_SLAB));
         addDrop(ModBlocks.CALCITE_STAIRS);
         addDrop(ModBlocks.CALCITE_WALL);
         addDrop(ModBlocks.CALCITE_BUTTON);
         addDrop(ModBlocks.CALCITE_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.POLISHED_CALCITE);
+        addDrop(ModBlocks.POLISHED_CALCITE_SLAB, slabDrops(ModBlocks.POLISHED_CALCITE_SLAB));
+        addDrop(ModBlocks.POLISHED_CALCITE_STAIRS);
+        addDrop(ModBlocks.POLISHED_CALCITE_WALL);
 
         addDrop(ModBlocks.TEMPLATE_STONE_ORE, oreDrops(ModBlocks.TEMPLATE_STONE_ORE, ModItems.TEMPLATE_RAW_ORE));
         addDrop(ModBlocks.TEMPLATE_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.TEMPLATE_DEEPSLATE_ORE, ModItems.TEMPLATE_RAW_ORE, 3, 7));
