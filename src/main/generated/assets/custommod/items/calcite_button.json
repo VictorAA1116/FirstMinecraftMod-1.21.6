@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "custommod:block/calcite_button_inventory"
+  }
+}

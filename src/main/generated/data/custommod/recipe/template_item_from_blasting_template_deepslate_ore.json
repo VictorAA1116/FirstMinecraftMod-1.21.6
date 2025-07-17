@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "template_item",
+  "ingredient": "custommod:template_deepslate_ore",
+  "result": {
+    "id": "custommod:template_item"
+  }
+}

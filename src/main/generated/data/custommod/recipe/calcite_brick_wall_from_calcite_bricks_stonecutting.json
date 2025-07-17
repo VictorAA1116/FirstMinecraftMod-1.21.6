@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "custommod:calcite_bricks",
+  "result": {
+    "count": 1,
+    "id": "custommod:calcite_brick_wall"
+  }
+}

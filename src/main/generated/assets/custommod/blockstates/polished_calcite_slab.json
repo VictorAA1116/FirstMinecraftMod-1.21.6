@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "custommod:block/polished_calcite_slab"
+    },
+    "type=double": {
+      "model": "custommod:block/polished_calcite"
+    },
+    "type=top": {
+      "model": "custommod:block/polished_calcite_slab_top"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "custommod:polished_calcite",
+  "result": {
+    "count": 1,
+    "id": "custommod:calcite_brick_stairs"
+  }
+}
