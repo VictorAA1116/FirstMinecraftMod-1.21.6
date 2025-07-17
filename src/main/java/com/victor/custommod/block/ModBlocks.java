@@ -42,8 +42,8 @@ public class ModBlocks {
     public static final Block CALCITE_WALL = registerBlock("calcite_wall",
             properties ->new WallBlock(properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
-    public static final Block CALCITE_BUTTON = registerBlock("calcite_wall",
-            properties ->new ButtonBlock(BlockSetType.STONE, 10,
+    public static final Block CALCITE_BUTTON = registerBlock("calcite_button",
+            properties ->new ButtonBlock(BlockSetType.STONE, 20,
                     properties.strength(2f).sounds(BlockSoundGroup.CALCITE).noCollision()));
 
     public static final Block CALCITE_PRESSURE_PLATE = registerBlock("calcite_pressure_plate",
@@ -72,6 +72,7 @@ public class ModBlocks {
             entries.add(ModBlocks.TEMPLATE_RAW_ORE_BLOCK);
             entries.add(ModBlocks.TEMPLATE_STONE_ORE);
             entries.add(ModBlocks.TEMPLATE_DEEPSLATE_ORE);
+
             entries.add(ModBlocks.CALCITE_STAIRS);
             entries.add(ModBlocks.CALCITE_SLAB);
             entries.add(ModBlocks.CALCITE_WALL);
