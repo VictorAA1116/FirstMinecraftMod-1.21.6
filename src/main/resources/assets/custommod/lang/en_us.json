@@ -20,5 +20,10 @@
   "block.custommod.polished_calcite_slab": "Polished Calcite Slab",
   "block.custommod.polished_calcite_wall": "Polished Calcite Wall",
 
+  "block.custommod.calcite_bricks": "Calcite Bricks",
+  "block.custommod.calcite_brick_stairs": "Calcite Brick Stairs",
+  "block.custommod.calcite_brick_slab": "Calcite Brick Slab",
+  "block.custommod.calcite_brick_wall": "Calcite Brick Wall",
+
   "itemgroup.custommod.template_item_group": "Template Item Group"
 }

@@ -23,7 +23,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
                 .add(ModBlocks.POLISHED_CALCITE)
                 .add(ModBlocks.POLISHED_CALCITE_SLAB)
-                .add(ModBlocks.POLISHED_CALCITE_STAIRS);
+                .add(ModBlocks.POLISHED_CALCITE_STAIRS)
+
+                .add(ModBlocks.CALCITE_BRICKS)
+                .add(ModBlocks.CALCITE_BRICK_SLAB)
+                .add(ModBlocks.CALCITE_BRICK_STAIRS);
 
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.TEMPLATE_STONE_ORE)
@@ -36,6 +40,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.POLISHED_CALCITE)
                 .add(ModBlocks.POLISHED_CALCITE_SLAB)
                 .add(ModBlocks.POLISHED_CALCITE_STAIRS)
+
+                .add(ModBlocks.CALCITE_BRICKS)
+                .add(ModBlocks.CALCITE_BRICK_SLAB)
+                .add(ModBlocks.CALCITE_BRICK_STAIRS)
 
                 .add(ModBlocks.TEMPLATE_BLOCK);
 
@@ -53,6 +61,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         valueLookupBuilder(BlockTags.WALLS)
                 .add(ModBlocks.CALCITE_WALL)
-                .add(ModBlocks.POLISHED_CALCITE_WALL);
+                .add(ModBlocks.POLISHED_CALCITE_WALL)
+                .add(ModBlocks.CALCITE_BRICK_WALL);
     }
 }

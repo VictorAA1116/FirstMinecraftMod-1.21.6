@@ -63,6 +63,19 @@ public class ModBlocks {
     public static final Block POLISHED_CALCITE_WALL = registerBlock("polished_calcite_wall",
             properties ->new WallBlock(properties.strength(3f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
+    public static final Block CALCITE_BRICKS = registerBlock("calcite_bricks",
+            properties ->new Block(properties.strength(3f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+
+    public static final Block CALCITE_BRICK_STAIRS = registerBlock("calcite_brick_stairs",
+            properties ->new StairsBlock(ModBlocks.POLISHED_CALCITE.getDefaultState(),
+                    properties.strength(3f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+
+    public static final Block CALCITE_BRICK_SLAB = registerBlock("calcite_brick_slab",
+            properties ->new SlabBlock(properties.strength(3f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+
+    public static final Block CALCITE_BRICK_WALL = registerBlock("calcite_brick_wall",
+            properties ->new WallBlock(properties.strength(3f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
         Block toRegister = function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CustomMod.MOD_ID, name))));
         registerBlockItem(name, toRegister);
@@ -96,6 +109,11 @@ public class ModBlocks {
             entries.add(ModBlocks.POLISHED_CALCITE_SLAB);
             entries.add(ModBlocks.POLISHED_CALCITE_STAIRS);
             entries.add(ModBlocks.POLISHED_CALCITE_WALL);
+
+            entries.add(ModBlocks.CALCITE_BRICKS);
+            entries.add(ModBlocks.CALCITE_BRICK_SLAB);
+            entries.add(ModBlocks.CALCITE_BRICK_STAIRS);
+            entries.add(ModBlocks.CALCITE_BRICK_WALL);
         });
     }
 }
