@@ -20,6 +20,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool polishedCalcitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_CALCITE);
         BlockStateModelGenerator.BlockTexturePool calciteBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CALCITE_BRICKS);
         BlockStateModelGenerator.BlockTexturePool amethystPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.AMETHYST_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool smoothBasaltPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.SMOOTH_BASALT);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEMPLATE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEMPLATE_STONE_ORE);
@@ -42,6 +43,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         amethystPool.stairs(ModBlocks.AMETHYST_STAIRS);
         amethystPool.slab(ModBlocks.AMETHYST_SLAB);
+
+        smoothBasaltPool.stairs(ModBlocks.SMOOTH_BASALT_STAIRS);
+        smoothBasaltPool.slab(ModBlocks.SMOOTH_BASALT_SLAB);
     }
 
     @Override
