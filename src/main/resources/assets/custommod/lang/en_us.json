@@ -25,5 +25,8 @@
   "block.custommod.calcite_brick_slab": "Calcite Brick Slab",
   "block.custommod.calcite_brick_wall": "Calcite Brick Wall",
 
+  "block.custommod.amethyst_stairs": "Amethyst Stairs",
+  "block.custommod.amethyst_slab": "Amethyst Slab",
+
   "itemgroup.custommod.template_item_group": "Template Item Group"
 }

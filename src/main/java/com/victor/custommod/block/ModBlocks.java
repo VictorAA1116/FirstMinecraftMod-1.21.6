@@ -34,47 +34,61 @@ public class ModBlocks {
 
     public static final Block CALCITE_STAIRS = registerBlock("calcite_stairs",
             properties ->new StairsBlock(ModBlocks.TEMPLATE_BLOCK.getDefaultState(),
-                    properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+                    properties.strength(1f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
     public static final Block CALCITE_SLAB = registerBlock("calcite_slab",
-            properties ->new SlabBlock(properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+            properties ->new SlabBlock(properties.strength(1f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
     public static final Block CALCITE_WALL = registerBlock("calcite_wall",
-            properties ->new WallBlock(properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+            properties ->new WallBlock(properties.strength(1f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
     public static final Block CALCITE_BUTTON = registerBlock("calcite_button",
             properties ->new ButtonBlock(BlockSetType.STONE, 20,
-                    properties.strength(2f).sounds(BlockSoundGroup.CALCITE).noCollision()));
+                    properties.strength(1f).sounds(BlockSoundGroup.CALCITE).noCollision()));
 
     public static final Block CALCITE_PRESSURE_PLATE = registerBlock("calcite_pressure_plate",
             properties ->new PressurePlateBlock(BlockSetType.STONE,
-                    properties.strength(2f).sounds(BlockSoundGroup.CALCITE)));
+                    properties.strength(1f).sounds(BlockSoundGroup.CALCITE)));
 
     public static final Block POLISHED_CALCITE = registerBlock("polished_calcite",
-            properties ->new Block(properties.strength(3f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+            properties ->new Block(properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
     public static final Block POLISHED_CALCITE_STAIRS = registerBlock("polished_calcite_stairs",
             properties ->new StairsBlock(ModBlocks.POLISHED_CALCITE.getDefaultState(),
-                    properties.strength(3f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+                    properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
     public static final Block POLISHED_CALCITE_SLAB = registerBlock("polished_calcite_slab",
-            properties ->new SlabBlock(properties.strength(3f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+            properties ->new SlabBlock(properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
     public static final Block POLISHED_CALCITE_WALL = registerBlock("polished_calcite_wall",
-            properties ->new WallBlock(properties.strength(3f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+            properties ->new WallBlock(properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
     public static final Block CALCITE_BRICKS = registerBlock("calcite_bricks",
-            properties ->new Block(properties.strength(3f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+            properties ->new Block(properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
     public static final Block CALCITE_BRICK_STAIRS = registerBlock("calcite_brick_stairs",
             properties ->new StairsBlock(ModBlocks.POLISHED_CALCITE.getDefaultState(),
-                    properties.strength(3f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+                    properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
     public static final Block CALCITE_BRICK_SLAB = registerBlock("calcite_brick_slab",
-            properties ->new SlabBlock(properties.strength(3f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+            properties ->new SlabBlock(properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
     public static final Block CALCITE_BRICK_WALL = registerBlock("calcite_brick_wall",
-            properties ->new WallBlock(properties.strength(3f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+            properties ->new WallBlock(properties.strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+
+    public static final Block AMETHYST_STAIRS = registerBlock("amethyst_stairs",
+            properties ->new StairsBlock(ModBlocks.POLISHED_CALCITE.getDefaultState(),
+                    properties.strength(1.5f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+
+    public static final Block AMETHYST_SLAB = registerBlock("amethyst_slab",
+            properties ->new SlabBlock(properties.strength(1.5f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+
+    public static final Block SMOOTH_BASALT_STAIRS = registerBlock("smooth_basalt_stairs",
+            properties ->new StairsBlock(ModBlocks.POLISHED_CALCITE.getDefaultState(),
+                    properties.strength(1.5f).requiresTool().sounds(BlockSoundGroup.BASALT)));
+
+    public static final Block SMOOTH_BASALT_SLAB = registerBlock("smooth_basalt_slab",
+            properties ->new SlabBlock(properties.strength(1.5f).requiresTool().sounds(BlockSoundGroup.BASALT)));
 
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
         Block toRegister = function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CustomMod.MOD_ID, name))));
@@ -114,6 +128,9 @@ public class ModBlocks {
             entries.add(ModBlocks.CALCITE_BRICK_SLAB);
             entries.add(ModBlocks.CALCITE_BRICK_STAIRS);
             entries.add(ModBlocks.CALCITE_BRICK_WALL);
+
+            entries.add(ModBlocks.AMETHYST_SLAB);
+            entries.add(ModBlocks.AMETHYST_STAIRS);
         });
     }
 }

@@ -11,6 +11,8 @@
     "custommod:calcite_bricks",
     "custommod:calcite_brick_slab",
     "custommod:calcite_brick_stairs",
+    "custommod:amethyst_slab",
+    "custommod:amethyst_stairs",
     "custommod:template_block"
   ]
 }

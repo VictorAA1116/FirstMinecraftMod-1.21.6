@@ -4,6 +4,7 @@ import com.victor.custommod.block.ModBlocks;
 import com.victor.custommod.item.ModItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.minecraft.block.Blocks;
 import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.client.data.ItemModelGenerator;
 import net.minecraft.client.data.Models;
@@ -15,9 +16,10 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        BlockStateModelGenerator.BlockTexturePool calcitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(net.minecraft.block.Blocks.CALCITE);
+        BlockStateModelGenerator.BlockTexturePool calcitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.CALCITE);
         BlockStateModelGenerator.BlockTexturePool polishedCalcitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_CALCITE);
         BlockStateModelGenerator.BlockTexturePool calciteBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CALCITE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool amethystPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.AMETHYST_BLOCK);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEMPLATE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEMPLATE_STONE_ORE);
@@ -37,6 +39,9 @@ public class ModModelProvider extends FabricModelProvider {
         calciteBrickPool.stairs(ModBlocks.CALCITE_BRICK_STAIRS);
         calciteBrickPool.slab(ModBlocks.CALCITE_BRICK_SLAB);
         calciteBrickPool.wall(ModBlocks.CALCITE_BRICK_WALL);
+
+        amethystPool.stairs(ModBlocks.AMETHYST_STAIRS);
+        amethystPool.slab(ModBlocks.AMETHYST_SLAB);
     }
 
     @Override

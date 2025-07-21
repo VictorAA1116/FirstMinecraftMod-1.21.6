@@ -1,4 +1,6 @@
 // 1.21.7	-999999999-01-01T00:00:00	CustomMod/Block Loot Tables
+6d182b605f4d45cf2889eb1243125daa0266e90e data/custommod/loot_table/blocks/amethyst_slab.json
+64133bdfd5c6c49f6e458a30eb2d59d0e275aca5 data/custommod/loot_table/blocks/amethyst_stairs.json
 1e5a729f9f794a925436f11c4fa7c2c80e44f625 data/custommod/loot_table/blocks/calcite_brick_slab.json
 9f16010a940ebf47d019d3a81a830094534ccd32 data/custommod/loot_table/blocks/calcite_brick_stairs.json
 f3c9355a6e3c4d778d0eb3fcc51fd53594f94f1d data/custommod/loot_table/blocks/calcite_brick_wall.json

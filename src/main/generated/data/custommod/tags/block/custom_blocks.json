@@ -7,6 +7,8 @@
     "custommod:polished_calcite_stairs",
     "custommod:calcite_bricks",
     "custommod:calcite_brick_slab",
-    "custommod:calcite_brick_stairs"
+    "custommod:calcite_brick_stairs",
+    "custommod:amethyst_slab",
+    "custommod:amethyst_stairs"
   ]
 }
