@@ -45,7 +45,7 @@ public class CapybaraModel extends EntityModel<CapybaraRenderState> {
         ModelPartData modelPartData = modelData.getRoot();
         ModelPartData root = modelPartData.addChild("root", ModelPartBuilder.create(), ModelTransform.of(0.0F, 24.0F, 0.0F, 0.0F, 3.1416F, 0.0F));
 
-        ModelPartData body = root.addChild("body", ModelPartBuilder.create().uv(0, 0).cuboid(-5.0F, -5.0F, -9.0F, 10.0F, 10.0F, 18.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, -11.0F, -2.0F,0 ,0 ,0));
+        ModelPartData body = root.addChild("body", ModelPartBuilder.create().uv(0, 0).cuboid(-5.0F, -5.0F, -9.0F, 10.0F, 10.0F, 18.0F, new Dilation(0.0F)), ModelTransform.origin(0.0F, -11.0F, -2.0F));
 
         ModelPartData head = body.addChild("head", ModelPartBuilder.create().uv(0, 29).cuboid(-3.0F, -4.2685F, -1.3612F, 6.0F, 6.0F, 10.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, -4.0F, 7.0F, -0.1745F, 0.0F, 0.0F));
 
@@ -57,13 +57,13 @@ public class CapybaraModel extends EntityModel<CapybaraRenderState> {
 
         ModelPartData ear_r2 = right_ear.addChild("ear_r2", ModelPartBuilder.create().uv(38, 34).cuboid(-1.0F, -2.0F, -1.0F, 2.0F, 2.0F, 1.0F, new Dilation(0.0F)), ModelTransform.of(-0.3F, 0.3F, 0.5F, 0.0F, 0.0F, 0.2618F));
 
-        ModelPartData front_left_leg = body.addChild("front_left_leg", ModelPartBuilder.create().uv(3, 4).cuboid(-1.5F, 0.0F, -1.5F, 3.0F, 6.0F, 3.0F, new Dilation(0.0F)), ModelTransform.of(-3.0F, 5.0F, 6.5F,0 ,0 ,0));
+        ModelPartData front_left_leg = body.addChild("front_left_leg", ModelPartBuilder.create().uv(3, 4).cuboid(-1.5F, 0.0F, -1.5F, 3.0F, 6.0F, 3.0F, new Dilation(0.0F)), ModelTransform.origin(-3.0F, 5.0F, 6.5F));
 
-        ModelPartData front_right_leg = body.addChild("front_right_leg", ModelPartBuilder.create().uv(3, 4).cuboid(4.5F, 0.0F, -1.5F, 3.0F, 6.0F, 3.0F, new Dilation(0.0F)), ModelTransform.of(-3.0F, 5.0F, 6.5F,0 ,0 ,0));
+        ModelPartData front_right_leg = body.addChild("front_right_leg", ModelPartBuilder.create().uv(3, 4).cuboid(4.5F, 0.0F, -1.5F, 3.0F, 6.0F, 3.0F, new Dilation(0.0F)), ModelTransform.origin(-3.0F, 5.0F, 6.5F));
 
-        ModelPartData back_left_leg = body.addChild("back_left_leg", ModelPartBuilder.create().uv(40, 4).cuboid(-2.0F, 0.0F, -2.0F, 4.0F, 6.0F, 4.0F, new Dilation(0.0F)), ModelTransform.of(-3.0F, 5.0F, -8.0F,0 ,0 ,0));
+        ModelPartData back_left_leg = body.addChild("back_left_leg", ModelPartBuilder.create().uv(40, 4).cuboid(-2.0F, 0.0F, -2.0F, 4.0F, 6.0F, 4.0F, new Dilation(0.0F)), ModelTransform.origin(-3.0F, 5.0F, -8.0F));
 
-        ModelPartData back_right_leg = body.addChild("back_right_leg", ModelPartBuilder.create().uv(40, 4).cuboid(-2.0F, 0.0F, -2.0F, 4.0F, 6.0F, 4.0F, new Dilation(0.0F)), ModelTransform.of(3.0F, 5.0F, -8.0F,0 ,0 ,0));
+        ModelPartData back_right_leg = body.addChild("back_right_leg", ModelPartBuilder.create().uv(40, 4).cuboid(-2.0F, 0.0F, -2.0F, 4.0F, 6.0F, 4.0F, new Dilation(0.0F)), ModelTransform.origin(3.0F, 5.0F, -8.0F));
         return TexturedModelData.of(modelData, 64, 64);
     }
     @Override
@@ -77,9 +77,9 @@ public class CapybaraModel extends EntityModel<CapybaraRenderState> {
 
     private void setHeadAngles(float headYaw, float headPitch) {
         headYaw = MathHelper.clamp(headYaw, -30.0f, 30.0f);
-        headPitch = MathHelper.clamp(headPitch, -25.0f, 25.0f);
+        headPitch = MathHelper.clamp(headPitch, -25.0f, 45.0f);
 
         this.head.yaw = headYaw * 0.017453292F;
-        this.head.pitch = headPitch * 0.017453292F;
+        this.head.pitch = headPitch * (float) -(Math.PI / 180.0);
     }
 }

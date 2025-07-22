@@ -18,6 +18,7 @@ public class ModItems {
     public static final Item TEMPLATE_ITEM = registerItem("template_item", Item::new);
     public static final Item TEMPLATE_RAW_ORE = registerItem("template_raw_ore", Item::new);
     public static final Item TEMPLATE_FUEL = registerItem("template_fuel", Item::new);
+
     public static final Item CAPYBARA_SPAWN_EGG = registerItem("capybara_spawn_egg",
             setting -> new SpawnEggItem(ModEntities.CAPYBARA, setting));
 

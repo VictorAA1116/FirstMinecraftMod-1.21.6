@@ -5,6 +5,12 @@ import net.minecraft.client.render.entity.animation.*;
 public class CapybaraAnimations {
 
     public static final AnimationDefinition ANIM_CAPYBARA_IDLE = AnimationDefinition.Builder.create(10f).looping()
+            .addBoneAnimation("head",
+                    new Transformation(Transformation.Targets.ROTATE,
+                            new Keyframe(0f, AnimationHelper.createRotationalVector(-10f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(10f, AnimationHelper.createRotationalVector(-10f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR)))
             .addBoneAnimation("left_ear",
                     new Transformation(Transformation.Targets.ROTATE,
                             new Keyframe(0f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
@@ -53,13 +59,19 @@ public class CapybaraAnimations {
                                     Transformation.Interpolations.LINEAR))).build();
 
     public static final AnimationDefinition ANIM_CAPYBARA_WALK = AnimationDefinition.Builder.create(1f).looping()
+            .addBoneAnimation("head",
+                    new Transformation(Transformation.Targets.ROTATE,
+                            new Keyframe(0f, AnimationHelper.createRotationalVector(-10f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(1f, AnimationHelper.createRotationalVector(-10f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR)))
             .addBoneAnimation("front_left_leg",
                     new Transformation(Transformation.Targets.ROTATE,
                             new Keyframe(0f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR),
-                            new Keyframe(0.25f, AnimationHelper.createRotationalVector(25f, 0f, 0f),
+                            new Keyframe(0.25f, AnimationHelper.createRotationalVector(45f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR),
-                            new Keyframe(0.75f, AnimationHelper.createRotationalVector(-25f, 0f, 0f),
+                            new Keyframe(0.75f, AnimationHelper.createRotationalVector(-45f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR),
                             new Keyframe(1f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR)))
@@ -67,9 +79,9 @@ public class CapybaraAnimations {
                     new Transformation(Transformation.Targets.ROTATE,
                             new Keyframe(0f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR),
-                            new Keyframe(0.25f, AnimationHelper.createRotationalVector(-25f, 0f, 0f),
+                            new Keyframe(0.25f, AnimationHelper.createRotationalVector(-45f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR),
-                            new Keyframe(0.75f, AnimationHelper.createRotationalVector(25f, 0f, 0f),
+                            new Keyframe(0.75f, AnimationHelper.createRotationalVector(45f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR),
                             new Keyframe(1f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR)))
@@ -77,9 +89,9 @@ public class CapybaraAnimations {
                     new Transformation(Transformation.Targets.ROTATE,
                             new Keyframe(0f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR),
-                            new Keyframe(0.25f, AnimationHelper.createRotationalVector(-25f, 0f, 0f),
+                            new Keyframe(0.25f, AnimationHelper.createRotationalVector(-45f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR),
-                            new Keyframe(0.75f, AnimationHelper.createRotationalVector(25f, 0f, 0f),
+                            new Keyframe(0.75f, AnimationHelper.createRotationalVector(45f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR),
                             new Keyframe(1f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR)))
@@ -87,9 +99,9 @@ public class CapybaraAnimations {
                     new Transformation(Transformation.Targets.ROTATE,
                             new Keyframe(0f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR),
-                            new Keyframe(0.25f, AnimationHelper.createRotationalVector(25f, 0f, 0f),
+                            new Keyframe(0.25f, AnimationHelper.createRotationalVector(45f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR),
-                            new Keyframe(0.75f, AnimationHelper.createRotationalVector(-25f, 0f, 0f),
+                            new Keyframe(0.75f, AnimationHelper.createRotationalVector(-45f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR),
                             new Keyframe(1f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR))).build();

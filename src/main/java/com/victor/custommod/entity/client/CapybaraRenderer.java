@@ -10,7 +10,7 @@ import net.minecraft.util.Identifier;
 
 public class CapybaraRenderer extends MobEntityRenderer<CapybaraEntity, CapybaraRenderState, CapybaraModel> {
     public CapybaraRenderer(EntityRendererFactory.Context context) {
-        super(context, new CapybaraModel(context.getPart(CapybaraModel.CAPYBARA)), 0.75f);
+        super(context, new CapybaraModel(context.getPart(CapybaraModel.CAPYBARA)), 0.5f);
     }
 
     @Override
