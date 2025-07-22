@@ -31,6 +31,9 @@
   "block.custommod.smooth_basalt_stairs": "Smooth Basalt Stairs",
   "block.custommod.smooth_basalt_slab": "Smooth Basal Slab",
 
+  "entity.custommod.capybara": "Capybara",
+  "item.custommod.capybara_spawn_egg": "Capybara Spawn Egg",
+
 
   "itemgroup.custommod.template_item_group": "Template Item Group"
 }

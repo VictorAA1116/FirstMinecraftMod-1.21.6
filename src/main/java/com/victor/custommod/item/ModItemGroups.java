@@ -25,6 +25,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.TEMPLATE_RAW_ORE_BLOCK);
                         entries.add(ModBlocks.TEMPLATE_DEEPSLATE_ORE);
                         entries.add(ModBlocks.TEMPLATE_STONE_ORE);
+
+                        entries.add(ModItems.CAPYBARA_SPAWN_EGG);
                     })
                     .build());
 
