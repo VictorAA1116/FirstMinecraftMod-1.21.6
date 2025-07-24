@@ -5,4 +5,5 @@ import net.minecraft.entity.AnimationState;
 
 public class CapybaraRenderState extends LivingEntityRenderState {
     public final AnimationState idleAnimationState = new AnimationState();
+    public final AnimationState sitAnimationState = new AnimationState();
 }

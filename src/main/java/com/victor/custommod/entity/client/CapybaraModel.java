@@ -24,6 +24,7 @@ public class CapybaraModel extends EntityModel<CapybaraRenderState> {
 
     private final Animation walkAnimation;
     private final Animation idleAnimation;
+    private final Animation sitAnimation;
 
     public CapybaraModel(ModelPart root) {
         super(root);
@@ -39,6 +40,7 @@ public class CapybaraModel extends EntityModel<CapybaraRenderState> {
 
         this.idleAnimation = CapybaraAnimations.ANIM_CAPYBARA_IDLE.createAnimation(root);
         this.walkAnimation = CapybaraAnimations.ANIM_CAPYBARA_WALK.createAnimation(root);
+        this.sitAnimation = CapybaraAnimations.ANIM_CAPYBARA_SIT.createAnimation(root);
     }
     public static TexturedModelData getTexturedModelData() {
         ModelData modelData = new ModelData();
@@ -73,6 +75,7 @@ public class CapybaraModel extends EntityModel<CapybaraRenderState> {
 
         this.walkAnimation.applyWalking(state.limbSwingAnimationProgress, state.limbSwingAmplitude, 2f, 2.5f);
         this.idleAnimation.apply(state.idleAnimationState, state.age, 1f);
+        this.sitAnimation.apply(state.sitAnimationState, state.age, 1f);
     }
 
     private void setHeadAngles(float headYaw, float headPitch) {

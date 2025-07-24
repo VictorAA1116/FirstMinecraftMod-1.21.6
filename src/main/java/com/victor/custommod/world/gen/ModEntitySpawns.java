@@ -13,8 +13,9 @@ import net.minecraft.world.biome.BiomeKeys;
 public class ModEntitySpawns {
     public static void  addSpawns() {
         BiomeModifications.addSpawn(BiomeSelectors.includeByKey(BiomeKeys.SWAMP, BiomeKeys.MANGROVE_SWAMP, BiomeKeys.JUNGLE,
-                BiomeKeys.SPARSE_JUNGLE, BiomeKeys.BAMBOO_JUNGLE, BiomeKeys.RIVER), SpawnGroup.CREATURE, ModEntities.CAPYBARA, 30, 3, 6);
+                BiomeKeys.SPARSE_JUNGLE, BiomeKeys.BAMBOO_JUNGLE, BiomeKeys.RIVER, BiomeKeys.SAVANNA),
+                SpawnGroup.CREATURE, ModEntities.CAPYBARA, 30, 3, 6);
 
-        SpawnRestriction.register(ModEntities.CAPYBARA, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::isValidNaturalSpawn);
+        SpawnRestriction.register(ModEntities.CAPYBARA, SpawnLocationTypes.UNRESTRICTED, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::isValidNaturalSpawn);
     }
 }

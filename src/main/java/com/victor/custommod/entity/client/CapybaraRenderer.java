@@ -39,5 +39,6 @@ public class CapybaraRenderer extends MobEntityRenderer<CapybaraEntity, Capybara
     public void updateRenderState(CapybaraEntity livingEntity, CapybaraRenderState livingEntityRenderState, float f) {
         super.updateRenderState(livingEntity, livingEntityRenderState, f);
         livingEntityRenderState.idleAnimationState.copyFrom(livingEntity.idleAnimationState);
+        livingEntityRenderState.sitAnimationState.copyFrom(livingEntity.sitAnimationState);
     }
 }
