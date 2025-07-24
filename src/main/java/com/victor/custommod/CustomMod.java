@@ -5,6 +5,7 @@ import com.victor.custommod.entity.ModEntities;
 import com.victor.custommod.entity.custom.CapybaraEntity;
 import com.victor.custommod.item.ModItemGroups;
 import com.victor.custommod.item.ModItems;
+import com.victor.custommod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
@@ -30,6 +31,8 @@ public class CustomMod implements ModInitializer {
 		ModEntities.registerModEntities();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.CAPYBARA, CapybaraEntity.createAttributes());
+
+		ModWorldGeneration.generateModWorldGen();
 
 		FuelRegistryEvents.BUILD.register((builder, context) -> {
 			builder.add(ModItems.TEMPLATE_FUEL, 600);
