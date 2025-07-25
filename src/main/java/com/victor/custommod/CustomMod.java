@@ -31,6 +31,7 @@ public class CustomMod implements ModInitializer {
 		ModEntities.registerModEntities();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.CAPYBARA, CapybaraEntity.createAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.PENGUIN, CapybaraEntity.createAttributes());
 
 		ModWorldGeneration.generateModWorldGen();
 

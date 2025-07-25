@@ -26,5 +26,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.SHORT_GRASS)
                 .add(Items.KELP)
                 .add(Items.SEAGRASS);
+
+        valueLookupBuilder(ModTags.Items.PENGUIN_FOODS)
+                .add(Items.COD)
+                .add(Items.SALMON)
+                .add(Items.TROPICAL_FISH);
     }
 }

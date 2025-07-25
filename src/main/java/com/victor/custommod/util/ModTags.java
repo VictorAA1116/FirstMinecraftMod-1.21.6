@@ -21,6 +21,8 @@ public class ModTags {
 
         public static final TagKey<Item> CAPYBARA_FOODS = createTag("capybara_foods");
 
+        public static final TagKey<Item> PENGUIN_FOODS = createTag("penguin_foods");
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(CustomMod.MOD_ID, name));
         }

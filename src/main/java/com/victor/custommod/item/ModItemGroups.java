@@ -27,6 +27,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.TEMPLATE_STONE_ORE);
 
                         entries.add(ModItems.CAPYBARA_SPAWN_EGG);
+                        entries.add(ModItems.PENGUIN_SPAWN_EGG);
                     })
                     .build());
 

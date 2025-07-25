@@ -22,6 +22,9 @@ public class ModItems {
     public static final Item CAPYBARA_SPAWN_EGG = registerItem("capybara_spawn_egg",
             setting -> new SpawnEggItem(ModEntities.CAPYBARA, setting));
 
+    public static final Item PENGUIN_SPAWN_EGG = registerItem("penguin_spawn_egg",
+            setting -> new SpawnEggItem(ModEntities.PENGUIN, setting));
+
     public static final Item TEMPLATE_FOOD = registerItem("template_food",
             setting -> new Item(setting.food(ModFoodComponents.TEMPLATE_FOOD, ModFoodComponents.TEMPLATE_FOOD_EFFECT)));
 
