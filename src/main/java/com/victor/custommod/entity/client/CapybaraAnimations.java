@@ -107,6 +107,12 @@ public class CapybaraAnimations {
                                     Transformation.Interpolations.LINEAR))).build();
 
     public static final AnimationDefinition ANIM_CAPYBARA_SIT = AnimationDefinition.Builder.create(10f).looping()
+            .addBoneAnimation("root",
+                    new Transformation(Transformation.Targets.MOVE_ORIGIN,
+                            new Keyframe(0f, AnimationHelper.createTranslationalVector(0f, 0f, -1f),
+                                    Transformation.Interpolations.CUBIC),
+                            new Keyframe(10f, AnimationHelper.createTranslationalVector(0f, 0f, -1f),
+                                    Transformation.Interpolations.CUBIC)))
             .addBoneAnimation("body",
                     new Transformation(Transformation.Targets.MOVE_ORIGIN,
                             new Keyframe(0f, AnimationHelper.createTranslationalVector(0f, -3f, 0f),
@@ -117,6 +123,12 @@ public class CapybaraAnimations {
                     new Transformation(Transformation.Targets.ROTATE,
                             new Keyframe(0f, AnimationHelper.createRotationalVector(30f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR)))
+            .addBoneAnimation("head",
+                    new Transformation(Transformation.Targets.MOVE_ORIGIN,
+                            new Keyframe(0f, AnimationHelper.createTranslationalVector(0f, -1f, 1f),
+                                    Transformation.Interpolations.CUBIC),
+                            new Keyframe(10f, AnimationHelper.createTranslationalVector(0f, -1f, 1f),
+                                    Transformation.Interpolations.CUBIC)))
             .addBoneAnimation("head",
                     new Transformation(Transformation.Targets.ROTATE,
                             new Keyframe(0f, AnimationHelper.createRotationalVector(-30f, 0f, 0f),
