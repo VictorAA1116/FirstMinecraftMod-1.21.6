@@ -4,6 +4,7 @@ import com.victor.custommod.item.ModItems;
 import com.victor.custommod.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
@@ -20,5 +21,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.TEMPLATE_RAW_ORE)
                 .add(ModItems.TEMPLATE_FOOD)
                 .add(ModItems.TEMPLATE_FUEL);
+
+        valueLookupBuilder(ModTags.Items.CAPYBARA_FOODS)
+                .add(Items.SHORT_GRASS)
+                .add(Items.KELP)
+                .add(Items.SEAGRASS);
     }
 }

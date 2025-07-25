@@ -1,6 +1,7 @@
 package com.victor.custommod.entity.custom;
 
 import com.victor.custommod.entity.ModEntities;
+import com.victor.custommod.util.ModTags;
 import net.minecraft.block.BlockState;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.FoodComponent;
@@ -44,6 +45,7 @@ public class CapybaraEntity extends TameableEntity {
         this.goalSelector.add(2, new AnimalMateGoal(this, 1.15D));
         this.goalSelector.add(3, new FollowOwnerGoal(this, 1F, 10F, 2F));
         this.goalSelector.add(4, new TemptGoal(this, 1.25D, Ingredient.ofItems(Items.MELON_SLICE), false));
+        this.goalSelector.add(4, new TemptGoal(this, 1.25D, (stack) -> stack.isIn(ModTags.Items.CAPYBARA_FOODS), false));
         this.goalSelector.add(5, new FollowParentGoal(this,1.1D));
         this.goalSelector.add(6, new WanderAroundFarGoal(this, 1.0D));
         this.goalSelector.add(7, new LookAtEntityGoal(this, PlayerEntity.class, 4.0F));
@@ -138,7 +140,7 @@ public class CapybaraEntity extends TameableEntity {
 
     @Override
     public boolean isBreedingItem(ItemStack stack) {
-        return stack.isOf(Items.MELON_SLICE);
+        return stack.isIn(ModTags.Items.CAPYBARA_FOODS);
     }
 
     @Override
