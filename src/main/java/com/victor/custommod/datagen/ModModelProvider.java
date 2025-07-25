@@ -60,5 +60,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.TEMPLATE_FUEL, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CAPYBARA_SPAWN_EGG, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PENGUIN_SPAWN_EGG, Models.GENERATED);
     }
 }

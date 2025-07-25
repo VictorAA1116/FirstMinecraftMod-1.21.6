@@ -55,11 +55,11 @@ public class PenguinModel extends EntityModel<PenguinRenderState>{
 
         ModelPartData right_wing = body.addChild("right_wing", ModelPartBuilder.create().uv(23, 18).mirrored().cuboid(-1.0F, 0.0F, -1.5F, 1.0F, 7.0F, 3.0F, new Dilation(0.0F)).mirrored(false), ModelTransform.origin(-3.0F, -4.0F, 0.0F));
 
-        ModelPartData left_foot = body.addChild("left_foot", ModelPartBuilder.create().uv(24, 7).cuboid(-1.5F, 2.0F, -2.0F, 3.0F, 0.0F, 2.0F, new Dilation(0.0F)), ModelTransform.origin(1.5F, 4.5F, 0.0F));
+        ModelPartData left_foot = body.addChild("left_foot", ModelPartBuilder.create().uv(24, 7).cuboid(-1.5F, 2.0F, -2.0F, 3.0F, 0.0F, 2.0F, new Dilation(0.0F)), ModelTransform.origin(1.5F, 4.4F, 0.0F));
 
         ModelPartData cube_r1 = left_foot.addChild("cube_r1", ModelPartBuilder.create().uv(25, 5).cuboid(-1.0F, 0.0F, -2.0F, 1.0F, 0.0F, 2.0F, new Dilation(0.0F)), ModelTransform.of(0.5F, 0.0F, 0.0F, 1.5708F, 0.0F, 0.0F));
 
-        ModelPartData right_foot = body.addChild("right_foot", ModelPartBuilder.create().uv(24, 7).mirrored().cuboid(-1.5F, 2.0F, -2.0F, 3.0F, 0.0F, 2.0F, new Dilation(0.0F)).mirrored(false), ModelTransform.origin(-1.5F, 4.5F, 0.0F));
+        ModelPartData right_foot = body.addChild("right_foot", ModelPartBuilder.create().uv(24, 7).mirrored().cuboid(-1.5F, 2.0F, -2.0F, 3.0F, 0.0F, 2.0F, new Dilation(0.0F)).mirrored(false), ModelTransform.origin(-1.5F, 4.4F, 0.0F));
 
         ModelPartData cube_r2 = right_foot.addChild("cube_r2", ModelPartBuilder.create().uv(25, 5).mirrored().cuboid(0.0F, 0.0F, -2.0F, 1.0F, 0.0F, 2.0F, new Dilation(0.0F)).mirrored(false), ModelTransform.of(-0.5F, 0.0F, 0.0F, 1.5708F, 0.0F, 0.0F));
 

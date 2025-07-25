@@ -44,5 +44,11 @@ public class ModItems {
             entries.add(TEMPLATE_RAW_ORE);
             entries.add(TEMPLATE_FOOD);
         });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.SPAWN_EGGS).register(entries ->
+        {
+            entries.add(CAPYBARA_SPAWN_EGG);
+            entries.add(PENGUIN_SPAWN_EGG);
+        });
     }
 }
