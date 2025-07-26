@@ -25,7 +25,7 @@ public class ModEntities {
 
     public static final EntityType<PenguinEntity> PENGUIN = Registry.register(Registries.ENTITY_TYPE,
             Identifier.of(CustomMod.MOD_ID, "penguin"), EntityType.Builder.create(PenguinEntity::new, SpawnGroup.CREATURE)
-                    .dimensions(0.75f,1f).build(PENGUIN_KEY));
+                    .dimensions(0.5f,1f).build(PENGUIN_KEY));
 
     public static void registerModEntities () {
         CustomMod.LOGGER.info("Registering Mod Entities for " + CustomMod.MOD_ID);

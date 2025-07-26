@@ -3,12 +3,18 @@ package com.victor.custommod.entity.client;
 import com.victor.custommod.CustomMod;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.entity.animation.Animation;
+import net.minecraft.client.render.entity.model.BabyModelTransformer;
 import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
+import net.minecraft.client.render.entity.model.ModelTransformer;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 
+import java.util.Set;
+
 public class PenguinModel extends EntityModel<PenguinRenderState>{
+
+    public static final ModelTransformer BABY_TRANSFORMER = new BabyModelTransformer(false, 4.0F, 4.0F, Set.of("head"));
 
     public static final EntityModelLayer PENGUIN = new EntityModelLayer(Identifier.of(CustomMod.MOD_ID, "penguin"), "main");
 
@@ -71,9 +77,16 @@ public class PenguinModel extends EntityModel<PenguinRenderState>{
         super.setAngles(state);
         this.setHeadAngles(state.relativeHeadYaw, state.pitch);
 
-        this.walkAnimation.applyWalking(state.limbSwingAnimationProgress, state.limbSwingAmplitude, 2f, 2.5f);
-        this.idleAnimation.apply(state.idleAnimationState, state.age, 1f);
-        this.swimAnimation.apply(state.swimAnimationState, state.age, 1f);
+        this.resetTransforms();
+
+        if (state.swimAnimationState.isRunning()) {
+            this.swimAnimation.apply(state.swimAnimationState, state.age, 1f);
+        } else if (state.walkAnimationState.isRunning()) {
+            this.walkAnimation.applyWalking(state.limbSwingAnimationProgress, state.limbSwingAmplitude, 2f, 2.5f);
+        } else if (state.idleAnimationState.isRunning()) {
+            this.idleAnimation.apply(state.idleAnimationState, state.age, 1f);
+        }
+
     }
 
     private void setHeadAngles(float headYaw, float headPitch) {

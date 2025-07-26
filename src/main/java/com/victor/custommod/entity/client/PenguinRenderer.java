@@ -37,6 +37,7 @@ public class PenguinRenderer extends MobEntityRenderer<PenguinEntity, PenguinRen
     public void updateRenderState(PenguinEntity livingEntity, PenguinRenderState livingEntityRenderState, float f) {
         super.updateRenderState(livingEntity, livingEntityRenderState, f);
         livingEntityRenderState.idleAnimationState.copyFrom(livingEntity.idleAnimationState);
+        livingEntityRenderState.walkAnimationState.copyFrom(livingEntity.walkAnimationState);
         livingEntityRenderState.swimAnimationState.copyFrom(livingEntity.swimAnimationState);
     }
 }
