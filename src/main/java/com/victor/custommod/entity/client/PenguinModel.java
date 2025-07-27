@@ -82,7 +82,7 @@ public class PenguinModel extends EntityModel<PenguinRenderState>{
         if (state.swimAnimationState.isRunning()) {
             this.swimAnimation.apply(state.swimAnimationState, state.age, 1f);
         } else if (state.walkAnimationState.isRunning()) {
-            this.walkAnimation.applyWalking(state.limbSwingAnimationProgress, state.limbSwingAmplitude, 2f, 2.5f);
+            this.walkAnimation.applyWalking(state.limbSwingAnimationProgress, state.limbSwingAmplitude * 1.5F, 2f, 2.5f);
         } else if (state.idleAnimationState.isRunning()) {
             this.idleAnimation.apply(state.idleAnimationState, state.age, 1f);
         }

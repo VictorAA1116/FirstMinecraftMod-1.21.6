@@ -4,10 +4,7 @@ import com.victor.custommod.entity.ModEntities;
 import com.victor.custommod.util.ModTags;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.entity.AnimationState;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.SpawnReason;
-import net.minecraft.entity.ai.control.AquaticMoveControl;
+import net.minecraft.entity.*;
 import net.minecraft.entity.ai.control.MoveControl;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.ai.pathing.AmphibiousSwimNavigation;
@@ -17,25 +14,17 @@ import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.MobEntity;
-import net.minecraft.entity.passive.AnimalEntity;
-import net.minecraft.entity.passive.PassiveEntity;
-import net.minecraft.entity.passive.PolarBearEntity;
-import net.minecraft.entity.passive.TurtleEntity;
+import net.minecraft.entity.passive.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.registry.tag.BiomeTags;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.math.random.Random;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
-import net.minecraft.world.biome.Biome;
 import org.jetbrains.annotations.Nullable;
 
 public class PenguinEntity extends AnimalEntity {
@@ -50,33 +39,35 @@ public class PenguinEntity extends AnimalEntity {
     public PenguinEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
         this.setPathfindingPenalty(PathNodeType.WATER, 4.0F);
-        this.moveControl = new PenguinMoveControl(this);
     }
 
     @Override
     protected void initGoals() {
         this.goalSelector.add(0, new BreatheAirGoal(this));
         this.goalSelector.add(1, new EscapeDangerGoal(this, 2.0D));
+        this.targetSelector.add(1, new ActiveTargetGoal<>(this, SalmonEntity.class, true));
+        this.targetSelector.add(1, new ActiveTargetGoal<>(this, CodEntity.class, true));
+        this.targetSelector.add(1, new ActiveTargetGoal<>(this, TropicalFishEntity.class, true));
         this.goalSelector.add(2, new AnimalMateGoal(this, 1.15D));
-        this.goalSelector.add(3, new TemptGoal(this, 2.0D, (stack) -> stack.isIn(ModTags.Items.PENGUIN_FOODS), false));
-        this.goalSelector.add(4, new AttackGoal(this));
+        this.goalSelector.add(3, new TemptGoal(this, 1.2D, (stack) -> stack.isIn(ModTags.Items.PENGUIN_FOODS), false));
+        this.goalSelector.add(4, new MeleeAttackGoal(this, 2.0D, true));
         this.goalSelector.add(5, new FollowParentGoal(this,1.1D));
         this.goalSelector.add(6, new WanderAroundFarGoal(this, 1.0D, 100));
-        this.goalSelector.add(7, new WanderInWaterGoal(this, 2.0D));
+        this.goalSelector.add(7, new WanderInWaterGoal(this, 1.2D));
         this.goalSelector.add(7, new MoveIntoWaterGoal(this));
-        this.goalSelector.add(7, new SwimAroundGoal(this, 3.0D, 100));
+        this.goalSelector.add(7, new SwimAroundGoal(this, 2.0D, 100));
         this.goalSelector.add(8, new LookAtEntityGoal(this, PlayerEntity.class, 4.0F));
         this.goalSelector.add(9, new LookAroundGoal(this));
     }
 
     public static DefaultAttributeContainer.Builder createAttributes() {
-        return AnimalEntity.createMobAttributes()
+        return MobEntity.createMobAttributes()
                 .add(EntityAttributes.MAX_HEALTH, 15)
                 .add(EntityAttributes.MOVEMENT_SPEED, 1)
-                .add(EntityAttributes.FOLLOW_RANGE, 20)
                 .add(EntityAttributes.WATER_MOVEMENT_EFFICIENCY, 5)
-                .add(EntityAttributes.ATTACK_DAMAGE, 5)
-                .add(EntityAttributes.TEMPT_RANGE, 20);
+                .add(EntityAttributes.ATTACK_DAMAGE, 5.0)
+                .add(EntityAttributes.STEP_HEIGHT, 1.0)
+                .add(EntityAttributes.TEMPT_RANGE, 15);
     }
 
     private void setupAnimationStates() {
@@ -86,7 +77,7 @@ public class PenguinEntity extends AnimalEntity {
         boolean isOnIce = blockState.isOf(Blocks.ICE) || blockState.isOf(Blocks.PACKED_ICE) || blockState.isOf(Blocks.BLUE_ICE);
         boolean isSwimming = this.isTouchingWater();
         boolean isWalking = !isOnIce && this.isOnGround() && this.getVelocity().horizontalLengthSquared() > 1.0E-6;
-        boolean shouldIdle = !isWalking && !isSwimming && !isOnIce;
+        boolean shouldIdle = this.isOnGround() && this.getVelocity().horizontalLengthSquared() >= 0 && !isSwimming && !isOnIce && !isWalking;
 
         if (isSwimming || isOnIce) {
             if (!this.swimAnimationState.isRunning()){
@@ -126,6 +117,41 @@ public class PenguinEntity extends AnimalEntity {
         if (this.getWorld().isClient()) {
             this.setupAnimationStates();
         }
+
+        this.setAir(this.getMaxAir());
+    }
+
+    @Override
+    public void travel(Vec3d movementInput) {
+        if (this.isTouchingWater()) {
+            this.updateVelocity(0.02F, movementInput);
+            this.move(MovementType.SELF, this.getVelocity());
+            this.setVelocity(this.getVelocity().multiply(0.8));
+
+            this.setPitch((float) (-this.getVelocity().y * 75.0));
+        }
+        else {
+            super.travel(movementInput);
+        }
+    }
+
+    @Override
+    public boolean tryAttack(ServerWorld world, Entity target) {
+        boolean success = super.tryAttack(world, target);
+        if (success && target instanceof LivingEntity){
+            this.onAttacking(target);
+        }
+        return success;
+    }
+
+    @Override
+    public boolean canBreatheInWater() {
+        return true;
+    }
+
+    @Override
+    public int getMaxAir() {
+        return 300;
     }
 
     @Override
@@ -169,48 +195,6 @@ public class PenguinEntity extends AnimalEntity {
         return new PenguinEntity.PenguinSwimNavigation(this, world);
     }
 
-    static class PenguinMoveControl extends MoveControl {
-        private final PenguinEntity penguin;
-
-        PenguinMoveControl(PenguinEntity penguin) {
-            super(penguin);
-            this.penguin = penguin;
-        }
-
-        private void updateVelocity() {
-            if (this.penguin.isInFluid()) {
-                this.penguin.setVelocity(this.penguin.getVelocity().add((double)0.0F, 0.005, (double)0.0F));
-
-            } else if (this.penguin.isOnGround()) {
-                this.penguin.setMovementSpeed(this.penguin.getMovementSpeed());
-            }
-
-        }
-
-        public void tick() {
-            this.updateVelocity();
-            if (this.state == State.MOVE_TO && !this.penguin.getNavigation().isIdle()) {
-                double d = this.targetX - this.penguin.getX();
-                double e = this.targetY - this.penguin.getY();
-                double f = this.targetZ - this.penguin.getZ();
-                double g = Math.sqrt(d * d + e * e + f * f);
-                if (g < (double)1.0E-5F) {
-                    this.entity.setMovementSpeed(0.0F);
-                } else {
-                    e /= g;
-                    float h = (float)(MathHelper.atan2(f, d) * (double)(180F / (float)Math.PI)) - 90.0F;
-                    this.penguin.setYaw(this.wrapDegrees(this.penguin.getYaw(), h, 90.0F));
-                    this.penguin.bodyYaw = this.penguin.getYaw();
-                    float i = (float)(this.speed * this.penguin.getAttributeValue(EntityAttributes.MOVEMENT_SPEED));
-                    this.penguin.setMovementSpeed(MathHelper.lerp(0.125F, this.penguin.getMovementSpeed(), i));
-                    this.penguin.setVelocity(this.penguin.getVelocity().add((double)0.0F, (double)this.penguin.getMovementSpeed() * e * 0.1, (double)0.0F));
-                }
-            } else {
-                this.penguin.setMovementSpeed(0.0F);
-            }
-        }
-    }
-
     static class PenguinSwimNavigation extends AmphibiousSwimNavigation {
         PenguinSwimNavigation(PenguinEntity owner, World world) {
             super(owner, world);
@@ -228,18 +212,6 @@ public class PenguinEntity extends AnimalEntity {
         }
     }
 
-    static class WanderOnLandGoal extends WanderAroundGoal {
-        private final PenguinEntity penguin;
-
-        WanderOnLandGoal(PenguinEntity penguin, double speed, int chance) {
-            super(penguin, speed, chance);
-            this.penguin = penguin;
-        }
-
-        public boolean canStart() {
-            return !this.mob.isTouchingWater() && !this.penguin.landBound ? super.canStart() : false;
-        }
-    }
 
     static class WanderInWaterGoal extends MoveToTargetPosGoal {
         private static final int field_30385 = 1200;
@@ -259,7 +231,7 @@ public class PenguinEntity extends AnimalEntity {
             if (this.penguin.isBaby() && !this.penguin.isTouchingWater()) {
                 return super.canStart();
             } else {
-                return !this.penguin.landBound && !this.penguin.isTouchingWater() ? super.canStart() : false;
+                return !this.penguin.landBound && !this.penguin.isTouchingWater() && super.canStart();
             }
         }
 

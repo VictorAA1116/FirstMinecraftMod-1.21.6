@@ -3,6 +3,7 @@ package com.victor.custommod;
 import com.victor.custommod.block.ModBlocks;
 import com.victor.custommod.entity.ModEntities;
 import com.victor.custommod.entity.custom.CapybaraEntity;
+import com.victor.custommod.entity.custom.PenguinEntity;
 import com.victor.custommod.item.ModItemGroups;
 import com.victor.custommod.item.ModItems;
 import com.victor.custommod.world.gen.ModWorldGeneration;
@@ -31,7 +32,7 @@ public class CustomMod implements ModInitializer {
 		ModEntities.registerModEntities();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.CAPYBARA, CapybaraEntity.createAttributes());
-		FabricDefaultAttributeRegistry.register(ModEntities.PENGUIN, CapybaraEntity.createAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.PENGUIN, PenguinEntity.createAttributes());
 
 		ModWorldGeneration.generateModWorldGen();
 

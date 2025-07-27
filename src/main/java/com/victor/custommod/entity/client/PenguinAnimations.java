@@ -7,6 +7,8 @@ public class PenguinAnimations {
     public static final AnimationDefinition ANIM_PENGUIN_IDLE = AnimationDefinition.Builder.create(10f).looping()
             .addBoneAnimation("left_wing",
                     new Transformation(Transformation.Targets.ROTATE,
+                            new Keyframe(0f, AnimationHelper.createRotationalVector(0f, 0f, -10f),
+                                    Transformation.Interpolations.LINEAR),
                             new Keyframe(0.5f, AnimationHelper.createRotationalVector(0f, 0f, -10f),
                                     Transformation.Interpolations.LINEAR),
                             new Keyframe(0.5834334f, AnimationHelper.createRotationalVector(0f, 0f, -40f),
@@ -84,9 +86,14 @@ public class PenguinAnimations {
                             new Keyframe(9f, AnimationHelper.createRotationalVector(0f, 0f, -40f),
                                     Transformation.Interpolations.LINEAR),
                             new Keyframe(9.083434f, AnimationHelper.createRotationalVector(0f, 0f, -10f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(10f, AnimationHelper.createRotationalVector(0f, 0f, -10f),
                                     Transformation.Interpolations.LINEAR)))
+
             .addBoneAnimation("right_wing",
                     new Transformation(Transformation.Targets.ROTATE,
+                            new Keyframe(0f, AnimationHelper.createRotationalVector(0f, 0f, 15f),
+                                    Transformation.Interpolations.LINEAR),
                             new Keyframe(0.5f, AnimationHelper.createRotationalVector(0f, 0f, 15f),
                                     Transformation.Interpolations.LINEAR),
                             new Keyframe(0.5834334f, AnimationHelper.createRotationalVector(0f, 0f, 40f),
@@ -164,10 +171,14 @@ public class PenguinAnimations {
                             new Keyframe(9f, AnimationHelper.createRotationalVector(0f, 0f, 40f),
                                     Transformation.Interpolations.LINEAR),
                             new Keyframe(9.083434f, AnimationHelper.createRotationalVector(0f, 0f, 15f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(10f, AnimationHelper.createRotationalVector(0f, 0f, 15f),
                                     Transformation.Interpolations.LINEAR)))
             .addBoneAnimation("tail",
                     new Transformation(Transformation.Targets.MOVE_ORIGIN,
                             new Keyframe(0f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(10f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR)))
             .addBoneAnimation("tail",
                     new Transformation(Transformation.Targets.ROTATE,
