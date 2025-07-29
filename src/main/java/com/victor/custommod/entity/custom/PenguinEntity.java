@@ -1,6 +1,7 @@
 package com.victor.custommod.entity.custom;
 
 import com.victor.custommod.entity.ModEntities;
+import com.victor.custommod.sound.ModSounds;
 import com.victor.custommod.util.ModTags;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -220,7 +221,7 @@ public class PenguinEntity extends AnimalEntity {
 
     @Override
     protected @Nullable SoundEvent getAmbientSound() {
-        return super.getAmbientSound();
+        return ModSounds.PENGUIN_AMBIENT;
     }
 
     @Override

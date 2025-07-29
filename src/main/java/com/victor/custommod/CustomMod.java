@@ -6,6 +6,7 @@ import com.victor.custommod.entity.custom.CapybaraEntity;
 import com.victor.custommod.entity.custom.PenguinEntity;
 import com.victor.custommod.item.ModItemGroups;
 import com.victor.custommod.item.ModItems;
+import com.victor.custommod.sound.ModSounds;
 import com.victor.custommod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -30,6 +31,7 @@ public class CustomMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModEntities.registerModEntities();
+		ModSounds.registerSounds();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.CAPYBARA, CapybaraEntity.createAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.PENGUIN, PenguinEntity.createAttributes());

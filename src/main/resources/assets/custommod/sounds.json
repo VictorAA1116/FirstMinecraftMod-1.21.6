@@ -1,0 +1,8 @@
+{
+  "penguin_ambient": {
+    "subtitle": "Penguin honks",
+    "sounds": [
+      "custommod:penguin_ambient"
+    ]
+  }
+}
