@@ -55,13 +55,13 @@ public class PenguinEntity extends AnimalEntity {
         this.targetSelector.add(1, new ActiveTargetGoal<>(this, TropicalFishEntity.class, true));
         this.goalSelector.add(2, new AnimalMateGoal(this, 1.15D));
         this.goalSelector.add(3, new TemptGoal(this, 0.7D, (stack) -> stack.isIn(ModTags.Items.PENGUIN_FOODS), false));
-        this.goalSelector.add(4, new MeleeAttackGoal(this, 1.5D, true));
-        this.goalSelector.add(5, new FollowParentGoal(this,1.2D));
-        this.goalSelector.add(6, new WanderAroundFarGoal(this, 0.6D, 100));
+        this.goalSelector.add(4, new FollowParentGoal(this,1.2D));
+        this.goalSelector.add(5, new WanderAroundFarGoal(this, 0.6D, 100));
+        this.goalSelector.add(6, new MoveIntoWaterGoal(this));
         this.goalSelector.add(7, new WanderInWaterGoal(this, 1.1D));
-        this.goalSelector.add(7, new MoveIntoWaterGoal(this));
         this.goalSelector.add(7, new SwimAroundGoal(this, 1.1D, 100));
-        this.goalSelector.add(8, new LookAtEntityGoal(this, PlayerEntity.class, 4.0F));
+        this.goalSelector.add(8, new MeleeAttackGoal(this, 1.5D, true));
+        this.goalSelector.add(9, new LookAtEntityGoal(this, PlayerEntity.class, 4.0F));
         this.goalSelector.add(9, new LookAroundGoal(this));
     }
 
