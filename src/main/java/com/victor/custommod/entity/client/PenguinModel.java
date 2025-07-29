@@ -1,6 +1,7 @@
 package com.victor.custommod.entity.client;
 
 import com.victor.custommod.CustomMod;
+import com.victor.custommod.entity.custom.PenguinEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.entity.animation.Animation;
 import net.minecraft.client.render.entity.model.BabyModelTransformer;
@@ -30,6 +31,8 @@ public class PenguinModel extends EntityModel<PenguinRenderState>{
     private final Animation walkAnimation;
     private final Animation idleAnimation;
     private final Animation swimAnimation;
+    private final Animation swimIdleAnimation;
+    private final Animation slideAnimation;
 
     public PenguinModel(ModelPart root) {
         super(root);
@@ -45,6 +48,8 @@ public class PenguinModel extends EntityModel<PenguinRenderState>{
         this.idleAnimation = PenguinAnimations.ANIM_PENGUIN_IDLE.createAnimation(root);
         this.walkAnimation = PenguinAnimations.ANIM_PENGUIN_WALK.createAnimation(root);
         this.swimAnimation = PenguinAnimations.ANIM_PENGUIN_SWIM.createAnimation(root);
+        this.swimIdleAnimation = PenguinAnimations.ANIM_PENGUIN_SWIM_IDLE.createAnimation(root);
+        this.slideAnimation = PenguinAnimations.ANIM_PENGUIN_SLIDE.createAnimation(root);
     }
 
     public static TexturedModelData getTexturedModelData() {
@@ -85,6 +90,14 @@ public class PenguinModel extends EntityModel<PenguinRenderState>{
             this.walkAnimation.applyWalking(state.limbSwingAnimationProgress, state.limbSwingAmplitude * 1.5F, 2f, 2.5f);
         } else if (state.idleAnimationState.isRunning()) {
             this.idleAnimation.apply(state.idleAnimationState, state.age, 1f);
+        } else if (state.swimIdleAnimationState.isRunning()) {
+            this.swimIdleAnimation.apply(state.swimIdleAnimationState, state.age, 1f);
+        } else if (state.slideAnimationState.isRunning()) {
+            this.slideAnimation.apply(state.slideAnimationState, state.age, 1f);
+        }
+
+        if (state.touchingWater) {
+            this.body.pitch += state.pitch * ((float)Math.PI / 180F);
         }
 
     }

@@ -7,4 +7,6 @@ public class PenguinRenderState extends LivingEntityRenderState{
     public final AnimationState idleAnimationState = new AnimationState();
     public final AnimationState walkAnimationState = new AnimationState();
     public final AnimationState swimAnimationState = new AnimationState();
+    public final AnimationState swimIdleAnimationState = new AnimationState();
+    public final AnimationState slideAnimationState = new AnimationState();
 }
