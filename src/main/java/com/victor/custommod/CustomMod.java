@@ -1,15 +1,19 @@
 package com.victor.custommod;
 
 import com.victor.custommod.block.ModBlocks;
+import com.victor.custommod.datagen.ModEntityLootTableProvider;
 import com.victor.custommod.entity.ModEntities;
 import com.victor.custommod.entity.custom.CapybaraEntity;
 import com.victor.custommod.entity.custom.PenguinEntity;
 import com.victor.custommod.item.ModItemGroups;
 import com.victor.custommod.item.ModItems;
 import com.victor.custommod.sound.ModSounds;
+import com.victor.custommod.util.ModLootTableModifiers;
 import com.victor.custommod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.datagen.v1.loot.FabricEntityLootTableGenerator;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricEntityLootTableProvider;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 import org.slf4j.Logger;
@@ -37,6 +41,7 @@ public class CustomMod implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(ModEntities.PENGUIN, PenguinEntity.createAttributes());
 
 		ModWorldGeneration.generateModWorldGen();
+
 
 		FuelRegistryEvents.BUILD.register((builder, context) -> {
 			builder.add(ModItems.TEMPLATE_FUEL, 600);

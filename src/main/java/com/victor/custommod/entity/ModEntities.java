@@ -29,5 +29,6 @@ public class ModEntities {
 
     public static void registerModEntities () {
         CustomMod.LOGGER.info("Registering Mod Entities for " + CustomMod.MOD_ID);
+
     }
 }

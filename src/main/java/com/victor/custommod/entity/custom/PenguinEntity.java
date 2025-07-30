@@ -220,6 +220,11 @@ public class PenguinEntity extends AnimalEntity {
     }
 
     @Override
+    protected void dropLoot(ServerWorld world, DamageSource damageSource, boolean causedByPlayer) {
+        super.dropLoot(world, damageSource, causedByPlayer);
+    }
+
+    @Override
     protected @Nullable SoundEvent getAmbientSound() {
         return ModSounds.PENGUIN_AMBIENT;
     }
