@@ -19,7 +19,7 @@ public class PenguinModel extends EntityModel<PenguinRenderState>{
 
     private final ModelPart root;
     private final ModelPart body;
-    private final ModelPart head;
+    public final ModelPart head;
     private final ModelPart left_wing;
     private final ModelPart right_wing;
     private final ModelPart left_foot;
@@ -97,7 +97,6 @@ public class PenguinModel extends EntityModel<PenguinRenderState>{
         }
 
         this.setHeadAngles(state.relativeHeadYaw, state.pitch, state.slideAnimationState.isRunning() || state.swimAnimationState.isRunning() || state.swimIdleAnimationState.isRunning());
-
     }
 
     private void setHeadAngles(float headYaw, float headPitch, boolean isSliding) {
