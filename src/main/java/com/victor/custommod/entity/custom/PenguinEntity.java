@@ -73,7 +73,7 @@ public class PenguinEntity extends AnimalEntity {
         this.goalSelector.add(8, new PickupItemGoal(this));
         this.goalSelector.add(8, new MeleeAttackGoal(this, 1.5D, true));
         this.goalSelector.add(9, new LookAtEntityGoal(this, PlayerEntity.class, 4.0F));
-        this.goalSelector.add(9, new LookAroundGoal(this));
+        this.goalSelector.add(10, new LookAroundGoal(this));
     }
 
     public static DefaultAttributeContainer.Builder createAttributes() {
@@ -372,7 +372,7 @@ public class PenguinEntity extends AnimalEntity {
 
     public boolean canPickupItem(ItemStack stack) {
         ItemStack itemStack = this.getEquippedStack(EquipmentSlot.MAINHAND);
-        return itemStack.isEmpty() || this.eatingTime > 0 && stack.contains(DataComponentTypes.FOOD) && !itemStack.contains(DataComponentTypes.FOOD);
+        return itemStack.isEmpty()  || this.eatingTime > 0 && stack.contains(DataComponentTypes.FOOD) && !itemStack.contains(DataComponentTypes.FOOD);
     }
 
     private void spit(ItemStack stack) {
@@ -392,7 +392,7 @@ public class PenguinEntity extends AnimalEntity {
 
     protected void loot(ServerWorld world, ItemEntity itemEntity) {
         ItemStack itemStack = itemEntity.getStack();
-        if (this.canPickupItem(itemStack)) {
+        if (this.canPickupItem(itemStack) &&  itemStack.isIn(ModTags.Items.PENGUIN_FOODS)) {
             int i = itemStack.getCount();
             if (i > 1) {
                 this.dropItem(itemStack.split(i - 1));
@@ -424,7 +424,7 @@ public class PenguinEntity extends AnimalEntity {
 
         public PickupItemGoal(PenguinEntity penguin) {
             this.penguin = penguin;
-            this.setControls(EnumSet.of(Control.MOVE, Control.LOOK));
+            this.setControls(EnumSet.of(Control.MOVE));
         }
 
         @Override
@@ -456,7 +456,7 @@ public class PenguinEntity extends AnimalEntity {
         public void start() {
             List<ItemEntity> list = PenguinEntity.this.getWorld().getEntitiesByClass(ItemEntity.class, PenguinEntity.this.getBoundingBox().expand((double)8.0F, (double)8.0F, (double)8.0F), PenguinEntity.PICKABLE_DROP_FILTER);
             if (!list.isEmpty()) {
-                PenguinEntity.this.getNavigation().startMovingTo((Entity)list.get(0), (double)1.2F);
+                PenguinEntity.this.getNavigation().startMovingTo((Entity)list.getFirst(), (double)1.2F);
             }
 
         }

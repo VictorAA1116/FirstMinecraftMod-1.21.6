@@ -15,8 +15,6 @@ import java.util.Set;
 
 public class PenguinModel extends EntityModel<PenguinRenderState>{
 
-    public static final ModelTransformer BABY_TRANSFORMER = new BabyModelTransformer(false, 4.0F, 4.0F, Set.of("head"));
-
     public static final EntityModelLayer PENGUIN = new EntityModelLayer(Identifier.of(CustomMod.MOD_ID, "penguin"), "main");
 
     private final ModelPart root;
@@ -55,12 +53,12 @@ public class PenguinModel extends EntityModel<PenguinRenderState>{
     public static TexturedModelData getTexturedModelData() {
         ModelData modelData = new ModelData();
         ModelPartData modelPartData = modelData.getRoot();
-        ModelPartData root = modelPartData.addChild("root", ModelPartBuilder.create(), ModelTransform.origin(0.0F, 24.0F, 0.0F));
+        ModelPartData root = modelPartData.addChild("root", ModelPartBuilder.create(), ModelTransform.of(0.0F, 24.0F, 0.0F, 0.0F, 0.0F, 0.0F));
 
         ModelPartData body = root.addChild("body", ModelPartBuilder.create().uv(0, 0).cuboid(-3.0F, -5.5F, -3.0F, 6.0F, 10.0F, 6.0F, new Dilation(0.0F)), ModelTransform.origin(0.0F, -6.5F, 0.0F));
 
         ModelPartData head = body.addChild("head", ModelPartBuilder.create().uv(0, 18).cuboid(-2.5F, -2.55F, -2.45F, 5.0F, 5.0F, 5.0F, new Dilation(0.0F))
-                .uv(25, 0).cuboid(-1.0F, 0.45F, -4.45F, 2.0F, 1.0F, 2.0F, new Dilation(0.0F)), ModelTransform.origin(0.0F, -7.95F, -0.05F));
+                .uv(25, 0).cuboid(-1.0F, 0.45F, -4.45F, 2.0F, 1.0F, 2.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, -7.95F, -0.05F,0.0F, 0.0F, 0.0F));
 
         ModelPartData left_wing = body.addChild("left_wing", ModelPartBuilder.create().uv(23, 18).cuboid(0.0F, 0.0F, -1.5F, 1.0F, 7.0F, 3.0F, new Dilation(0.0F)), ModelTransform.origin(3.0F, -4.0F, 0.0F));
 
@@ -80,14 +78,12 @@ public class PenguinModel extends EntityModel<PenguinRenderState>{
     @Override
     public void setAngles(PenguinRenderState state) {
         super.setAngles(state);
-        this.setHeadAngles(state.relativeHeadYaw, state.pitch);
-
-        this.resetTransforms();
+        this. resetTransforms();
 
         if (state.swimAnimationState.isRunning()) {
             this.swimAnimation.apply(state.swimAnimationState, state.age, 1f);
         } else if (state.walkAnimationState.isRunning()) {
-            this.walkAnimation.applyWalking(state.limbSwingAnimationProgress, state.limbSwingAmplitude * 1.5F, 2f, 2.5f);
+            this.walkAnimation.applyWalking(state.limbSwingAnimationProgress, state.limbSwingAmplitude, 2f, 2.5f);
         } else if (state.idleAnimationState.isRunning()) {
             this.idleAnimation.apply(state.idleAnimationState, state.age, 1f);
         } else if (state.swimIdleAnimationState.isRunning()) {
@@ -100,13 +96,26 @@ public class PenguinModel extends EntityModel<PenguinRenderState>{
             this.body.pitch += state.pitch * ((float)Math.PI / 180F);
         }
 
+        this.setHeadAngles(state.relativeHeadYaw, state.pitch, state.slideAnimationState.isRunning() || state.swimAnimationState.isRunning() || state.swimIdleAnimationState.isRunning());
+
     }
 
-    private void setHeadAngles(float headYaw, float headPitch) {
+    private void setHeadAngles(float headYaw, float headPitch, boolean isSliding) {
         headYaw = MathHelper.clamp(headYaw, -30.0f, 30.0f);
         headPitch = MathHelper.clamp(headPitch, -25.0f, 45.0f);
 
-        this.head.yaw = headYaw * 0.017453292F;
+        if (isSliding) {
+            headPitch -= 90f;
+        }
+
         this.head.pitch = headPitch * (float) (Math.PI / 180.0);
+
+        if ( isSliding) {
+            this.head.roll = -(headYaw * 0.017453292F);
+        } else {
+            this.head.yaw = headYaw * 0.017453292F;
+        }
+
+
     }
 }
