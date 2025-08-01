@@ -64,9 +64,9 @@ public class PenguinEntity extends AnimalEntity {
         this.targetSelector.add(1, new ActiveTargetGoal<>(this, CodEntity.class, true));
         this.targetSelector.add(1, new ActiveTargetGoal<>(this, TropicalFishEntity.class, true));
         this.goalSelector.add(2, new AnimalMateGoal(this, 1.15D));
-        this.goalSelector.add(3, new TemptGoal(this, 0.7D, (stack) -> stack.isIn(ModTags.Items.PENGUIN_FOODS), false));
-        this.goalSelector.add(4, new FollowParentGoal(this,1.2D));
-        this.goalSelector.add(5, new WanderAroundFarGoal(this, 0.6D, 100));
+        this.goalSelector.add(3, new TemptGoal(this, 1.0D, (stack) -> stack.isIn(ModTags.Items.PENGUIN_FOODS), false));
+        this.goalSelector.add(4, new FollowParentGoal(this,1.0D));
+        this.goalSelector.add(5, new WanderAroundFarGoal(this, 1.0D, 100));
         this.goalSelector.add(6, new MoveIntoWaterGoal(this));
         this.goalSelector.add(7, new WanderInWaterGoal(this, 1.1D));
         this.goalSelector.add(7, new SwimAroundGoal(this, 1.1D, 100));
@@ -79,7 +79,7 @@ public class PenguinEntity extends AnimalEntity {
     public static DefaultAttributeContainer.Builder createAttributes() {
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.MAX_HEALTH, 15)
-                .add(EntityAttributes.MOVEMENT_SPEED, 0.75)
+                .add(EntityAttributes.MOVEMENT_SPEED, 0.6)
                 .add(EntityAttributes.WATER_MOVEMENT_EFFICIENCY, 5)
                 .add(EntityAttributes.ATTACK_DAMAGE, 5.0)
                 .add(EntityAttributes.STEP_HEIGHT, 1.0)
@@ -304,8 +304,8 @@ public class PenguinEntity extends AnimalEntity {
                     this.penguin.setYaw(this.wrapDegrees(this.penguin.getYaw(), targetYaw, 90.0F));
                     this.penguin.bodyYaw = this.penguin.getYaw();
 
-                    float speed = (float) (this.speed * this.penguin.getAttributeValue(EntityAttributes.MOVEMENT_SPEED));
-                    this.penguin.setMovementSpeed(MathHelper.lerp(0.3F, this.penguin.getMovementSpeed(), speed));
+                    float speed = (float) (this.speed * this.penguin.getAttributeValue(EntityAttributes.MOVEMENT_SPEED) / 2.5F);
+                    this.penguin.setMovementSpeed(speed);
                     this.penguin.setVelocity(this.penguin.getVelocity().add((double)0.0F, (double)this.penguin.getMovementSpeed() * distY * 0.1, (double)0.0F));
                 }
                 if (this.penguin.isTouchingWater()) {
