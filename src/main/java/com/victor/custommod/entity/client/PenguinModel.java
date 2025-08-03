@@ -18,7 +18,7 @@ public class PenguinModel extends EntityModel<PenguinRenderState>{
     public static final EntityModelLayer PENGUIN = new EntityModelLayer(Identifier.of(CustomMod.MOD_ID, "penguin"), "main");
 
     private final ModelPart root;
-    private final ModelPart body;
+    public final ModelPart body;
     public final ModelPart head;
     private final ModelPart left_wing;
     private final ModelPart right_wing;
@@ -83,7 +83,7 @@ public class PenguinModel extends EntityModel<PenguinRenderState>{
         if (state.swimAnimationState.isRunning()) {
             this.swimAnimation.apply(state.swimAnimationState, state.age, 1f);
         } else if (state.walkAnimationState.isRunning()) {
-            this.walkAnimation.applyWalking(state.limbSwingAnimationProgress, state.limbSwingAmplitude, 2f, 2.5f);
+            this.walkAnimation.applyWalking(state.limbSwingAnimationProgress, state.limbSwingAmplitude * 1.5f, 2f, 2.5f);
         } else if (state.idleAnimationState.isRunning()) {
             this.idleAnimation.apply(state.idleAnimationState, state.age, 1f);
         } else if (state.swimIdleAnimationState.isRunning()) {
@@ -109,12 +109,10 @@ public class PenguinModel extends EntityModel<PenguinRenderState>{
 
         this.head.pitch = headPitch * (float) (Math.PI / 180.0);
 
-        if ( isSliding) {
+        if (isSliding) {
             this.head.roll = -(headYaw * 0.017453292F);
         } else {
             this.head.yaw = headYaw * 0.017453292F;
         }
-
-
     }
 }

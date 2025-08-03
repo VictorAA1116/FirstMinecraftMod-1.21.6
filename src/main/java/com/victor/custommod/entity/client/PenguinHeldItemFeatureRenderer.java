@@ -12,6 +12,7 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RotationAxis;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import org.joml.Vector3f;
 
 @Environment(EnvType.CLIENT)
 public class PenguinHeldItemFeatureRenderer extends FeatureRenderer<PenguinRenderState, PenguinModel> {
@@ -23,6 +24,7 @@ public class PenguinHeldItemFeatureRenderer extends FeatureRenderer<PenguinRende
         ItemRenderState itemRenderState = penguinRenderState.itemRenderState;
         if (!itemRenderState.isEmpty()) {
             boolean isSliding = penguinRenderState.slideAnimationState.isRunning() || penguinRenderState.swimIdleAnimationState.isRunning() || penguinRenderState.swimAnimationState.isRunning();
+            matrixStack.push();
 
             ModelPart head = ((PenguinModel)this.getContextModel()).head;
 
@@ -32,17 +34,14 @@ public class PenguinHeldItemFeatureRenderer extends FeatureRenderer<PenguinRende
                 matrixStack.translate((head.originX / 16.0F), (head.originY / 16.0F) + 1.1F, (head.originZ / 16.0F));
             }
 
-            matrixStack.multiply(RotationAxis.POSITIVE_X.rotationDegrees(MathHelper.clamp(x, -25.0f, 45.0f)));
             matrixStack.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(MathHelper.clamp(y, -30.0f, 30.0f)));
-
-            matrixStack.push();
+            matrixStack.multiply(RotationAxis.POSITIVE_X.rotationDegrees(MathHelper.clamp(x, -25.0f, 45.0f)));
 
             if (isSliding) {
-                matrixStack.translate(0.06F, 0.1F, -0.3F);
+                matrixStack.translate(0.0F, 0.15F, -0.3F);
             } else {
-                matrixStack.translate(0.06F, 0.1F, -0.3F);
+                matrixStack.translate(0.0F, 0.1F, -0.3F);
             }
-
 
             matrixStack.multiply(RotationAxis.POSITIVE_X.rotationDegrees(90.0F));
 
