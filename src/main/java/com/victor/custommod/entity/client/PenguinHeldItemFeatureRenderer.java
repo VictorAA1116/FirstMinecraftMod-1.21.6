@@ -12,7 +12,6 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RotationAxis;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import org.joml.Vector3f;
 
 @Environment(EnvType.CLIENT)
 public class PenguinHeldItemFeatureRenderer extends FeatureRenderer<PenguinRenderState, PenguinModel> {

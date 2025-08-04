@@ -19,6 +19,8 @@ import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.particle.ItemStackParticleEffect;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -47,7 +49,7 @@ public class PenguinEntity extends AnimalEntity {
     boolean landBound;
 
     private static final Predicate<? super ItemEntity> PICKABLE_DROP_FILTER;
-    private int eatingTime;
+    private int eatingTime = 0;
 
     public PenguinEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
@@ -109,7 +111,6 @@ public class PenguinEntity extends AnimalEntity {
             this.isSliding = false;
             this.slidingCooldown = 0;
         }
-
 
         boolean isSwimming = this.isTouchingWater() && this.getVelocity().horizontalLengthSquared() > 0.001;
         boolean isSwimmingIdle = this.isTouchingWater() && this.getVelocity().horizontalLengthSquared() < 0.001;
@@ -179,8 +180,55 @@ public class PenguinEntity extends AnimalEntity {
                 this.setPitch(MathHelper.lerp(0.1F, this.getPitch(), 0.0F)) ;
             }
         }
-
         this.setAir(this.getMaxAir());
+    }
+
+    @Override
+    public void tickMovement() {
+        this.tryEat();
+        super.tickMovement();
+    }
+
+    public void tryEat() {
+        if (!this.getWorld().isClient && this.isAlive() && this.canActVoluntarily()) {
+            ++this.eatingTime;
+            ItemStack itemStack = this.getEquippedStack(EquipmentSlot.MAINHAND);
+            if (this.canEat(itemStack)) {
+                if (this.eatingTime > 600) {
+                    ItemStack itemStack2 = itemStack.finishUsing(this.getWorld(), this);
+                    if (!itemStack2.isEmpty()) {
+                        this.equipStack(EquipmentSlot.MAINHAND, itemStack2);
+                    }
+                    this.eatingTime = 0;
+                } else if (this.eatingTime > 560 && this.random.nextFloat() < 0.1F) {
+                    this.playEatSound();
+                    this.getWorld().sendEntityStatus(this, (byte)45);
+                }
+            }
+        }
+    }
+
+    private boolean canEat(ItemStack itemStack) {
+        return itemStack.contains(DataComponentTypes.FOOD) && this.getTarget() == null;
+    }
+
+    @Override
+    protected void playEatSound() {
+        this.playSound(SoundEvents.ENTITY_FOX_EAT, 1.0F, 1.0F);
+    }
+
+    public void handleStatus(byte status) {
+        if (status == 45) {
+            ItemStack itemStack = this.getEquippedStack(EquipmentSlot.MAINHAND);
+            if (!itemStack.isEmpty()) {
+                for(int i = 0; i < 8; ++i) {
+                    Vec3d vec3d = (new Vec3d(((double)this.random.nextFloat() - (double)0.5F) * 0.1, Math.random() * 0.1 + 0.1, (double)0.0F)).rotateX(-this.getPitch() * ((float)Math.PI / 180F)).rotateY(-this.getYaw() * ((float)Math.PI / 180F));
+                    this.getWorld().addParticleClient(new ItemStackParticleEffect(ParticleTypes.ITEM, itemStack), this.getX() + this.getRotationVector().x / (double)2.0F, this.getY(), this.getZ() + this.getRotationVector().z / (double)2.0F, vec3d.x, vec3d.y + 0.05, vec3d.z);
+                }
+            }
+        } else {
+            super.handleStatus(status);
+        }
     }
 
     @Override
