@@ -48,7 +48,7 @@ public class PenguinEntity extends AnimalEntity {
     BlockPos travelPos;
     boolean landBound;
 
-    private static final Predicate<? super ItemEntity> PICKABLE_DROP_FILTER;
+    private static final Predicate<ItemEntity> PICKABLE_DROP_FILTER;
     private int eatingTime = 0;
 
     public PenguinEntity(EntityType<? extends AnimalEntity> entityType, World world) {
@@ -79,7 +79,7 @@ public class PenguinEntity extends AnimalEntity {
     }
 
     public static DefaultAttributeContainer.Builder createAttributes() {
-        return MobEntity.createMobAttributes()
+        return AnimalEntity.createMobAttributes()
                 .add(EntityAttributes.MAX_HEALTH, 15)
                 .add(EntityAttributes.MOVEMENT_SPEED, 0.6)
                 .add(EntityAttributes.WATER_MOVEMENT_EFFICIENCY, 5)
@@ -425,7 +425,7 @@ public class PenguinEntity extends AnimalEntity {
 
     private void spit(ItemStack stack) {
         if (!stack.isEmpty() && !this.getWorld().isClient) {
-            ItemEntity itemEntity = new ItemEntity(this.getWorld(), this.getX() + this.getRotationVector().x, this.getY() + (double)1.0F, this.getZ() + this.getRotationVector().z, stack);
+            ItemEntity itemEntity = new ItemEntity(this.getWorld(), this.getX() + this.getRotationVector().x, this.getY() + (double) 1.0F, this.getZ() + this.getRotationVector().z, stack);
             itemEntity.setPickupDelay(40);
             itemEntity.setThrower(this);
             this.playSound(SoundEvents.ENTITY_FOX_SPIT, 1.0F, 1.0F);
@@ -438,14 +438,18 @@ public class PenguinEntity extends AnimalEntity {
         this.getWorld().spawnEntity(itemEntity);
     }
 
+    @Override
     protected void loot(ServerWorld world, ItemEntity itemEntity) {
         ItemStack itemStack = itemEntity.getStack();
-        if (this.canPickupItem(itemStack) &&  itemStack.isIn(ModTags.Items.PENGUIN_FOODS)) {
+        if (this.canPickupItem(itemStack) && itemStack.isIn(ModTags.Items.PENGUIN_FOODS)) {
             int i = itemStack.getCount();
             if (i > 1) {
                 this.dropItem(itemStack.split(i - 1));
             }
-
+            if (!this.getWorld().isClient) {
+                System.out.println("Server: Penguin looted item " + itemStack + " at tick " + this.age);
+                System.out.println("Thread: " + Thread.currentThread().getName());
+            }
             this.spit(this.getEquippedStack(EquipmentSlot.MAINHAND));
             this.triggerItemPickedUpByEntityCriteria(itemEntity);
             this.equipStack(EquipmentSlot.MAINHAND, itemStack.split(1));
@@ -453,8 +457,9 @@ public class PenguinEntity extends AnimalEntity {
             this.sendPickup(itemEntity, itemStack.getCount());
             itemEntity.discard();
             this.eatingTime = 0;
+        } else {
+            super.loot(world, itemEntity);
         }
-
     }
 
     protected void drop(ServerWorld world, DamageSource damageSource) {
@@ -468,18 +473,14 @@ public class PenguinEntity extends AnimalEntity {
     }
 
     public class PickupItemGoal extends Goal {
-        private final PenguinEntity penguin;
-
         public PickupItemGoal(PenguinEntity penguin) {
-            this.penguin = penguin;
             this.setControls(EnumSet.of(Control.MOVE));
         }
 
-        @Override
         public boolean canStart() {
-            if (!penguin.getEquippedStack(EquipmentSlot.MAINHAND).isEmpty()){
+            if (PenguinEntity.this.getEquippedStack(EquipmentSlot.MAINHAND).isEmpty()){
                 return false;
-            } else {
+            } else if (PenguinEntity.this.getTarget() == null && PenguinEntity.this.getAttacker() == null){
                 if (!PenguinEntity.this.getNavigation().isIdle()) {
                     return false;
                 } else if (PenguinEntity.this.getRandom().nextInt(toGoalTicks(10)) != 0) {
@@ -488,23 +489,23 @@ public class PenguinEntity extends AnimalEntity {
                     List<ItemEntity> list = PenguinEntity.this.getWorld().getEntitiesByClass(ItemEntity.class, PenguinEntity.this.getBoundingBox().expand((double)8.0F, (double)8.0F, (double)8.0F), PenguinEntity.PICKABLE_DROP_FILTER);
                     return !list.isEmpty() && PenguinEntity.this.getEquippedStack(EquipmentSlot.MAINHAND).isEmpty();
                 }
+            } else {
+                return false;
             }
         }
 
-        @Override
         public void tick() {
             List<ItemEntity> list = PenguinEntity.this.getWorld().getEntitiesByClass(ItemEntity.class, PenguinEntity.this.getBoundingBox().expand((double)8.0F, (double)8.0F, (double)8.0F), PenguinEntity.PICKABLE_DROP_FILTER);
             ItemStack itemStack = PenguinEntity.this.getEquippedStack(EquipmentSlot.MAINHAND);
             if (itemStack.isEmpty() && !list.isEmpty()) {
                 PenguinEntity.this.getNavigation().startMovingTo((Entity)list.get(0), (double)1.2F);
             }
-
         }
 
         public void start() {
             List<ItemEntity> list = PenguinEntity.this.getWorld().getEntitiesByClass(ItemEntity.class, PenguinEntity.this.getBoundingBox().expand((double)8.0F, (double)8.0F, (double)8.0F), PenguinEntity.PICKABLE_DROP_FILTER);
             if (!list.isEmpty()) {
-                PenguinEntity.this.getNavigation().startMovingTo((Entity)list.getFirst(), (double)1.2F);
+                PenguinEntity.this.getNavigation().startMovingTo((Entity)list.get(0), (double)1.2F);
             }
 
         }
