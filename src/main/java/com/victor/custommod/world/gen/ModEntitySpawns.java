@@ -34,7 +34,6 @@ public class ModEntitySpawns {
     }
 
     public static boolean canCapybaraSpawn(EntityType<CapybaraEntity> type, ServerWorldAccess world, SpawnReason spawnReason, BlockPos blockPos, Random random) {
-        BlockState stateBelow = world.getBlockState(blockPos.down());
 
         if (AnimalEntity.isValidNaturalSpawn(type, world,spawnReason, blockPos, random)) {
             return true;
@@ -51,7 +50,7 @@ public class ModEntitySpawns {
                 BiomeKeys.SPARSE_JUNGLE, BiomeKeys.BAMBOO_JUNGLE, BiomeKeys.RIVER, BiomeKeys.SAVANNA),
                 SpawnGroup.CREATURE, ModEntities.CAPYBARA, 30, 3, 6);
 
-        SpawnRestriction.register(ModEntities.CAPYBARA, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::isValidNaturalSpawn);
+        SpawnRestriction.register(ModEntities.CAPYBARA, SpawnLocationTypes.UNRESTRICTED, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ModEntitySpawns::canCapybaraSpawn);
 
         BiomeModifications.addSpawn(BiomeSelectors.includeByKey(BiomeKeys.STONY_SHORE, BiomeKeys.ICE_SPIKES, BiomeKeys.FROZEN_OCEAN, BiomeKeys.DEEP_FROZEN_OCEAN, BiomeKeys.FROZEN_RIVER),
                 SpawnGroup.CREATURE, ModEntities.PENGUIN, 50, 3, 10);
