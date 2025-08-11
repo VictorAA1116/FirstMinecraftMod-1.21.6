@@ -21,6 +21,17 @@
   "block.custommod.smooth_basalt_stairs": "Smooth Basalt Stairs",
   "block.custommod.smooth_basalt_slab": "Smooth Basalt Slab",
 
+  "block.custommod.stone_wall": "Stone Wall",
+  "block.custommod.smooth_stone_stairs": "Smooth Stone Stairs",
+  "block.custommod.polished_deepslate_pressure_plate": "Polished Deepslate Pressure Plate",
+
+  "block.custommod.packed_mud_stairs": "Packed Mud Stairs",
+  "block.custommod.packed_mud_slab": "Packed Mud Slab",
+  "block.custommod.packed_mud_wall": "Packed Mud Wall",
+
+  "block.custommod.smooth_sandstone_wall": "Smooth Sandstone Wall",
+  "block.custommod.smooth_red_sandstone_wall": "Smooth Red Sandstone Wall",
+
   "entity.custommod.capybara": "Capybara",
   "item.custommod.capybara_spawn_egg": "Capybara Spawn Egg",
 

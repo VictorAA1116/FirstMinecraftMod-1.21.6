@@ -2,8 +2,8 @@
 	"schemaVersion": 1,
 	"id": "custommod",
 	"version": "${version}",
-	"name": "CustomMod",
-	"description": "This is Victor Avila's first Minecraft mod made for learning purposes",
+	"name": "Penguibara",
+	"description": "A small mod that adds a Penguin and a Capybara",
 	"authors": [
 		"Victor Avila"
 	],

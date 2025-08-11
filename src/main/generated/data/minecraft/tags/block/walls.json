@@ -2,6 +2,10 @@
   "values": [
     "custommod:calcite_wall",
     "custommod:polished_calcite_wall",
-    "custommod:calcite_brick_wall"
+    "custommod:calcite_brick_wall",
+    "custommod:stone_wall",
+    "custommod:packed_mud_wall",
+    "custommod:smooth_sandstone_wall",
+    "custommod:smooth_red_sandstone_wall"
   ]
 }

@@ -49,6 +49,19 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.SMOOTH_BASALT_SLAB, slabDrops(ModBlocks.SMOOTH_BASALT_SLAB));
         addDrop(ModBlocks.SMOOTH_BASALT_STAIRS);
+
+        addDrop(ModBlocks.STONE_WALL);
+
+        addDrop(ModBlocks.SMOOTH_STONE_STAIRS);
+        addDrop(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.PACKED_MUD_STAIRS);
+        addDrop(ModBlocks.PACKED_MUD_WALL);
+        addDrop(ModBlocks.PACKED_MUD_SLAB, slabDrops(ModBlocks.PACKED_MUD_SLAB));
+
+        addDrop(ModBlocks.SMOOTH_SANDSTONE_WALL);
+        addDrop(ModBlocks.SMOOTH_RED_SANDSTONE_WALL);
+
     }
 
     /*

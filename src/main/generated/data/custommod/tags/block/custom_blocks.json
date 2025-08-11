@@ -11,6 +11,10 @@
     "custommod:amethyst_slab",
     "custommod:amethyst_stairs",
     "custommod:smooth_basalt_slab",
-    "custommod:smooth_basalt_stairs"
+    "custommod:smooth_basalt_stairs",
+    "custommod:smooth_stone_stairs",
+    "custommod:polished_deepslate_pressure_plate",
+    "custommod:packed_mud_stairs",
+    "custommod:packed_mud_slab"
   ]
 }

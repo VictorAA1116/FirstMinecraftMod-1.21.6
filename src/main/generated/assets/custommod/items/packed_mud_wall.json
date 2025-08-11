@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "custommod:block/packed_mud_wall_inventory"
+  }
+}

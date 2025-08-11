@@ -38,6 +38,17 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SMOOTH_BASALT_STAIRS);
                         entries.add(ModBlocks.SMOOTH_BASALT_SLAB);
 
+                        entries.add(ModBlocks.STONE_WALL);
+                        entries.add(ModBlocks.SMOOTH_STONE_STAIRS);
+                        entries.add(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
+
+                        entries.add(ModBlocks.PACKED_MUD_SLAB);
+                        entries.add(ModBlocks.PACKED_MUD_STAIRS);
+                        entries.add(ModBlocks.PACKED_MUD_WALL);
+
+                        entries.add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL);
+                        entries.add(ModBlocks.SMOOTH_SANDSTONE_WALL);
+
                         entries.add(ModItems.CAPYBARA_SPAWN_EGG);
                         entries.add(ModItems.PENGUIN_SPAWN_EGG);
                     })

@@ -3,6 +3,7 @@ package com.victor.custommod.block;
 import com.victor.custommod.CustomMod;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -76,6 +77,38 @@ public class ModBlocks {
     public static final Block SMOOTH_BASALT_SLAB = registerBlock("smooth_basalt_slab",
             properties ->new SlabBlock(properties.mapColor(MapColor.BLACK).strength(1.25f,4.2f).requiresTool().sounds(BlockSoundGroup.BASALT)));
 
+    public static final Block STONE_WALL = registerBlock("stone_wall",
+            properties ->new WallBlock(properties.mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.5F, 6.0F).requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SMOOTH_STONE_STAIRS = registerBlock("smooth_stone_stairs",
+            properties ->new StairsBlock(Blocks.SMOOTH_STONE.getDefaultState(),
+                    properties.mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.5F, 6.0F).requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate",
+            properties ->new PressurePlateBlock(BlockSetType.STONE,
+                    properties.mapColor(MapColor.DEEPSLATE_GRAY).strength(1f).sounds(BlockSoundGroup.POLISHED_DEEPSLATE)));
+
+    public static final Block PACKED_MUD_STAIRS = registerBlock("packed_mud_stairs",
+            properties ->new StairsBlock(Blocks.PACKED_MUD.getDefaultState(), properties.mapColor(MapColor.DIRT_BROWN)
+                    .strength(1.0F, 3.0F).sounds(BlockSoundGroup.PACKED_MUD)));
+
+    public static final Block PACKED_MUD_SLAB = registerBlock("packed_mud_slab",
+            properties ->new SlabBlock(properties.mapColor(MapColor.DIRT_BROWN).strength(1.0F, 3.0F).sounds(BlockSoundGroup.PACKED_MUD)));
+
+    public static final Block PACKED_MUD_WALL = registerBlock("packed_mud_wall",
+            properties ->new WallBlock(properties.mapColor(MapColor.DIRT_BROWN).strength(1.0F, 3.0F).sounds(BlockSoundGroup.PACKED_MUD)));
+
+    public static final Block SMOOTH_SANDSTONE_WALL = registerBlock("smooth_sandstone_wall",
+            properties ->new WallBlock(properties.mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SMOOTH_RED_SANDSTONE_WALL = registerBlock("smooth_red_sandstone_wall",
+            properties ->new WallBlock(properties.mapColor(MapColor.ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
+
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
         Block toRegister = function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CustomMod.MOD_ID, name))));
         registerBlockItem(name, toRegister);
@@ -115,6 +148,17 @@ public class ModBlocks {
 
             entries.add(ModBlocks.SMOOTH_BASALT_SLAB);
             entries.add(ModBlocks.SMOOTH_BASALT_STAIRS);
+
+            entries.add(ModBlocks.STONE_WALL);
+            entries.add(ModBlocks.SMOOTH_STONE_STAIRS);
+            entries.add(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
+            entries.add(ModBlocks.PACKED_MUD_STAIRS);
+            entries.add(ModBlocks.PACKED_MUD_SLAB);
+            entries.add(ModBlocks.PACKED_MUD_WALL);
+
+            entries.add(ModBlocks.SMOOTH_SANDSTONE_WALL);
+            entries.add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL);
+
         });
     }
 }
