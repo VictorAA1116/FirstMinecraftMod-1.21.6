@@ -2,7 +2,7 @@
 aadda493767b619350aabc7da963e2ab24b50ecd data/custommod/tags/block/custom_blocks.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/fence_gates.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/fences.json
-842946eb125ffa551ce4f63270af96c8a5d65e6e data/minecraft/tags/block/mineable/pickaxe.json
+e7e0541600835841c6c7fb3adf2fca2fcf5ecf33 data/minecraft/tags/block/mineable/pickaxe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_diamond_tool.json
-6f51a29449d56b51a563b1c42a4f6095f6d61b50 data/minecraft/tags/block/needs_iron_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_iron_tool.json
 633466539718205a25040fbdb8a52d9e81ac4523 data/minecraft/tags/block/walls.json

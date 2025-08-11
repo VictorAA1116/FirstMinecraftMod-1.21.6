@@ -36,9 +36,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SMOOTH_BASALT_STAIRS);
 
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.TEMPLATE_STONE_ORE)
-                .add(ModBlocks.TEMPLATE_DEEPSLATE_ORE)
-                .add(ModBlocks.TEMPLATE_RAW_ORE_BLOCK)
 
                 .add(ModBlocks.CALCITE_SLAB)
                 .add(ModBlocks.CALCITE_STAIRS)
@@ -55,15 +52,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.AMETHYST_STAIRS)
 
                 .add(ModBlocks.SMOOTH_BASALT_SLAB)
-                .add(ModBlocks.SMOOTH_BASALT_STAIRS)
+                .add(ModBlocks.SMOOTH_BASALT_STAIRS);
 
-                .add(ModBlocks.TEMPLATE_BLOCK);
-
-        valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.TEMPLATE_STONE_ORE)
-                .add(ModBlocks.TEMPLATE_DEEPSLATE_ORE)
-                .add(ModBlocks.TEMPLATE_RAW_ORE_BLOCK)
-                .add(ModBlocks.TEMPLATE_BLOCK);
+        valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL);
 
         valueLookupBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
 

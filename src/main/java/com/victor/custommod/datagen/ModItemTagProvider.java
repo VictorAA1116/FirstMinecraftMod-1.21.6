@@ -16,12 +16,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        valueLookupBuilder(ModTags.Items.CUSTOM_ITEMS)
-                .add(ModItems.TEMPLATE_ITEM)
-                .add(ModItems.TEMPLATE_RAW_ORE)
-                .add(ModItems.TEMPLATE_FOOD)
-                .add(ModItems.TEMPLATE_FUEL);
-
         valueLookupBuilder(ModTags.Items.CAPYBARA_FOODS)
                 .add(Items.SHORT_GRASS)
                 .add(Items.KELP)

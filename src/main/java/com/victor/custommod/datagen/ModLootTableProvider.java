@@ -27,8 +27,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.TEMPLATE_BLOCK);
-        addDrop(ModBlocks.TEMPLATE_RAW_ORE_BLOCK);
 
         addDrop(ModBlocks.CALCITE_SLAB, slabDrops(ModBlocks.CALCITE_SLAB));
         addDrop(ModBlocks.CALCITE_STAIRS);
@@ -51,15 +49,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.SMOOTH_BASALT_SLAB, slabDrops(ModBlocks.SMOOTH_BASALT_SLAB));
         addDrop(ModBlocks.SMOOTH_BASALT_STAIRS);
-
-        addDrop(ModBlocks.TEMPLATE_STONE_ORE, oreDrops(ModBlocks.TEMPLATE_STONE_ORE, ModItems.TEMPLATE_RAW_ORE));
-        addDrop(ModBlocks.TEMPLATE_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.TEMPLATE_DEEPSLATE_ORE, ModItems.TEMPLATE_RAW_ORE, 3, 7));
     }
 
+    /*
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {
         RegistryWrapper.Impl<Enchantment> impl = this.registries.getOrThrow(RegistryKeys.ENCHANTMENT);
         return this.dropsWithSilkTouch(drop, this.applyExplosionDecay(drop, ((LeafEntry.Builder<?>)
                 ItemEntry.builder(item).apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(minDrops, maxDrops))))
                 .apply(ApplyBonusLootFunction.oreDrops(impl.getOrThrow(Enchantments.FORTUNE)))));
     }
+    */
 }

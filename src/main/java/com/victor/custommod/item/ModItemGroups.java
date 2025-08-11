@@ -12,19 +12,31 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
 
-    public static final ItemGroup TEMPLATE_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(CustomMod.MOD_ID, "template_item_group"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.TEMPLATE_ITEM))
-                    .displayName(Text.translatable("itemgroup.custommod.template_item_group"))
+    public static final ItemGroup MOD_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(CustomMod.MOD_ID, "mod_item_group"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.PENGUIN_SPAWN_EGG))
+                    .displayName(Text.translatable("itemgroup.custommod.mod_item_group"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModItems.TEMPLATE_ITEM);
-                        entries.add(ModItems.TEMPLATE_RAW_ORE);
-                        entries.add(ModItems.TEMPLATE_FOOD);
-                        entries.add(ModItems.TEMPLATE_FUEL);
+                        entries.add(ModBlocks.CALCITE_STAIRS);
+                        entries.add(ModBlocks.CALCITE_SLAB);
+                        entries.add(ModBlocks.CALCITE_WALL);
+                        entries.add(ModBlocks.CALCITE_PRESSURE_PLATE);
+                        entries.add(ModBlocks.CALCITE_BUTTON);
 
-                        entries.add(ModBlocks.TEMPLATE_BLOCK);
-                        entries.add(ModBlocks.TEMPLATE_RAW_ORE_BLOCK);
-                        entries.add(ModBlocks.TEMPLATE_DEEPSLATE_ORE);
-                        entries.add(ModBlocks.TEMPLATE_STONE_ORE);
+                        entries.add(ModBlocks.POLISHED_CALCITE);
+                        entries.add(ModBlocks.POLISHED_CALCITE_STAIRS);
+                        entries.add(ModBlocks.POLISHED_CALCITE_SLAB);
+                        entries.add(ModBlocks.POLISHED_CALCITE_WALL);
+
+                        entries.add(ModBlocks.CALCITE_BRICKS);
+                        entries.add(ModBlocks.CALCITE_BRICK_WALL);
+                        entries.add(ModBlocks.CALCITE_BRICK_SLAB);
+                        entries.add(ModBlocks.CALCITE_BRICK_STAIRS);
+
+                        entries.add(ModBlocks.AMETHYST_STAIRS);
+                        entries.add(ModBlocks.AMETHYST_SLAB);
+
+                        entries.add(ModBlocks.SMOOTH_BASALT_STAIRS);
+                        entries.add(ModBlocks.SMOOTH_BASALT_SLAB);
 
                         entries.add(ModItems.CAPYBARA_SPAWN_EGG);
                         entries.add(ModItems.PENGUIN_SPAWN_EGG);

@@ -18,22 +18,8 @@ import java.util.function.Function;
 
 public class ModBlocks {
 
-    public static final Block TEMPLATE_BLOCK = registerBlock("template_block",
-            properties ->new Block(properties.strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
-
-    public static final Block TEMPLATE_RAW_ORE_BLOCK = registerBlock("template_raw_ore_block",
-            properties ->new Block(properties.strength(3f).requiresTool().sounds(BlockSoundGroup.STONE)));
-
-    public static final Block TEMPLATE_STONE_ORE = registerBlock("template_stone_ore",
-            properties ->new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
-                    properties.strength(3f).requiresTool().sounds(BlockSoundGroup.STONE)));
-
-    public static final Block TEMPLATE_DEEPSLATE_ORE = registerBlock("template_deepslate_ore",
-            properties ->new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
-                    properties.strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
-
     public static final Block CALCITE_STAIRS = registerBlock("calcite_stairs",
-            properties ->new StairsBlock(ModBlocks.TEMPLATE_BLOCK.getDefaultState(),
+            properties ->new StairsBlock(Blocks.CALCITE.getDefaultState(),
                     properties.mapColor(MapColor.TERRACOTTA_WHITE).strength(1f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
     public static final Block CALCITE_SLAB = registerBlock("calcite_slab",
@@ -108,11 +94,6 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries ->
         {
-            entries.add(ModBlocks.TEMPLATE_BLOCK);
-            entries.add(ModBlocks.TEMPLATE_RAW_ORE_BLOCK);
-            entries.add(ModBlocks.TEMPLATE_STONE_ORE);
-            entries.add(ModBlocks.TEMPLATE_DEEPSLATE_ORE);
-
             entries.add(ModBlocks.CALCITE_STAIRS);
             entries.add(ModBlocks.CALCITE_SLAB);
             entries.add(ModBlocks.CALCITE_WALL);

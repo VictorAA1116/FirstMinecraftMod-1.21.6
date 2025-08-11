@@ -26,11 +26,6 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool amethystPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.AMETHYST_BLOCK);
         BlockStateModelGenerator.BlockTexturePool smoothBasaltPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.SMOOTH_BASALT);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEMPLATE_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEMPLATE_STONE_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEMPLATE_DEEPSLATE_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEMPLATE_RAW_ORE_BLOCK);
-
         calcitePool.stairs(ModBlocks.CALCITE_STAIRS);
         calcitePool.slab(ModBlocks.CALCITE_SLAB);
         calcitePool.wall(ModBlocks.CALCITE_WALL);
@@ -54,11 +49,6 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.TEMPLATE_ITEM, Models.GENERATED);
-        itemModelGenerator.register(ModItems.TEMPLATE_RAW_ORE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.TEMPLATE_FOOD, Models.GENERATED);
-        itemModelGenerator.register(ModItems.TEMPLATE_FUEL, Models.GENERATED);
-
         itemModelGenerator.register(ModItems.CAPYBARA_SPAWN_EGG, Models.GENERATED);
         itemModelGenerator.register(ModItems.PENGUIN_SPAWN_EGG, Models.GENERATED);
     }

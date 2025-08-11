@@ -42,8 +42,10 @@ public class CustomMod implements ModInitializer {
 
 		ModWorldGeneration.generateModWorldGen();
 
+		/*
 		FuelRegistryEvents.BUILD.register((builder, context) -> {
 			builder.add(ModItems.TEMPLATE_FUEL, 600);
 		});
+		*/
 	}
 }

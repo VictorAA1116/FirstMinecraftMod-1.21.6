@@ -25,14 +25,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         return new RecipeGenerator(wrapperLookup, recipeExporter) {
             @Override
             public void generate() {
-                List<ItemConvertible> TEMPLATE_ITEM_SMELTABLES = List.of(ModItems.TEMPLATE_RAW_ORE, ModBlocks.TEMPLATE_STONE_ORE, ModBlocks.TEMPLATE_DEEPSLATE_ORE);
-
-                offerSmelting(TEMPLATE_ITEM_SMELTABLES, RecipeCategory.MISC, ModItems.TEMPLATE_ITEM, 0.25f, 200, "template_item");
-                offerBlasting(TEMPLATE_ITEM_SMELTABLES, RecipeCategory.MISC, ModItems.TEMPLATE_ITEM, 0.25f, 100, "template_item");
-
-                offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.TEMPLATE_ITEM, RecipeCategory.DECORATIONS, ModBlocks.TEMPLATE_BLOCK);
-                offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.TEMPLATE_RAW_ORE, RecipeCategory.DECORATIONS, ModBlocks.TEMPLATE_RAW_ORE_BLOCK);
-
                 createStairsRecipe(ModBlocks.CALCITE_STAIRS, Ingredient.ofItem(Blocks.CALCITE))
                         .criterion(hasItem(Blocks.CALCITE), conditionsFromItem(Blocks.CALCITE))
                         .offerTo(exporter);

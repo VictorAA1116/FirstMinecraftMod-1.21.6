@@ -17,7 +17,6 @@ public class ModTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> CUSTOM_ITEMS = createTag("custom_items");
 
         public static final TagKey<Item> CAPYBARA_FOODS = createTag("capybara_foods");
 

@@ -1,8 +1,5 @@
 {
   "values": [
-    "custommod:template_stone_ore",
-    "custommod:template_deepslate_ore",
-    "custommod:template_raw_ore_block",
     "custommod:calcite_slab",
     "custommod:calcite_stairs",
     "custommod:polished_calcite",
@@ -14,7 +11,6 @@
     "custommod:amethyst_slab",
     "custommod:amethyst_stairs",
     "custommod:smooth_basalt_slab",
-    "custommod:smooth_basalt_stairs",
-    "custommod:template_block"
+    "custommod:smooth_basalt_stairs"
   ]
 }
