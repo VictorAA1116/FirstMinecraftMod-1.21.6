@@ -49,6 +49,18 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL);
                         entries.add(ModBlocks.SMOOTH_SANDSTONE_WALL);
 
+                        entries.add(ModBlocks.PURPUR_WALL);
+                        entries.add(ModBlocks.DARK_PRISMARINE_WALL);
+                        entries.add(ModBlocks.PRISMARINE_BRICK_WALL);
+
+                        entries.add(ModBlocks.NETHERRACK_SLAB);
+                        entries.add(ModBlocks.NETHERRACK_STAIRS);
+                        entries.add(ModBlocks.NETHERRACK_WALL);
+
+                        entries.add(ModBlocks.END_STONE_SLAB);
+                        entries.add(ModBlocks.END_STONE_STAIRS);
+                        entries.add(ModBlocks.END_STONE_WALL);
+
                         entries.add(ModItems.CAPYBARA_SPAWN_EGG);
                         entries.add(ModItems.PENGUIN_SPAWN_EGG);
                     })

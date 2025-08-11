@@ -32,6 +32,18 @@
   "block.custommod.smooth_sandstone_wall": "Smooth Sandstone Wall",
   "block.custommod.smooth_red_sandstone_wall": "Smooth Red Sandstone Wall",
 
+  "block.custommod.prismarine_brick_wall": "Prismarine Brick Wall",
+  "block.custommod.dark_prismarine_wall": "Dark Prismarine Wall",
+  "block.custommod.purpur_wall": "Purpur Wall",
+
+  "block.custommod.netherrack_stairs": "Netherrack Stairs",
+  "block.custommod.netherrack_slab": "Netherrack Slab",
+  "block.custommod.netherrack_wall": "Netherrack Wall",
+
+  "block.custommod.end_stone_stairs": "End Stone Stairs",
+  "block.custommod.end_stone_slab": "End Stone Slab",
+  "block.custommod.end_stone_wall": "End Stone Wall",
+
   "entity.custommod.capybara": "Capybara",
   "item.custommod.capybara_spawn_egg": "Capybara Spawn Egg",
 

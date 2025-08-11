@@ -39,7 +39,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE)
 
                 .add(ModBlocks.PACKED_MUD_STAIRS)
-                .add(ModBlocks.PACKED_MUD_SLAB);
+                .add(ModBlocks.PACKED_MUD_SLAB)
+
+                .add(ModBlocks.NETHERRACK_SLAB)
+                .add(ModBlocks.NETHERRACK_STAIRS)
+
+                .add(ModBlocks.END_STONE_SLAB)
+                .add(ModBlocks.END_STONE_STAIRS);
 
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE)
 
@@ -60,7 +66,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SMOOTH_BASALT_SLAB)
                 .add(ModBlocks.SMOOTH_BASALT_STAIRS)
 
-                .add(ModBlocks.SMOOTH_STONE_STAIRS);
+                .add(ModBlocks.SMOOTH_STONE_STAIRS)
+
+                .add(ModBlocks.NETHERRACK_SLAB)
+                .add(ModBlocks.NETHERRACK_STAIRS)
+
+                .add(ModBlocks.END_STONE_SLAB)
+                .add(ModBlocks.END_STONE_STAIRS);
 
         valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL);
 
@@ -77,6 +89,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STONE_WALL)
                 .add(ModBlocks.PACKED_MUD_WALL)
                 .add(ModBlocks.SMOOTH_SANDSTONE_WALL)
-                .add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL);
+                .add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL)
+                .add(ModBlocks.PURPUR_WALL)
+                .add(ModBlocks.PRISMARINE_BRICK_WALL)
+                .add(ModBlocks.DARK_PRISMARINE_WALL)
+                .add(ModBlocks.NETHERRACK_WALL)
+                .add(ModBlocks.END_STONE_WALL);
     }
 }

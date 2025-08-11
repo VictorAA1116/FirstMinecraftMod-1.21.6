@@ -15,6 +15,10 @@
     "custommod:smooth_stone_stairs",
     "custommod:polished_deepslate_pressure_plate",
     "custommod:packed_mud_stairs",
-    "custommod:packed_mud_slab"
+    "custommod:packed_mud_slab",
+    "custommod:netherrack_slab",
+    "custommod:netherrack_stairs",
+    "custommod:end_stone_slab",
+    "custommod:end_stone_stairs"
   ]
 }

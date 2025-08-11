@@ -1,8 +1,8 @@
 // 1.21.7	-999999999-01-01T00:00:00	Penguibara/Tags for minecraft:block
-050805bb7e730cf2de2fab604e4c7390f547fe6f data/custommod/tags/block/custom_blocks.json
+b7b3d266784873d2870e6f2ddb077ce8d1fe3e3c data/custommod/tags/block/custom_blocks.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/fence_gates.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/fences.json
-abb3250b6c39b66fb83a9012a37ef7d55ad1ee0d data/minecraft/tags/block/mineable/pickaxe.json
+fd0b76e952a42d4cbce9c7513ed516686f42a2eb data/minecraft/tags/block/mineable/pickaxe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_diamond_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_iron_tool.json
-ab3283eaae6b35a9afc763e01af30d7b803cb295 data/minecraft/tags/block/walls.json
+2ca9c0b18d6cc348c284b85b0b7d10f0a1a32f4f data/minecraft/tags/block/walls.json

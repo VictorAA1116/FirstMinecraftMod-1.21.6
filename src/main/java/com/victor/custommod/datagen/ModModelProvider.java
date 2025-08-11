@@ -27,6 +27,11 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool packedMudPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.PACKED_MUD);
         BlockStateModelGenerator.BlockTexturePool smoothSandstonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.SMOOTH_SANDSTONE);
         BlockStateModelGenerator.BlockTexturePool smoothRedSandstonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.SMOOTH_RED_SANDSTONE);
+        BlockStateModelGenerator.BlockTexturePool prismarineBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.PRISMARINE_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool darkPrismarinePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.DARK_PRISMARINE);
+        BlockStateModelGenerator.BlockTexturePool purpurPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.PURPUR_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool netherrackPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.NETHERRACK);
+        BlockStateModelGenerator.BlockTexturePool endStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.END_STONE);
 
         calcitePool.stairs(ModBlocks.CALCITE_STAIRS);
         calcitePool.slab(ModBlocks.CALCITE_SLAB);
@@ -61,6 +66,17 @@ public class ModModelProvider extends FabricModelProvider {
         smoothSandstonePool.wall(ModBlocks.SMOOTH_SANDSTONE_WALL);
         smoothRedSandstonePool.wall(ModBlocks.SMOOTH_RED_SANDSTONE_WALL);
 
+        darkPrismarinePool.wall(ModBlocks.DARK_PRISMARINE_WALL);
+        prismarineBrickPool.wall(ModBlocks.PRISMARINE_BRICK_WALL);
+        purpurPool.wall(ModBlocks.PURPUR_WALL);
+
+        netherrackPool.stairs(ModBlocks.NETHERRACK_STAIRS);
+        netherrackPool.slab(ModBlocks.NETHERRACK_SLAB);
+        netherrackPool.wall(ModBlocks.NETHERRACK_WALL);
+
+        endStonePool.slab(ModBlocks.END_STONE_SLAB);
+        endStonePool.stairs(ModBlocks.END_STONE_STAIRS);
+        endStonePool.wall(ModBlocks.END_STONE_WALL);
     }
 
     @Override

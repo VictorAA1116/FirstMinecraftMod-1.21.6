@@ -12,6 +12,10 @@
     "custommod:amethyst_stairs",
     "custommod:smooth_basalt_slab",
     "custommod:smooth_basalt_stairs",
-    "custommod:smooth_stone_stairs"
+    "custommod:smooth_stone_stairs",
+    "custommod:netherrack_slab",
+    "custommod:netherrack_stairs",
+    "custommod:end_stone_slab",
+    "custommod:end_stone_stairs"
   ]
 }

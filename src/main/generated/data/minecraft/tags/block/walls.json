@@ -6,6 +6,11 @@
     "custommod:stone_wall",
     "custommod:packed_mud_wall",
     "custommod:smooth_sandstone_wall",
-    "custommod:smooth_red_sandstone_wall"
+    "custommod:smooth_red_sandstone_wall",
+    "custommod:purpur_wall",
+    "custommod:prismarine_brick_wall",
+    "custommod:dark_prismarine_wall",
+    "custommod:netherrack_wall",
+    "custommod:end_stone_wall"
   ]
 }
