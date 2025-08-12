@@ -12,9 +12,9 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
 
-    public static final ItemGroup MOD_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(CustomMod.MOD_ID, "mod_item_group"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.PENGUIN_SPAWN_EGG))
-                    .displayName(Text.translatable("itemgroup.custommod.mod_item_group"))
+    public static final ItemGroup MOD_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(CustomMod.MOD_ID, "mod_block_group"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.CALCITE_BRICKS))
+                    .displayName(Text.translatable("itemgroup.custommod.mod_block_group"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.CALCITE_STAIRS);
                         entries.add(ModBlocks.CALCITE_SLAB);
@@ -37,6 +37,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.SMOOTH_BASALT_STAIRS);
                         entries.add(ModBlocks.SMOOTH_BASALT_SLAB);
+                        entries.add(ModBlocks.SMOOTH_BASALT_WALL);
 
                         entries.add(ModBlocks.STONE_WALL);
                         entries.add(ModBlocks.SMOOTH_STONE_STAIRS);
@@ -61,10 +62,90 @@ public class ModItemGroups {
                         entries.add(ModBlocks.END_STONE_STAIRS);
                         entries.add(ModBlocks.END_STONE_WALL);
 
-                        entries.add(ModItems.CAPYBARA_SPAWN_EGG);
-                        entries.add(ModItems.PENGUIN_SPAWN_EGG);
+                        entries.add(ModBlocks.POLISHED_GRANITE_WALL);
+                        entries.add(ModBlocks.POLISHED_ANDESITE_WALL);
+                        entries.add(ModBlocks.POLISHED_DIORITE_WALL);
+
+                        entries.add(ModBlocks.SMOOTH_QUARTZ_WALL);
+                        entries.add(ModBlocks.QUARTZ_WALL);
+
+                        entries.add(ModBlocks.QUARTZ_BRICK_SLAB);
+                        entries.add(ModBlocks.QUARTZ_BRICK_STAIRS);
+                        entries.add(ModBlocks.QUARTZ_BRICK_WALL);
+
+                        entries.add(ModBlocks.WHITE_CONCRETE_SLAB);
+                        entries.add(ModBlocks.WHITE_CONCRETE_STAIRS);
+                        entries.add(ModBlocks.WHITE_CONCRETE_WALL);
+
+                        entries.add(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB);
+                        entries.add(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS);
+                        entries.add(ModBlocks.LIGHT_GRAY_CONCRETE_WALL);
+
+                        entries.add(ModBlocks.GRAY_CONCRETE_SLAB);
+                        entries.add(ModBlocks.GRAY_CONCRETE_STAIRS);
+                        entries.add(ModBlocks.GRAY_CONCRETE_WALL);
+
+                        entries.add(ModBlocks.BLACK_CONCRETE_SLAB);
+                        entries.add(ModBlocks.BLACK_CONCRETE_STAIRS);
+                        entries.add(ModBlocks.BLACK_CONCRETE_WALL);
+
+                        entries.add(ModBlocks.RED_CONCRETE_SLAB);
+                        entries.add(ModBlocks.RED_CONCRETE_STAIRS);
+                        entries.add(ModBlocks.RED_CONCRETE_WALL);
+
+                        entries.add(ModBlocks.ORANGE_CONCRETE_SLAB);
+                        entries.add(ModBlocks.ORANGE_CONCRETE_STAIRS);
+                        entries.add(ModBlocks.ORANGE_CONCRETE_WALL);
+
+                        entries.add(ModBlocks.YELLOW_CONCRETE_SLAB);
+                        entries.add(ModBlocks.YELLOW_CONCRETE_STAIRS);
+                        entries.add(ModBlocks.YELLOW_CONCRETE_WALL);
+
+                        entries.add(ModBlocks.LIME_CONCRETE_SLAB);
+                        entries.add(ModBlocks.LIME_CONCRETE_STAIRS);
+                        entries.add(ModBlocks.LIME_CONCRETE_WALL);
+
+                        entries.add(ModBlocks.GREEN_CONCRETE_SLAB);
+                        entries.add(ModBlocks.GREEN_CONCRETE_STAIRS);
+                        entries.add(ModBlocks.GREEN_CONCRETE_WALL);
+
+                        entries.add(ModBlocks.CYAN_CONCRETE_SLAB);
+                        entries.add(ModBlocks.CYAN_CONCRETE_STAIRS);
+                        entries.add(ModBlocks.CYAN_CONCRETE_WALL);
+
+                        entries.add(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB);
+                        entries.add(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS);
+                        entries.add(ModBlocks.LIGHT_BLUE_CONCRETE_WALL);
+
+                        entries.add(ModBlocks.BLUE_CONCRETE_SLAB);
+                        entries.add(ModBlocks.BLUE_CONCRETE_STAIRS);
+                        entries.add(ModBlocks.BLUE_CONCRETE_WALL);
+
+                        entries.add(ModBlocks.PURPLE_CONCRETE_SLAB);
+                        entries.add(ModBlocks.PURPLE_CONCRETE_STAIRS);
+                        entries.add(ModBlocks.PURPLE_CONCRETE_WALL);
+
+                        entries.add(ModBlocks.MAGENTA_CONCRETE_SLAB);
+                        entries.add(ModBlocks.MAGENTA_CONCRETE_STAIRS);
+                        entries.add(ModBlocks.MAGENTA_CONCRETE_WALL);
+
+                        entries.add(ModBlocks.PINK_CONCRETE_SLAB);
+                        entries.add(ModBlocks.PINK_CONCRETE_STAIRS);
+                        entries.add(ModBlocks.PINK_CONCRETE_WALL);
+
+                        entries.add(ModBlocks.BROWN_CONCRETE_SLAB);
+                        entries.add(ModBlocks.BROWN_CONCRETE_STAIRS);
+                        entries.add(ModBlocks.BROWN_CONCRETE_WALL);
                     })
                     .build());
+
+    public static final ItemGroup MOD_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(CustomMod.MOD_ID, "mod_item_group"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.PENGUIN_SPAWN_EGG))
+                    .displayName(Text.translatable("itemgroup.custommod.mod_item_group"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.CAPYBARA_SPAWN_EGG);
+                        entries.add(ModItems.PENGUIN_SPAWN_EGG);
+                    }).build());
 
     public static void registerItemGroups()
     {

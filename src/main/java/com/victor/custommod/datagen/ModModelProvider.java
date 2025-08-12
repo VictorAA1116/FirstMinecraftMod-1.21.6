@@ -32,6 +32,28 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool purpurPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.PURPUR_BLOCK);
         BlockStateModelGenerator.BlockTexturePool netherrackPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.NETHERRACK);
         BlockStateModelGenerator.BlockTexturePool endStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.END_STONE);
+        BlockStateModelGenerator.BlockTexturePool polishedGranitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.POLISHED_GRANITE);
+        BlockStateModelGenerator.BlockTexturePool polishedAndesitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.POLISHED_ANDESITE);
+        BlockStateModelGenerator.BlockTexturePool polishedDioritePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.POLISHED_DIORITE);
+        BlockStateModelGenerator.BlockTexturePool quartzPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.QUARTZ_TEXTURE);
+        BlockStateModelGenerator.BlockTexturePool smoothQuartzPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.SMOOTH_QUARTZ);
+        BlockStateModelGenerator.BlockTexturePool quartzBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.QUARTZ_BRICKS);
+        BlockStateModelGenerator.BlockTexturePool whiteConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.WHITE_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool lightGrayConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIGHT_GRAY_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool grayConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.GRAY_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool blackConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.BLACK_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool redConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.RED_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool orangeConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.ORANGE_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool yellowConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.YELLOW_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool limeConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIME_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool greenConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.GREEN_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool cyanConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.CYAN_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool lightBlueConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIGHT_BLUE_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool blueConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.BLUE_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool purpleConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.PURPLE_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool magentaConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.MAGENTA_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool pinkConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.PINK_CONCRETE);
+        BlockStateModelGenerator.BlockTexturePool brownConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.BROWN_CONCRETE);
 
         calcitePool.stairs(ModBlocks.CALCITE_STAIRS);
         calcitePool.slab(ModBlocks.CALCITE_SLAB);
@@ -52,6 +74,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         smoothBasaltPool.stairs(ModBlocks.SMOOTH_BASALT_STAIRS);
         smoothBasaltPool.slab(ModBlocks.SMOOTH_BASALT_SLAB);
+        smoothBasaltPool.wall(ModBlocks.SMOOTH_BASALT_WALL);
 
         stonePool.wall(ModBlocks.STONE_WALL);
 
@@ -77,6 +100,81 @@ public class ModModelProvider extends FabricModelProvider {
         endStonePool.slab(ModBlocks.END_STONE_SLAB);
         endStonePool.stairs(ModBlocks.END_STONE_STAIRS);
         endStonePool.wall(ModBlocks.END_STONE_WALL);
+
+        polishedDioritePool.wall(ModBlocks.POLISHED_DIORITE_WALL);
+        polishedGranitePool.wall(ModBlocks.POLISHED_GRANITE_WALL);
+        polishedAndesitePool.wall(ModBlocks.POLISHED_ANDESITE_WALL);
+
+        smoothQuartzPool.wall(ModBlocks.SMOOTH_QUARTZ_WALL);
+        quartzPool.wall(ModBlocks.QUARTZ_WALL);
+
+        quartzBrickPool.slab(ModBlocks.QUARTZ_BRICK_SLAB);
+        quartzBrickPool.stairs(ModBlocks.QUARTZ_BRICK_STAIRS);
+        quartzBrickPool.wall(ModBlocks.QUARTZ_BRICK_WALL);
+
+        whiteConcretePool.slab(ModBlocks.WHITE_CONCRETE_SLAB);
+        whiteConcretePool.stairs(ModBlocks.WHITE_CONCRETE_STAIRS);
+        whiteConcretePool.wall(ModBlocks.WHITE_CONCRETE_WALL);
+
+        lightGrayConcretePool.slab(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB);
+        lightGrayConcretePool.stairs(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS);
+        lightGrayConcretePool.wall(ModBlocks.LIGHT_GRAY_CONCRETE_WALL);
+
+        grayConcretePool.slab(ModBlocks.GRAY_CONCRETE_SLAB);
+        grayConcretePool.stairs(ModBlocks.GRAY_CONCRETE_STAIRS);
+        grayConcretePool.wall(ModBlocks.GRAY_CONCRETE_WALL);
+
+        blackConcretePool.slab(ModBlocks.BLACK_CONCRETE_SLAB);
+        blackConcretePool.stairs(ModBlocks.BLACK_CONCRETE_STAIRS);
+        blackConcretePool.wall(ModBlocks.BLACK_CONCRETE_WALL);
+
+        redConcretePool.slab(ModBlocks.RED_CONCRETE_SLAB);
+        redConcretePool.stairs(ModBlocks.RED_CONCRETE_STAIRS);
+        redConcretePool.wall(ModBlocks.RED_CONCRETE_WALL);
+
+        orangeConcretePool.slab(ModBlocks.ORANGE_CONCRETE_SLAB);
+        orangeConcretePool.stairs(ModBlocks.ORANGE_CONCRETE_STAIRS);
+        orangeConcretePool.wall(ModBlocks.ORANGE_CONCRETE_WALL);
+
+        yellowConcretePool.slab(ModBlocks.YELLOW_CONCRETE_SLAB);
+        yellowConcretePool.stairs(ModBlocks.YELLOW_CONCRETE_STAIRS);
+        yellowConcretePool.wall(ModBlocks.YELLOW_CONCRETE_WALL);
+
+        limeConcretePool.slab(ModBlocks.LIME_CONCRETE_SLAB);
+        limeConcretePool.stairs(ModBlocks.LIME_CONCRETE_STAIRS);
+        limeConcretePool.wall(ModBlocks.LIME_CONCRETE_WALL);
+
+        greenConcretePool.slab(ModBlocks.GREEN_CONCRETE_SLAB);
+        greenConcretePool.stairs(ModBlocks.GREEN_CONCRETE_STAIRS);
+        greenConcretePool.wall(ModBlocks.GREEN_CONCRETE_WALL);
+
+        cyanConcretePool.slab(ModBlocks.CYAN_CONCRETE_SLAB);
+        cyanConcretePool.stairs(ModBlocks.CYAN_CONCRETE_STAIRS);
+        cyanConcretePool.wall(ModBlocks.CYAN_CONCRETE_WALL);
+
+        lightBlueConcretePool.slab(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB);
+        lightBlueConcretePool.stairs(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS);
+        lightBlueConcretePool.wall(ModBlocks.LIGHT_BLUE_CONCRETE_WALL);
+
+        blueConcretePool.slab(ModBlocks.BLUE_CONCRETE_SLAB);
+        blueConcretePool.stairs(ModBlocks.BLUE_CONCRETE_STAIRS);
+        blueConcretePool.wall(ModBlocks.BLUE_CONCRETE_WALL);
+
+        purpleConcretePool.slab(ModBlocks.PURPLE_CONCRETE_SLAB);
+        purpleConcretePool.stairs(ModBlocks.PURPLE_CONCRETE_STAIRS);
+        purpleConcretePool.wall(ModBlocks.PURPLE_CONCRETE_WALL);
+
+        magentaConcretePool.slab(ModBlocks.MAGENTA_CONCRETE_SLAB);
+        magentaConcretePool.stairs(ModBlocks.MAGENTA_CONCRETE_STAIRS);
+        magentaConcretePool.wall(ModBlocks.MAGENTA_CONCRETE_WALL);
+
+        pinkConcretePool.slab(ModBlocks.PINK_CONCRETE_SLAB);
+        pinkConcretePool.stairs(ModBlocks.PINK_CONCRETE_STAIRS);
+        pinkConcretePool.wall(ModBlocks.PINK_CONCRETE_WALL);
+
+        brownConcretePool.slab(ModBlocks.BROWN_CONCRETE_SLAB);
+        brownConcretePool.stairs(ModBlocks.BROWN_CONCRETE_STAIRS);
+        brownConcretePool.wall(ModBlocks.BROWN_CONCRETE_WALL);
     }
 
     @Override

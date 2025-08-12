@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "custommod:block/quartz_brick_stairs"
+  }
+}

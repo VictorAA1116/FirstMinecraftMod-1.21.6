@@ -72,6 +72,78 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.END_STONE_STAIRS);
         addDrop(ModBlocks.END_STONE_SLAB, slabDrops(ModBlocks.END_STONE_SLAB));
         addDrop(ModBlocks.END_STONE_WALL);
+
+        addDrop(ModBlocks.POLISHED_DIORITE_WALL);
+        addDrop(ModBlocks.POLISHED_ANDESITE_WALL);
+        addDrop(ModBlocks.POLISHED_GRANITE_WALL);
+
+        addDrop(ModBlocks.QUARTZ_WALL);
+        addDrop(ModBlocks.SMOOTH_QUARTZ_WALL);
+        addDrop(ModBlocks.SMOOTH_BASALT_WALL);
+
+        addDrop(ModBlocks.QUARTZ_BRICK_SLAB, slabDrops(ModBlocks.QUARTZ_BRICK_SLAB));
+        addDrop(ModBlocks.QUARTZ_BRICK_STAIRS);
+        addDrop(ModBlocks.QUARTZ_BRICK_WALL);
+
+        addDrop(ModBlocks.WHITE_CONCRETE_SLAB, slabDrops(ModBlocks.WHITE_CONCRETE_SLAB));
+        addDrop(ModBlocks.WHITE_CONCRETE_STAIRS);
+        addDrop(ModBlocks.WHITE_CONCRETE_WALL);
+
+        addDrop(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB, slabDrops(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB));
+        addDrop(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS);
+        addDrop(ModBlocks.LIGHT_GRAY_CONCRETE_WALL);
+
+        addDrop(ModBlocks.GRAY_CONCRETE_SLAB, slabDrops(ModBlocks.GRAY_CONCRETE_SLAB));
+        addDrop(ModBlocks.GRAY_CONCRETE_STAIRS);
+        addDrop(ModBlocks.GRAY_CONCRETE_WALL);
+
+        addDrop(ModBlocks.BLACK_CONCRETE_SLAB, slabDrops(ModBlocks.BLACK_CONCRETE_SLAB));
+        addDrop(ModBlocks.BLACK_CONCRETE_STAIRS);
+        addDrop(ModBlocks.BLACK_CONCRETE_WALL);
+
+        addDrop(ModBlocks.RED_CONCRETE_SLAB, slabDrops(ModBlocks.RED_CONCRETE_SLAB));
+        addDrop(ModBlocks.RED_CONCRETE_STAIRS);
+        addDrop(ModBlocks.RED_CONCRETE_WALL);
+
+        addDrop(ModBlocks.ORANGE_CONCRETE_SLAB, slabDrops(ModBlocks.ORANGE_CONCRETE_SLAB));
+        addDrop(ModBlocks.ORANGE_CONCRETE_STAIRS);
+        addDrop(ModBlocks.ORANGE_CONCRETE_WALL);
+
+        addDrop(ModBlocks.YELLOW_CONCRETE_SLAB, slabDrops(ModBlocks.YELLOW_CONCRETE_SLAB));
+        addDrop(ModBlocks.YELLOW_CONCRETE_STAIRS);
+        addDrop(ModBlocks.YELLOW_CONCRETE_WALL);
+
+        addDrop(ModBlocks.LIME_CONCRETE_SLAB, slabDrops(ModBlocks.LIME_CONCRETE_SLAB));
+        addDrop(ModBlocks.LIME_CONCRETE_STAIRS);
+        addDrop(ModBlocks.LIME_CONCRETE_WALL);
+
+        addDrop(ModBlocks.GREEN_CONCRETE_SLAB, slabDrops(ModBlocks.GREEN_CONCRETE_SLAB));
+        addDrop(ModBlocks.GREEN_CONCRETE_STAIRS);
+        addDrop(ModBlocks.GREEN_CONCRETE_WALL);
+
+        addDrop(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB, slabDrops(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB));
+        addDrop(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS);
+        addDrop(ModBlocks.LIGHT_BLUE_CONCRETE_WALL);
+
+        addDrop(ModBlocks.BLUE_CONCRETE_SLAB, slabDrops(ModBlocks.BLUE_CONCRETE_SLAB));
+        addDrop(ModBlocks.BLUE_CONCRETE_STAIRS);
+        addDrop(ModBlocks.BLUE_CONCRETE_WALL);
+
+        addDrop(ModBlocks.PURPLE_CONCRETE_SLAB, slabDrops(ModBlocks.PURPLE_CONCRETE_SLAB));
+        addDrop(ModBlocks.PURPLE_CONCRETE_STAIRS);
+        addDrop(ModBlocks.PURPLE_CONCRETE_WALL);
+
+        addDrop(ModBlocks.MAGENTA_CONCRETE_SLAB, slabDrops(ModBlocks.MAGENTA_CONCRETE_SLAB));
+        addDrop(ModBlocks.MAGENTA_CONCRETE_STAIRS);
+        addDrop(ModBlocks.MAGENTA_CONCRETE_WALL);
+
+        addDrop(ModBlocks.PINK_CONCRETE_SLAB, slabDrops(ModBlocks.PINK_CONCRETE_SLAB));
+        addDrop(ModBlocks.PINK_CONCRETE_STAIRS);
+        addDrop(ModBlocks.PINK_CONCRETE_WALL);
+
+        addDrop(ModBlocks.BROWN_CONCRETE_SLAB, slabDrops(ModBlocks.BROWN_CONCRETE_SLAB));
+        addDrop(ModBlocks.BROWN_CONCRETE_STAIRS);
+        addDrop(ModBlocks.BROWN_CONCRETE_WALL);
     }
 
     /*

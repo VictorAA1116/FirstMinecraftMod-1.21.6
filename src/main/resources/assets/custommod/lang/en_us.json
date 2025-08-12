@@ -20,6 +20,7 @@
 
   "block.custommod.smooth_basalt_stairs": "Smooth Basalt Stairs",
   "block.custommod.smooth_basalt_slab": "Smooth Basalt Slab",
+  "block.custommod.smooth_basalt_wall": "Smooth Basalt Wall",
 
   "block.custommod.stone_wall": "Stone Wall",
   "block.custommod.smooth_stone_stairs": "Smooth Stone Stairs",
@@ -44,12 +45,87 @@
   "block.custommod.end_stone_slab": "End Stone Slab",
   "block.custommod.end_stone_wall": "End Stone Wall",
 
+  "block.custommod.polished_granite_wall": "Polished Granite Wall",
+  "block.custommod.polished_andesite_wall": "Polished Andesite Wall",
+  "block.custommod.polished_diorite_wall": "Polished Diorite Wall",
+
+  "block.custommod.quartz_wall": "Quartz Wall",
+  "block.custommod.smooth_quartz_wall": "Smooth Quartz Wall",
+
+  "block.custommod.quartz_brick_stairs": "Quartz Brick Stairs",
+  "block.custommod.quartz_brick_slab": "Quartz Brick Slab",
+  "block.custommod.quartz_brick_wall": "Quartz Brick Wall",
+
+  "block.custommod.white_concrete_stairs": "White Concrete Stairs",
+  "block.custommod.white_concrete_slab": "White Concrete Slab",
+  "block.custommod.white_concrete_wall": "White Concrete Wall",
+
+  "block.custommod.light_gray_concrete_stairs": "Light Gray Concrete Stairs",
+  "block.custommod.light_gray_concrete_slab": "Light Gray Concrete Slab",
+  "block.custommod.light_gray_concrete_wall": "Light Gray Concrete Wall",
+
+  "block.custommod.gray_concrete_stairs": "Gray Concrete Stairs",
+  "block.custommod.gray_concrete_slab": "Gray Concrete Slab",
+  "block.custommod.gray_concrete_wall": "Gray Concrete Wall",
+
+  "block.custommod.black_concrete_stairs": "Black Concrete Stairs",
+  "block.custommod.black_concrete_slab": "Black Concrete Slab",
+  "block.custommod.black_concrete_wall": "Black Concrete Wall",
+
+  "block.custommod.red_concrete_stairs": "Red Concrete Stairs",
+  "block.custommod.red_concrete_slab": "Red Concrete Slab",
+  "block.custommod.red_concrete_wall": "Red Concrete Wall",
+
+  "block.custommod.orange_concrete_stairs": "Orange Concrete Stairs",
+  "block.custommod.orange_concrete_slab": "Orange Concrete Slab",
+  "block.custommod.orange_concrete_wall": "Orange Concrete Wall",
+
+  "block.custommod.yellow_concrete_stairs": "Yellow Concrete Stairs",
+  "block.custommod.yellow_concrete_slab": "Yellow Concrete Slab",
+  "block.custommod.yellow_concrete_wall": "Yellow Concrete Wall",
+
+  "block.custommod.lime_concrete_stairs": "Lime Concrete Stairs",
+  "block.custommod.lime_concrete_slab": "Lime Concrete Slab",
+  "block.custommod.lime_concrete_wall": "Lime Concrete Wall",
+
+  "block.custommod.green_concrete_stairs": "Green Concrete Stairs",
+  "block.custommod.green_concrete_slab": "Green Concrete Slab",
+  "block.custommod.green_concrete_wall": "Green Concrete Wall",
+
+  "block.custommod.cyan_concrete_stairs": "Cyan Concrete Stairs",
+  "block.custommod.cyan_concrete_slab": "Cyan Concrete Slab",
+  "block.custommod.cyan_concrete_wall": "Cyan Concrete Wall",
+
+  "block.custommod.light_blue_concrete_stairs": "Light Blue Concrete Stairs",
+  "block.custommod.light_blue_concrete_slab": "Light Blue Concrete Slab",
+  "block.custommod.light_blue_concrete_wall": "Light Blue Concrete Wall",
+
+  "block.custommod.blue_concrete_stairs": "Blue Concrete Stairs",
+  "block.custommod.blue_concrete_slab": "Blue Concrete Slab",
+  "block.custommod.blue_concrete_wall": "Blue Concrete Wall",
+
+  "block.custommod.purple_concrete_stairs": "Purple Concrete Stairs",
+  "block.custommod.purple_concrete_slab": "Purple Concrete Slab",
+  "block.custommod.purple_concrete_wall": "Purple Concrete Wall",
+
+  "block.custommod.magenta_concrete_stairs": "Magenta Concrete Stairs",
+  "block.custommod.magenta_concrete_slab": "Magenta Concrete Slab",
+  "block.custommod.magenta_concrete_wall": "Magenta Concrete Wall",
+
+  "block.custommod.pink_concrete_stairs": "Pink Concrete Stairs",
+  "block.custommod.pink_concrete_slab": "Pink Concrete Slab",
+  "block.custommod.pink_concrete_wall": "Pink Concrete Wall",
+
+  "block.custommod.brown_concrete_stairs": "Brown Concrete Stairs",
+  "block.custommod.brown_concrete_slab": "Brown Concrete Slab",
+  "block.custommod.brown_concrete_wall": "Brown Concrete Wall",
+
   "entity.custommod.capybara": "Capybara",
   "item.custommod.capybara_spawn_egg": "Capybara Spawn Egg",
 
   "entity.custommod.penguin": "Penguin",
   "item.custommod.penguin_spawn_egg": "Penguin Spawn Egg",
 
-
-  "itemgroup.custommod.mod_item_group": "Mod Items"
+  "itemgroup.custommod.mod_item_group": "Mod Items",
+  "itemgroup.custommod.mod_block_group": "Mod Blocks"
 }

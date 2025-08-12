@@ -72,10 +72,16 @@ public class ModBlocks {
 
     public static final Block SMOOTH_BASALT_STAIRS = registerBlock("smooth_basalt_stairs",
             properties -> new StairsBlock(ModBlocks.POLISHED_CALCITE.getDefaultState(),
-                    properties.mapColor(MapColor.BLACK).strength(1.25f, 4.2f).requiresTool().sounds(BlockSoundGroup.BASALT)));
+                    properties.mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM)
+                            .strength(1.25f, 4.2f).requiresTool().sounds(BlockSoundGroup.BASALT)));
 
     public static final Block SMOOTH_BASALT_SLAB = registerBlock("smooth_basalt_slab",
-            properties -> new SlabBlock(properties.mapColor(MapColor.BLACK).strength(1.25f,4.2f).requiresTool().sounds(BlockSoundGroup.BASALT)));
+            properties -> new SlabBlock(properties.mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25f,4.2f).requiresTool().sounds(BlockSoundGroup.BASALT)));
+
+    public static final Block SMOOTH_BASALT_WALL = registerBlock("smooth_basalt_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM)
+                    .strength(1.25f,4.2f).requiresTool().sounds(BlockSoundGroup.BASALT)));
 
     public static final Block STONE_WALL = registerBlock("stone_wall",
             properties -> new WallBlock(properties.mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM)
@@ -144,6 +150,233 @@ public class ModBlocks {
             properties -> new WallBlock(properties.mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
                     .strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
 
+    public static final Block POLISHED_GRANITE_WALL = registerBlock("polished_granite_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.DIRT_BROWN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_DIORITE_WALL = registerBlock("polished_diorite_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.OFF_WHITE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_ANDESITE_WALL = registerBlock("polished_andesite_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block QUARTZ_TEXTURE = registerBlock("quartz_texture",
+            properties -> new Block(properties.mapColor(MapColor.OFF_WHITE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block QUARTZ_WALL = registerBlock("quartz_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.OFF_WHITE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SMOOTH_QUARTZ_WALL = registerBlock("smooth_quartz_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.OFF_WHITE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block QUARTZ_BRICK_STAIRS = registerBlock("quartz_brick_stairs",
+            properties -> new StairsBlock(Blocks.QUARTZ_BRICKS.getDefaultState(),properties.mapColor(MapColor.OFF_WHITE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block QUARTZ_BRICK_SLAB = registerBlock("quartz_brick_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.OFF_WHITE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block QUARTZ_BRICK_WALL = registerBlock("quartz_brick_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.OFF_WHITE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block WHITE_CONCRETE_STAIRS = registerBlock("white_concrete_stairs",
+            properties -> new StairsBlock(Blocks.WHITE_CONCRETE.getDefaultState(),properties.mapColor(MapColor.WHITE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block WHITE_CONCRETE_SLAB = registerBlock("white_concrete_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.WHITE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block WHITE_CONCRETE_WALL = registerBlock("white_concrete_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.WHITE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block LIGHT_GRAY_CONCRETE_STAIRS = registerBlock("light_gray_concrete_stairs",
+            properties -> new StairsBlock(Blocks.LIGHT_GRAY_CONCRETE.getDefaultState(),properties.mapColor(MapColor.LIGHT_GRAY).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block LIGHT_GRAY_CONCRETE_SLAB = registerBlock("light_gray_concrete_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.LIGHT_GRAY).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block LIGHT_GRAY_CONCRETE_WALL = registerBlock("light_gray_concrete_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.LIGHT_GRAY).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRAY_CONCRETE_STAIRS = registerBlock("gray_concrete_stairs",
+            properties -> new StairsBlock(Blocks.GRAY_CONCRETE.getDefaultState(),properties.mapColor(MapColor.GRAY).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRAY_CONCRETE_SLAB = registerBlock("gray_concrete_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.GRAY).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GRAY_CONCRETE_WALL = registerBlock("gray_concrete_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.GRAY).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block BLACK_CONCRETE_STAIRS = registerBlock("black_concrete_stairs",
+            properties -> new StairsBlock(Blocks.BLACK_CONCRETE.getDefaultState(),properties.mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block BLACK_CONCRETE_SLAB = registerBlock("black_concrete_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block BLACK_CONCRETE_WALL = registerBlock("black_concrete_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block RED_CONCRETE_STAIRS = registerBlock("red_concrete_stairs",
+            properties -> new StairsBlock(Blocks.RED_CONCRETE.getDefaultState(),properties.mapColor(MapColor.RED).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block RED_CONCRETE_SLAB = registerBlock("red_concrete_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.RED).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block RED_CONCRETE_WALL = registerBlock("red_concrete_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.RED).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block ORANGE_CONCRETE_STAIRS = registerBlock("orange_concrete_stairs",
+            properties -> new StairsBlock(Blocks.ORANGE_CONCRETE.getDefaultState(),properties.mapColor(MapColor.ORANGE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block ORANGE_CONCRETE_SLAB = registerBlock("orange_concrete_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.ORANGE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block ORANGE_CONCRETE_WALL = registerBlock("orange_concrete_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.ORANGE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block YELLOW_CONCRETE_STAIRS = registerBlock("yellow_concrete_stairs",
+            properties -> new StairsBlock(Blocks.YELLOW_CONCRETE.getDefaultState(),properties.mapColor(MapColor.YELLOW).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block YELLOW_CONCRETE_SLAB = registerBlock("yellow_concrete_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.YELLOW).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block YELLOW_CONCRETE_WALL = registerBlock("yellow_concrete_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.YELLOW).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block LIME_CONCRETE_STAIRS = registerBlock("lime_concrete_stairs",
+            properties -> new StairsBlock(Blocks.LIME_CONCRETE.getDefaultState(),properties.mapColor(MapColor.LIME).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block LIME_CONCRETE_SLAB = registerBlock("lime_concrete_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.LIME).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block LIME_CONCRETE_WALL = registerBlock("lime_concrete_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.LIME).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GREEN_CONCRETE_STAIRS = registerBlock("green_concrete_stairs",
+            properties -> new StairsBlock(Blocks.GREEN_CONCRETE.getDefaultState(),properties.mapColor(MapColor.GREEN).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GREEN_CONCRETE_SLAB = registerBlock("green_concrete_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.GREEN).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GREEN_CONCRETE_WALL = registerBlock("green_concrete_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.GREEN).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CYAN_CONCRETE_STAIRS = registerBlock("cyan_concrete_stairs",
+            properties -> new StairsBlock(Blocks.CYAN_CONCRETE.getDefaultState(),properties.mapColor(MapColor.CYAN).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CYAN_CONCRETE_SLAB = registerBlock("cyan_concrete_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.CYAN).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CYAN_CONCRETE_WALL = registerBlock("cyan_concrete_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.CYAN).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block LIGHT_BLUE_CONCRETE_STAIRS = registerBlock("light_blue_concrete_stairs",
+            properties -> new StairsBlock(Blocks.LIGHT_BLUE_CONCRETE.getDefaultState(),properties.mapColor(MapColor.LIGHT_BLUE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block LIGHT_BLUE_CONCRETE_SLAB = registerBlock("light_blue_concrete_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.LIGHT_BLUE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block LIGHT_BLUE_CONCRETE_WALL = registerBlock("light_blue_concrete_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.LIGHT_BLUE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block BLUE_CONCRETE_STAIRS = registerBlock("blue_concrete_stairs",
+            properties -> new StairsBlock(Blocks.BLUE_CONCRETE.getDefaultState(),properties.mapColor(MapColor.BLUE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block BLUE_CONCRETE_SLAB = registerBlock("blue_concrete_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.BLUE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block BLUE_CONCRETE_WALL = registerBlock("blue_concrete_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.BLUE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block PURPLE_CONCRETE_STAIRS = registerBlock("purple_concrete_stairs",
+            properties -> new StairsBlock(Blocks.PURPLE_CONCRETE.getDefaultState(),properties.mapColor(MapColor.PURPLE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block PURPLE_CONCRETE_SLAB = registerBlock("purple_concrete_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.PURPLE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block PURPLE_CONCRETE_WALL = registerBlock("purple_concrete_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.PURPLE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MAGENTA_CONCRETE_STAIRS = registerBlock("magenta_concrete_stairs",
+            properties -> new StairsBlock(Blocks.MAGENTA_CONCRETE.getDefaultState(),properties.mapColor(MapColor.MAGENTA).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MAGENTA_CONCRETE_SLAB = registerBlock("magenta_concrete_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.MAGENTA).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MAGENTA_CONCRETE_WALL = registerBlock("magenta_concrete_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.MAGENTA).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block PINK_CONCRETE_STAIRS = registerBlock("pink_concrete_stairs",
+            properties -> new StairsBlock(Blocks.PINK_CONCRETE.getDefaultState(),properties.mapColor(MapColor.PINK).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block PINK_CONCRETE_SLAB = registerBlock("pink_concrete_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.PINK).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block PINK_CONCRETE_WALL = registerBlock("pink_concrete_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.PINK).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block BROWN_CONCRETE_STAIRS = registerBlock("brown_concrete_stairs",
+            properties -> new StairsBlock(Blocks.BROWN_CONCRETE.getDefaultState(),properties.mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block BROWN_CONCRETE_SLAB = registerBlock("brown_concrete_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block BROWN_CONCRETE_WALL = registerBlock("brown_concrete_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.BROWN).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(1.8F).sounds(BlockSoundGroup.STONE)));
 
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
         Block toRegister = function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(CustomMod.MOD_ID, name))));
@@ -207,6 +440,80 @@ public class ModBlocks {
             entries.add(ModBlocks.END_STONE_WALL);
             entries.add(ModBlocks.END_STONE_STAIRS);
 
+            entries.add(ModBlocks.POLISHED_ANDESITE_WALL);
+            entries.add(ModBlocks.POLISHED_DIORITE_WALL);
+            entries.add(ModBlocks.POLISHED_GRANITE_WALL);
+
+            entries.add(ModBlocks.QUARTZ_WALL);
+            entries.add(ModBlocks.SMOOTH_QUARTZ_WALL);
+
+            entries.add(ModBlocks.QUARTZ_BRICK_SLAB);
+            entries.add(ModBlocks.QUARTZ_BRICK_WALL);
+            entries.add(ModBlocks.QUARTZ_BRICK_STAIRS);
+
+            entries.add(ModBlocks.WHITE_CONCRETE_WALL);
+            entries.add(ModBlocks.WHITE_CONCRETE_STAIRS);
+            entries.add(ModBlocks.WHITE_CONCRETE_SLAB);
+
+            entries.add(ModBlocks.LIGHT_GRAY_CONCRETE_WALL);
+            entries.add(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS);
+            entries.add(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB);
+
+            entries.add(ModBlocks.GRAY_CONCRETE_WALL);
+            entries.add(ModBlocks.GRAY_CONCRETE_STAIRS);
+            entries.add(ModBlocks.GRAY_CONCRETE_SLAB);
+
+            entries.add(ModBlocks.BLACK_CONCRETE_WALL);
+            entries.add(ModBlocks.BLACK_CONCRETE_STAIRS);
+            entries.add(ModBlocks.BLACK_CONCRETE_SLAB);
+
+            entries.add(ModBlocks.RED_CONCRETE_WALL);
+            entries.add(ModBlocks.RED_CONCRETE_STAIRS);
+            entries.add(ModBlocks.RED_CONCRETE_SLAB);
+
+            entries.add(ModBlocks.ORANGE_CONCRETE_WALL);
+            entries.add(ModBlocks.ORANGE_CONCRETE_STAIRS);
+            entries.add(ModBlocks.ORANGE_CONCRETE_SLAB);
+
+            entries.add(ModBlocks.YELLOW_CONCRETE_WALL);
+            entries.add(ModBlocks.YELLOW_CONCRETE_STAIRS);
+            entries.add(ModBlocks.YELLOW_CONCRETE_SLAB);
+
+            entries.add(ModBlocks.LIME_CONCRETE_WALL);
+            entries.add(ModBlocks.LIME_CONCRETE_STAIRS);
+            entries.add(ModBlocks.LIME_CONCRETE_SLAB);
+
+            entries.add(ModBlocks.GREEN_CONCRETE_WALL);
+            entries.add(ModBlocks.GREEN_CONCRETE_STAIRS);
+            entries.add(ModBlocks.GREEN_CONCRETE_SLAB);
+
+            entries.add(ModBlocks.CYAN_CONCRETE_WALL);
+            entries.add(ModBlocks.CYAN_CONCRETE_STAIRS);
+            entries.add(ModBlocks.CYAN_CONCRETE_SLAB);
+
+            entries.add(ModBlocks.LIGHT_BLUE_CONCRETE_WALL);
+            entries.add(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS);
+            entries.add(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB);
+
+            entries.add(ModBlocks.BLUE_CONCRETE_WALL);
+            entries.add(ModBlocks.BLUE_CONCRETE_STAIRS);
+            entries.add(ModBlocks.BLUE_CONCRETE_SLAB);
+
+            entries.add(ModBlocks.PURPLE_CONCRETE_WALL);
+            entries.add(ModBlocks.PURPLE_CONCRETE_STAIRS);
+            entries.add(ModBlocks.PURPLE_CONCRETE_SLAB);
+
+            entries.add(ModBlocks.MAGENTA_CONCRETE_WALL);
+            entries.add(ModBlocks.MAGENTA_CONCRETE_STAIRS);
+            entries.add(ModBlocks.MAGENTA_CONCRETE_SLAB);
+
+            entries.add(ModBlocks.PINK_CONCRETE_WALL);
+            entries.add(ModBlocks.PINK_CONCRETE_STAIRS);
+            entries.add(ModBlocks.PINK_CONCRETE_SLAB);
+
+            entries.add(ModBlocks.BROWN_CONCRETE_WALL);
+            entries.add(ModBlocks.BROWN_CONCRETE_STAIRS);
+            entries.add(ModBlocks.BROWN_CONCRETE_SLAB);
         });
     }
 }
