@@ -150,6 +150,22 @@ public class ModBlocks {
             properties -> new WallBlock(properties.mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
                     .strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
 
+    public static final Block POLISHED_END_STONE = registerBlock("polished_end_stone",
+            properties -> new Block(properties.mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_END_STONE_STAIRS = registerBlock("polished_end_stone_stairs",
+            properties -> new StairsBlock(ModBlocks.POLISHED_END_STONE.getDefaultState(),properties.mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_END_STONE_SLAB = registerBlock("polished_end_stone_slab",
+            properties -> new SlabBlock(properties.mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_END_STONE_WALL = registerBlock("polished_end_stone_wall",
+            properties -> new WallBlock(properties.mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool().strength(3.0F, 9.0F).sounds(BlockSoundGroup.STONE)));
+
     public static final Block POLISHED_GRANITE_WALL = registerBlock("polished_granite_wall",
             properties -> new WallBlock(properties.mapColor(MapColor.DIRT_BROWN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
                     .strength(1.5F, 6.0F).sounds(BlockSoundGroup.STONE)));
@@ -185,6 +201,14 @@ public class ModBlocks {
     public static final Block QUARTZ_BRICK_WALL = registerBlock("quartz_brick_wall",
             properties -> new WallBlock(properties.mapColor(MapColor.OFF_WHITE).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GOLD_TRAPDOOR = registerBlock("gold_trapdoor",
+            properties -> new TrapdoorBlock(BlockSetType.GOLD, properties.mapColor(MapColor.GOLD).strength(2F).requiresTool().nonOpaque()
+                    .sounds(BlockSoundGroup.METAL).allowsSpawning(Blocks::never)));
+
+    public static final Block GOLD_DOOR = registerBlock("gold_door",
+            properties -> new DoorBlock(BlockSetType.GOLD, properties.mapColor(MapColor.GOLD).strength(2F).requiresTool().nonOpaque()
+                    .sounds(BlockSoundGroup.METAL).allowsSpawning(Blocks::never)));
 
     public static final Block WHITE_CONCRETE_STAIRS = registerBlock("white_concrete_stairs",
             properties -> new StairsBlock(Blocks.WHITE_CONCRETE.getDefaultState(),properties.mapColor(MapColor.WHITE).instrument(NoteBlockInstrument.BASEDRUM)
@@ -417,6 +441,7 @@ public class ModBlocks {
 
             entries.add(ModBlocks.SMOOTH_BASALT_SLAB);
             entries.add(ModBlocks.SMOOTH_BASALT_STAIRS);
+            entries.add(ModBlocks.SMOOTH_BASALT_WALL);
 
             entries.add(ModBlocks.STONE_WALL);
             entries.add(ModBlocks.SMOOTH_STONE_STAIRS);
@@ -440,6 +465,11 @@ public class ModBlocks {
             entries.add(ModBlocks.END_STONE_WALL);
             entries.add(ModBlocks.END_STONE_STAIRS);
 
+            entries.add(ModBlocks.POLISHED_END_STONE);
+            entries.add(ModBlocks.POLISHED_END_STONE_WALL);
+            entries.add(ModBlocks.POLISHED_END_STONE_STAIRS);
+            entries.add(ModBlocks.POLISHED_END_STONE_SLAB);
+
             entries.add(ModBlocks.POLISHED_ANDESITE_WALL);
             entries.add(ModBlocks.POLISHED_DIORITE_WALL);
             entries.add(ModBlocks.POLISHED_GRANITE_WALL);
@@ -450,6 +480,9 @@ public class ModBlocks {
             entries.add(ModBlocks.QUARTZ_BRICK_SLAB);
             entries.add(ModBlocks.QUARTZ_BRICK_WALL);
             entries.add(ModBlocks.QUARTZ_BRICK_STAIRS);
+
+            entries.add(ModBlocks.GOLD_TRAPDOOR);
+            entries.add(ModBlocks.GOLD_DOOR);
 
             entries.add(ModBlocks.WHITE_CONCRETE_WALL);
             entries.add(ModBlocks.WHITE_CONCRETE_STAIRS);

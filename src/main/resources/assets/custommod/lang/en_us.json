@@ -45,6 +45,11 @@
   "block.custommod.end_stone_slab": "End Stone Slab",
   "block.custommod.end_stone_wall": "End Stone Wall",
 
+  "block.custommod.polished_end_stone": "Polished End Stone",
+  "block.custommod.polished_end_stone_stairs": "Polished End Stone Stairs",
+  "block.custommod.polished_end_stone_slab": "Polished End Stone Slab",
+  "block.custommod.polished_end_stone_wall": "Polished End Stone Wall",
+
   "block.custommod.polished_granite_wall": "Polished Granite Wall",
   "block.custommod.polished_andesite_wall": "Polished Andesite Wall",
   "block.custommod.polished_diorite_wall": "Polished Diorite Wall",
@@ -55,6 +60,9 @@
   "block.custommod.quartz_brick_stairs": "Quartz Brick Stairs",
   "block.custommod.quartz_brick_slab": "Quartz Brick Slab",
   "block.custommod.quartz_brick_wall": "Quartz Brick Wall",
+
+  "block.custommod.gold_trapdoor": "Gold Trapdoor",
+  "block.custommod.gold_door": "Gold Door",
 
   "block.custommod.white_concrete_stairs": "White Concrete Stairs",
   "block.custommod.white_concrete_slab": "White Concrete Slab",

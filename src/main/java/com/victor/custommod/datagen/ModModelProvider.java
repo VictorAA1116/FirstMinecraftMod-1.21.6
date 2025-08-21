@@ -32,6 +32,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool purpurPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.PURPUR_BLOCK);
         BlockStateModelGenerator.BlockTexturePool netherrackPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.NETHERRACK);
         BlockStateModelGenerator.BlockTexturePool endStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.END_STONE);
+        BlockStateModelGenerator.BlockTexturePool polishedEndStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POLISHED_END_STONE);
         BlockStateModelGenerator.BlockTexturePool polishedGranitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.POLISHED_GRANITE);
         BlockStateModelGenerator.BlockTexturePool polishedAndesitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.POLISHED_ANDESITE);
         BlockStateModelGenerator.BlockTexturePool polishedDioritePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.POLISHED_DIORITE);
@@ -101,6 +102,10 @@ public class ModModelProvider extends FabricModelProvider {
         endStonePool.stairs(ModBlocks.END_STONE_STAIRS);
         endStonePool.wall(ModBlocks.END_STONE_WALL);
 
+        polishedEndStonePool.slab(ModBlocks.POLISHED_END_STONE_SLAB);
+        polishedEndStonePool.stairs(ModBlocks.POLISHED_END_STONE_STAIRS);
+        polishedEndStonePool.wall(ModBlocks.POLISHED_END_STONE_WALL);
+
         polishedDioritePool.wall(ModBlocks.POLISHED_DIORITE_WALL);
         polishedGranitePool.wall(ModBlocks.POLISHED_GRANITE_WALL);
         polishedAndesitePool.wall(ModBlocks.POLISHED_ANDESITE_WALL);
@@ -111,6 +116,9 @@ public class ModModelProvider extends FabricModelProvider {
         quartzBrickPool.slab(ModBlocks.QUARTZ_BRICK_SLAB);
         quartzBrickPool.stairs(ModBlocks.QUARTZ_BRICK_STAIRS);
         quartzBrickPool.wall(ModBlocks.QUARTZ_BRICK_WALL);
+
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.GOLD_TRAPDOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.GOLD_DOOR);
 
         whiteConcretePool.slab(ModBlocks.WHITE_CONCRETE_SLAB);
         whiteConcretePool.stairs(ModBlocks.WHITE_CONCRETE_STAIRS);

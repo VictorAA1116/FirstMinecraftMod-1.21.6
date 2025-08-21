@@ -62,6 +62,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.END_STONE_STAIRS);
                         entries.add(ModBlocks.END_STONE_WALL);
 
+                        entries.add(ModBlocks.POLISHED_END_STONE);
+                        entries.add(ModBlocks.POLISHED_END_STONE_STAIRS);
+                        entries.add(ModBlocks.POLISHED_END_STONE_SLAB);
+                        entries.add(ModBlocks.POLISHED_END_STONE_WALL);
+
+                        entries.add(ModBlocks.GOLD_TRAPDOOR);
+                        entries.add(ModBlocks.GOLD_DOOR);
+
                         entries.add(ModBlocks.POLISHED_GRANITE_WALL);
                         entries.add(ModBlocks.POLISHED_ANDESITE_WALL);
                         entries.add(ModBlocks.POLISHED_DIORITE_WALL);

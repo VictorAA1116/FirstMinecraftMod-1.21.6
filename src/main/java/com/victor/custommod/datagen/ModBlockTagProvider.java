@@ -47,8 +47,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.END_STONE_SLAB)
                 .add(ModBlocks.END_STONE_STAIRS)
 
+                .add(ModBlocks.POLISHED_END_STONE)
+                .add(ModBlocks.POLISHED_END_STONE_SLAB)
+                .add(ModBlocks.POLISHED_END_STONE_STAIRS)
+
                 .add(ModBlocks.QUARTZ_BRICK_SLAB)
                 .add(ModBlocks.QUARTZ_BRICK_STAIRS)
+
+                .add(ModBlocks.GOLD_TRAPDOOR)
+                .add(ModBlocks.GOLD_DOOR)
 
                 .add(ModBlocks.WHITE_CONCRETE_SLAB)
                 .add(ModBlocks.WHITE_CONCRETE_STAIRS)
@@ -110,6 +117,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DARK_PRISMARINE_WALL)
                 .add(ModBlocks.NETHERRACK_WALL)
                 .add(ModBlocks.END_STONE_WALL)
+                .add(ModBlocks.POLISHED_END_STONE_WALL)
                 .add(ModBlocks.POLISHED_ANDESITE_WALL)
                 .add(ModBlocks.POLISHED_DIORITE_WALL)
                 .add(ModBlocks.POLISHED_GRANITE_WALL)
@@ -161,8 +169,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.END_STONE_SLAB)
                 .add(ModBlocks.END_STONE_STAIRS)
 
+                .add(ModBlocks.POLISHED_END_STONE)
+                .add(ModBlocks.POLISHED_END_STONE_SLAB)
+                .add(ModBlocks.POLISHED_END_STONE_STAIRS)
+
                 .add(ModBlocks.QUARTZ_BRICK_SLAB)
                 .add(ModBlocks.QUARTZ_BRICK_STAIRS)
+
+                .add(ModBlocks.GOLD_TRAPDOOR)
+                .add(ModBlocks.GOLD_DOOR)
 
                 .add(ModBlocks.WHITE_CONCRETE_SLAB)
                 .add(ModBlocks.WHITE_CONCRETE_STAIRS)
@@ -224,6 +239,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DARK_PRISMARINE_WALL)
                 .add(ModBlocks.NETHERRACK_WALL)
                 .add(ModBlocks.END_STONE_WALL)
+                .add(ModBlocks.POLISHED_END_STONE_WALL)
                 .add(ModBlocks.POLISHED_ANDESITE_WALL)
                 .add(ModBlocks.POLISHED_DIORITE_WALL)
                 .add(ModBlocks.POLISHED_GRANITE_WALL)
@@ -269,6 +285,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DARK_PRISMARINE_WALL)
                 .add(ModBlocks.NETHERRACK_WALL)
                 .add(ModBlocks.END_STONE_WALL)
+                .add(ModBlocks.POLISHED_END_STONE_WALL)
                 .add(ModBlocks.POLISHED_ANDESITE_WALL)
                 .add(ModBlocks.POLISHED_DIORITE_WALL)
                 .add(ModBlocks.POLISHED_GRANITE_WALL)

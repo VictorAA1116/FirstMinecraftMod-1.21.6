@@ -8,6 +8,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -51,6 +52,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .offerTo(exporter);
                 createStairsRecipe(ModBlocks.END_STONE_STAIRS, Ingredient.ofItem(Blocks.END_STONE))
                         .criterion(hasItem(Blocks.END_STONE), conditionsFromItem(Blocks.END_STONE))
+                        .offerTo(exporter);
+                createStairsRecipe(ModBlocks.POLISHED_END_STONE_STAIRS, Ingredient.ofItem(ModBlocks.POLISHED_END_STONE))
+                        .criterion(hasItem(ModBlocks.POLISHED_END_STONE), conditionsFromItem(ModBlocks.POLISHED_END_STONE))
                         .offerTo(exporter);
                 createStairsRecipe(ModBlocks.QUARTZ_BRICK_STAIRS, Ingredient.ofItem(Blocks.QUARTZ_BRICKS))
                         .criterion(hasItem(Blocks.QUARTZ_BRICKS), conditionsFromItem(Blocks.QUARTZ_BRICKS))
@@ -116,6 +120,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PRISMARINE_BRICK_WALL, Blocks.PRISMARINE_BRICKS);
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_WALL, Blocks.NETHERRACK);
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_WALL, Blocks.END_STONE);
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE_WALL, ModBlocks.POLISHED_END_STONE);
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_ANDESITE_WALL, Blocks.POLISHED_ANDESITE);
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_GRANITE_WALL, Blocks.POLISHED_GRANITE);
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DIORITE_WALL, Blocks.POLISHED_DIORITE);
@@ -148,6 +153,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_MUD_SLAB, Blocks.PACKED_MUD);
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERRACK_SLAB, Blocks.NETHERRACK);
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_SLAB, Blocks.END_STONE);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE_SLAB, ModBlocks.POLISHED_END_STONE);
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.QUARTZ_BRICK_SLAB, Blocks.QUARTZ_BRICKS);
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_CONCRETE_SLAB, Blocks.WHITE_CONCRETE);
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_CONCRETE_SLAB, Blocks.LIGHT_GRAY_CONCRETE);
@@ -222,6 +228,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_STAIRS, Blocks.END_STONE, 1);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_SLAB, Blocks.END_STONE, 2);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_STONE_WALL, Blocks.END_STONE, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE, Blocks.END_STONE, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE_STAIRS, Blocks.END_STONE, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE_SLAB, Blocks.END_STONE, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE_WALL, Blocks.END_STONE, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICKS, ModBlocks.POLISHED_END_STONE, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICK_STAIRS, ModBlocks.POLISHED_END_STONE, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICK_SLAB, ModBlocks.POLISHED_END_STONE, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICK_WALL, ModBlocks.POLISHED_END_STONE, 1);
 
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_GRANITE_WALL, Blocks.POLISHED_GRANITE, 1);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_DIORITE_WALL, Blocks.POLISHED_DIORITE, 1);
@@ -306,10 +322,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_CONCRETE_SLAB, Blocks.BROWN_CONCRETE, 2);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_CONCRETE_WALL, Blocks.BROWN_CONCRETE, 1);
 
+
+
                 createShaped(RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE, 4)
                         .pattern("RR")
                         .pattern("RR")
-                        .input('R', net.minecraft.block.Blocks.CALCITE)
+                        .input('R', Blocks.CALCITE)
                         .criterion(hasItem(Blocks.CALCITE), conditionsFromItem(Blocks.CALCITE))
                         .offerTo(exporter);
 
@@ -319,6 +337,36 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('R', ModBlocks.POLISHED_CALCITE)
                         .criterion(hasItem(ModBlocks.POLISHED_CALCITE), conditionsFromItem(ModBlocks.POLISHED_CALCITE))
                         .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, ModBlocks.POLISHED_END_STONE, 4)
+                        .pattern("RR")
+                        .pattern("RR")
+                        .input('R', Blocks.END_STONE)
+                        .criterion(hasItem(Blocks.END_STONE), conditionsFromItem(Blocks.END_STONE))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.MISC, Blocks.END_STONE_BRICKS, 4)
+                        .pattern("RR")
+                        .pattern("RR")
+                        .input('R', ModBlocks.POLISHED_END_STONE)
+                        .criterion(hasItem(ModBlocks.POLISHED_END_STONE), conditionsFromItem(ModBlocks.POLISHED_END_STONE))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.REDSTONE, ModBlocks.GOLD_TRAPDOOR, 1)
+                        .pattern("RR")
+                        .pattern("RR")
+                        .input('R', Items.GOLD_INGOT)
+                        .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.REDSTONE, ModBlocks.GOLD_DOOR, 3)
+                        .pattern("RR")
+                        .pattern("RR")
+                        .pattern("RR")
+                        .input('R', Items.GOLD_INGOT)
+                        .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                        .offerTo(exporter);
+
 
                 // createShapeless();
             }

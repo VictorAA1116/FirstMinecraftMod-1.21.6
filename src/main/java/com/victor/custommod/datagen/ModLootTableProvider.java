@@ -73,6 +73,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.END_STONE_SLAB, slabDrops(ModBlocks.END_STONE_SLAB));
         addDrop(ModBlocks.END_STONE_WALL);
 
+        addDrop(ModBlocks.POLISHED_END_STONE);
+        addDrop(ModBlocks.POLISHED_END_STONE_STAIRS);
+        addDrop(ModBlocks.POLISHED_END_STONE_SLAB, slabDrops(ModBlocks.POLISHED_END_STONE_SLAB));
+        addDrop(ModBlocks.POLISHED_END_STONE_WALL);
+
         addDrop(ModBlocks.POLISHED_DIORITE_WALL);
         addDrop(ModBlocks.POLISHED_ANDESITE_WALL);
         addDrop(ModBlocks.POLISHED_GRANITE_WALL);
@@ -84,6 +89,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.QUARTZ_BRICK_SLAB, slabDrops(ModBlocks.QUARTZ_BRICK_SLAB));
         addDrop(ModBlocks.QUARTZ_BRICK_STAIRS);
         addDrop(ModBlocks.QUARTZ_BRICK_WALL);
+
+        addDrop(ModBlocks.GOLD_TRAPDOOR);
+        addDrop(ModBlocks.GOLD_DOOR, doorDrops(ModBlocks.GOLD_DOOR));
 
         addDrop(ModBlocks.WHITE_CONCRETE_SLAB, slabDrops(ModBlocks.WHITE_CONCRETE_SLAB));
         addDrop(ModBlocks.WHITE_CONCRETE_STAIRS);
