@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "custommod:block/polished_end_stone",
+    "side": "custommod:block/polished_end_stone",
+    "top": "custommod:block/polished_end_stone"
+  }
+}
