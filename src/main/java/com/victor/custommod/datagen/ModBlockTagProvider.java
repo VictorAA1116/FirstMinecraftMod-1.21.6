@@ -1,6 +1,5 @@
 package com.victor.custommod.datagen;
 
-import com.victor.custommod.CustomMod;
 import com.victor.custommod.block.ModBlocks;
 import com.victor.custommod.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -105,6 +104,57 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BROWN_CONCRETE_SLAB)
                 .add(ModBlocks.BROWN_CONCRETE_STAIRS)
 
+                .add(ModBlocks.TERRACOTTA_SLAB)
+                .add(ModBlocks.TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.WHITE_TERRACOTTA_SLAB)
+                .add(ModBlocks.WHITE_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB)
+                .add(ModBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.GRAY_TERRACOTTA_SLAB)
+                .add(ModBlocks.GRAY_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.BLACK_TERRACOTTA_SLAB)
+                .add(ModBlocks.BLACK_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.RED_TERRACOTTA_SLAB)
+                .add(ModBlocks.RED_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.ORANGE_TERRACOTTA_SLAB)
+                .add(ModBlocks.ORANGE_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.YELLOW_TERRACOTTA_SLAB)
+                .add(ModBlocks.YELLOW_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.LIME_TERRACOTTA_SLAB)
+                .add(ModBlocks.LIME_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.GREEN_TERRACOTTA_SLAB)
+                .add(ModBlocks.GREEN_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.CYAN_TERRACOTTA_SLAB)
+                .add(ModBlocks.CYAN_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.LIGHT_BLUE_TERRACOTTA_SLAB)
+                .add(ModBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.BLUE_TERRACOTTA_SLAB)
+                .add(ModBlocks.BLUE_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.PURPLE_TERRACOTTA_SLAB)
+                .add(ModBlocks.PURPLE_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.MAGENTA_TERRACOTTA_SLAB)
+                .add(ModBlocks.MAGENTA_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.PINK_TERRACOTTA_SLAB)
+                .add(ModBlocks.PINK_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.BROWN_TERRACOTTA_SLAB)
+                .add(ModBlocks.BROWN_TERRACOTTA_STAIRS)
+
                 .add(ModBlocks.CALCITE_WALL)
                 .add(ModBlocks.POLISHED_CALCITE_WALL)
                 .add(ModBlocks.CALCITE_BRICK_WALL)
@@ -125,6 +175,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SMOOTH_QUARTZ_WALL)
                 .add(ModBlocks.SMOOTH_BASALT_WALL)
                 .add(ModBlocks.QUARTZ_BRICK_WALL)
+
                 .add(ModBlocks.WHITE_CONCRETE_WALL)
                 .add(ModBlocks.LIGHT_GRAY_CONCRETE_WALL)
                 .add(ModBlocks.GRAY_CONCRETE_WALL)
@@ -140,7 +191,25 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PURPLE_CONCRETE_WALL)
                 .add(ModBlocks.MAGENTA_CONCRETE_WALL)
                 .add(ModBlocks.PINK_CONCRETE_WALL)
-                .add(ModBlocks.BROWN_CONCRETE_WALL);
+                .add(ModBlocks.BROWN_CONCRETE_WALL)
+
+                .add(ModBlocks.TERRACOTTA_WALL)
+                .add(ModBlocks.WHITE_TERRACOTTA_WALL)
+                .add(ModBlocks.LIGHT_GRAY_TERRACOTTA_WALL)
+                .add(ModBlocks.GRAY_TERRACOTTA_WALL)
+                .add(ModBlocks.BLACK_TERRACOTTA_WALL)
+                .add(ModBlocks.RED_TERRACOTTA_WALL)
+                .add(ModBlocks.ORANGE_TERRACOTTA_WALL)
+                .add(ModBlocks.YELLOW_TERRACOTTA_WALL)
+                .add(ModBlocks.LIME_TERRACOTTA_WALL)
+                .add(ModBlocks.GREEN_TERRACOTTA_WALL)
+                .add(ModBlocks.CYAN_TERRACOTTA_WALL)
+                .add(ModBlocks.LIGHT_BLUE_TERRACOTTA_WALL)
+                .add(ModBlocks.BLUE_TERRACOTTA_WALL)
+                .add(ModBlocks.PURPLE_TERRACOTTA_WALL)
+                .add(ModBlocks.MAGENTA_TERRACOTTA_WALL)
+                .add(ModBlocks.PINK_TERRACOTTA_WALL)
+                .add(ModBlocks.BROWN_TERRACOTTA_WALL);
 
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE)
 
@@ -227,6 +296,57 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BROWN_CONCRETE_SLAB)
                 .add(ModBlocks.BROWN_CONCRETE_STAIRS)
 
+                .add(ModBlocks.TERRACOTTA_SLAB)
+                .add(ModBlocks.TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.WHITE_TERRACOTTA_SLAB)
+                .add(ModBlocks.WHITE_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB)
+                .add(ModBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.GRAY_TERRACOTTA_SLAB)
+                .add(ModBlocks.GRAY_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.BLACK_TERRACOTTA_SLAB)
+                .add(ModBlocks.BLACK_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.RED_TERRACOTTA_SLAB)
+                .add(ModBlocks.RED_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.ORANGE_TERRACOTTA_SLAB)
+                .add(ModBlocks.ORANGE_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.YELLOW_TERRACOTTA_SLAB)
+                .add(ModBlocks.YELLOW_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.LIME_TERRACOTTA_SLAB)
+                .add(ModBlocks.LIME_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.GREEN_TERRACOTTA_SLAB)
+                .add(ModBlocks.GREEN_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.CYAN_TERRACOTTA_SLAB)
+                .add(ModBlocks.CYAN_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.LIGHT_BLUE_TERRACOTTA_SLAB)
+                .add(ModBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.BLUE_TERRACOTTA_SLAB)
+                .add(ModBlocks.BLUE_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.PURPLE_TERRACOTTA_SLAB)
+                .add(ModBlocks.PURPLE_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.MAGENTA_TERRACOTTA_SLAB)
+                .add(ModBlocks.MAGENTA_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.PINK_TERRACOTTA_SLAB)
+                .add(ModBlocks.PINK_TERRACOTTA_STAIRS)
+
+                .add(ModBlocks.BROWN_TERRACOTTA_SLAB)
+                .add(ModBlocks.BROWN_TERRACOTTA_STAIRS)
+
                 .add(ModBlocks.CALCITE_WALL)
                 .add(ModBlocks.POLISHED_CALCITE_WALL)
                 .add(ModBlocks.CALCITE_BRICK_WALL)
@@ -247,6 +367,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SMOOTH_QUARTZ_WALL)
                 .add(ModBlocks.SMOOTH_BASALT_WALL)
                 .add(ModBlocks.QUARTZ_BRICK_WALL)
+
                 .add(ModBlocks.WHITE_CONCRETE_WALL)
                 .add(ModBlocks.LIGHT_GRAY_CONCRETE_WALL)
                 .add(ModBlocks.GRAY_CONCRETE_WALL)
@@ -262,7 +383,25 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PURPLE_CONCRETE_WALL)
                 .add(ModBlocks.MAGENTA_CONCRETE_WALL)
                 .add(ModBlocks.PINK_CONCRETE_WALL)
-                .add(ModBlocks.BROWN_CONCRETE_WALL);
+                .add(ModBlocks.BROWN_CONCRETE_WALL)
+
+                .add(ModBlocks.TERRACOTTA_WALL)
+                .add(ModBlocks.WHITE_TERRACOTTA_WALL)
+                .add(ModBlocks.LIGHT_GRAY_TERRACOTTA_WALL)
+                .add(ModBlocks.GRAY_TERRACOTTA_WALL)
+                .add(ModBlocks.BLACK_TERRACOTTA_WALL)
+                .add(ModBlocks.RED_TERRACOTTA_WALL)
+                .add(ModBlocks.ORANGE_TERRACOTTA_WALL)
+                .add(ModBlocks.YELLOW_TERRACOTTA_WALL)
+                .add(ModBlocks.LIME_TERRACOTTA_WALL)
+                .add(ModBlocks.GREEN_TERRACOTTA_WALL)
+                .add(ModBlocks.CYAN_TERRACOTTA_WALL)
+                .add(ModBlocks.LIGHT_BLUE_TERRACOTTA_WALL)
+                .add(ModBlocks.BLUE_TERRACOTTA_WALL)
+                .add(ModBlocks.PURPLE_TERRACOTTA_WALL)
+                .add(ModBlocks.MAGENTA_TERRACOTTA_WALL)
+                .add(ModBlocks.PINK_TERRACOTTA_WALL)
+                .add(ModBlocks.BROWN_TERRACOTTA_WALL);
 
         valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL);
 
@@ -293,6 +432,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SMOOTH_QUARTZ_WALL)
                 .add(ModBlocks.SMOOTH_BASALT_WALL)
                 .add(ModBlocks.QUARTZ_BRICK_WALL)
+
                 .add(ModBlocks.WHITE_CONCRETE_WALL)
                 .add(ModBlocks.LIGHT_GRAY_CONCRETE_WALL)
                 .add(ModBlocks.GRAY_CONCRETE_WALL)
@@ -308,6 +448,24 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PURPLE_CONCRETE_WALL)
                 .add(ModBlocks.MAGENTA_CONCRETE_WALL)
                 .add(ModBlocks.PINK_CONCRETE_WALL)
-                .add(ModBlocks.BROWN_CONCRETE_WALL);
+                .add(ModBlocks.BROWN_CONCRETE_WALL)
+
+                .add(ModBlocks.TERRACOTTA_WALL)
+                .add(ModBlocks.WHITE_TERRACOTTA_WALL)
+                .add(ModBlocks.LIGHT_GRAY_TERRACOTTA_WALL)
+                .add(ModBlocks.GRAY_TERRACOTTA_WALL)
+                .add(ModBlocks.BLACK_TERRACOTTA_WALL)
+                .add(ModBlocks.RED_TERRACOTTA_WALL)
+                .add(ModBlocks.ORANGE_TERRACOTTA_WALL)
+                .add(ModBlocks.YELLOW_TERRACOTTA_WALL)
+                .add(ModBlocks.LIME_TERRACOTTA_WALL)
+                .add(ModBlocks.GREEN_TERRACOTTA_WALL)
+                .add(ModBlocks.CYAN_TERRACOTTA_WALL)
+                .add(ModBlocks.LIGHT_BLUE_TERRACOTTA_WALL)
+                .add(ModBlocks.BLUE_TERRACOTTA_WALL)
+                .add(ModBlocks.PURPLE_TERRACOTTA_WALL)
+                .add(ModBlocks.MAGENTA_TERRACOTTA_WALL)
+                .add(ModBlocks.PINK_TERRACOTTA_WALL)
+                .add(ModBlocks.BROWN_TERRACOTTA_WALL);
     }
 }

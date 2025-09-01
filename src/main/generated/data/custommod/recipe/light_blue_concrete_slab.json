@@ -5,7 +5,6 @@
     "#": "minecraft:light_blue_concrete"
   },
   "pattern": [
-    "###",
     "###"
   ],
   "result": {

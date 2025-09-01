@@ -39,6 +39,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool quartzPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.QUARTZ_TEXTURE);
         BlockStateModelGenerator.BlockTexturePool smoothQuartzPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.SMOOTH_QUARTZ);
         BlockStateModelGenerator.BlockTexturePool quartzBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.QUARTZ_BRICKS);
+
         BlockStateModelGenerator.BlockTexturePool whiteConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.WHITE_CONCRETE);
         BlockStateModelGenerator.BlockTexturePool lightGrayConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIGHT_GRAY_CONCRETE);
         BlockStateModelGenerator.BlockTexturePool grayConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.GRAY_CONCRETE);
@@ -55,6 +56,24 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool magentaConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.MAGENTA_CONCRETE);
         BlockStateModelGenerator.BlockTexturePool pinkConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.PINK_CONCRETE);
         BlockStateModelGenerator.BlockTexturePool brownConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.BROWN_CONCRETE);
+
+        BlockStateModelGenerator.BlockTexturePool terracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.TERRACOTTA);
+        BlockStateModelGenerator.BlockTexturePool whiteTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.WHITE_TERRACOTTA);
+        BlockStateModelGenerator.BlockTexturePool lightGrayTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIGHT_GRAY_TERRACOTTA);
+        BlockStateModelGenerator.BlockTexturePool grayTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.GRAY_TERRACOTTA);
+        BlockStateModelGenerator.BlockTexturePool blackTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.BLACK_TERRACOTTA);
+        BlockStateModelGenerator.BlockTexturePool redTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.RED_TERRACOTTA);
+        BlockStateModelGenerator.BlockTexturePool orangeTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.ORANGE_TERRACOTTA);
+        BlockStateModelGenerator.BlockTexturePool yellowTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.YELLOW_TERRACOTTA);
+        BlockStateModelGenerator.BlockTexturePool limeTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIME_TERRACOTTA);
+        BlockStateModelGenerator.BlockTexturePool greenTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.GREEN_TERRACOTTA);
+        BlockStateModelGenerator.BlockTexturePool cyanTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.CYAN_TERRACOTTA);
+        BlockStateModelGenerator.BlockTexturePool lightBlueTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIGHT_BLUE_TERRACOTTA);
+        BlockStateModelGenerator.BlockTexturePool blueTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.BLUE_TERRACOTTA);
+        BlockStateModelGenerator.BlockTexturePool purpleTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.PURPLE_TERRACOTTA);
+        BlockStateModelGenerator.BlockTexturePool magentaTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.MAGENTA_TERRACOTTA);
+        BlockStateModelGenerator.BlockTexturePool pinkTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.PINK_TERRACOTTA);
+        BlockStateModelGenerator.BlockTexturePool brownTerracottaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.BROWN_TERRACOTTA);
 
         calcitePool.stairs(ModBlocks.CALCITE_STAIRS);
         calcitePool.slab(ModBlocks.CALCITE_SLAB);
@@ -183,6 +202,74 @@ public class ModModelProvider extends FabricModelProvider {
         brownConcretePool.slab(ModBlocks.BROWN_CONCRETE_SLAB);
         brownConcretePool.stairs(ModBlocks.BROWN_CONCRETE_STAIRS);
         brownConcretePool.wall(ModBlocks.BROWN_CONCRETE_WALL);
+
+        terracottaPool.slab(ModBlocks.TERRACOTTA_SLAB);
+        terracottaPool.stairs(ModBlocks.TERRACOTTA_STAIRS);
+        terracottaPool.wall(ModBlocks.TERRACOTTA_WALL);
+
+        whiteTerracottaPool.slab(ModBlocks.WHITE_TERRACOTTA_SLAB);
+        whiteTerracottaPool.stairs(ModBlocks.WHITE_TERRACOTTA_STAIRS);
+        whiteTerracottaPool.wall(ModBlocks.WHITE_TERRACOTTA_WALL);
+
+        lightGrayTerracottaPool.slab(ModBlocks.LIGHT_GRAY_TERRACOTTA_SLAB);
+        lightGrayTerracottaPool.stairs(ModBlocks.LIGHT_GRAY_TERRACOTTA_STAIRS);
+        lightGrayTerracottaPool.wall(ModBlocks.LIGHT_GRAY_TERRACOTTA_WALL);
+
+        grayTerracottaPool.slab(ModBlocks.GRAY_TERRACOTTA_SLAB);
+        grayTerracottaPool.stairs(ModBlocks.GRAY_TERRACOTTA_STAIRS);
+        grayTerracottaPool.wall(ModBlocks.GRAY_TERRACOTTA_WALL);
+
+        blackTerracottaPool.slab(ModBlocks.BLACK_TERRACOTTA_SLAB);
+        blackTerracottaPool.stairs(ModBlocks.BLACK_TERRACOTTA_STAIRS);
+        blackTerracottaPool.wall(ModBlocks.BLACK_TERRACOTTA_WALL);
+
+        redTerracottaPool.slab(ModBlocks.RED_TERRACOTTA_SLAB);
+        redTerracottaPool.stairs(ModBlocks.RED_TERRACOTTA_STAIRS);
+        redTerracottaPool.wall(ModBlocks.RED_TERRACOTTA_WALL);
+
+        orangeTerracottaPool.slab(ModBlocks.ORANGE_TERRACOTTA_SLAB);
+        orangeTerracottaPool.stairs(ModBlocks.ORANGE_TERRACOTTA_STAIRS);
+        orangeTerracottaPool.wall(ModBlocks.ORANGE_TERRACOTTA_WALL);
+
+        yellowTerracottaPool.slab(ModBlocks.YELLOW_TERRACOTTA_SLAB);
+        yellowTerracottaPool.stairs(ModBlocks.YELLOW_TERRACOTTA_STAIRS);
+        yellowTerracottaPool.wall(ModBlocks.YELLOW_TERRACOTTA_WALL);
+
+        limeTerracottaPool.slab(ModBlocks.LIME_TERRACOTTA_SLAB);
+        limeTerracottaPool.stairs(ModBlocks.LIME_TERRACOTTA_STAIRS);
+        limeTerracottaPool.wall(ModBlocks.LIME_TERRACOTTA_WALL);
+
+        greenTerracottaPool.slab(ModBlocks.GREEN_TERRACOTTA_SLAB);
+        greenTerracottaPool.stairs(ModBlocks.GREEN_TERRACOTTA_STAIRS);
+        greenTerracottaPool.wall(ModBlocks.GREEN_TERRACOTTA_WALL);
+
+        cyanTerracottaPool.slab(ModBlocks.CYAN_TERRACOTTA_SLAB);
+        cyanTerracottaPool.stairs(ModBlocks.CYAN_TERRACOTTA_STAIRS);
+        cyanTerracottaPool.wall(ModBlocks.CYAN_TERRACOTTA_WALL);
+
+        lightBlueTerracottaPool.slab(ModBlocks.LIGHT_BLUE_TERRACOTTA_SLAB);
+        lightBlueTerracottaPool.stairs(ModBlocks.LIGHT_BLUE_TERRACOTTA_STAIRS);
+        lightBlueTerracottaPool.wall(ModBlocks.LIGHT_BLUE_TERRACOTTA_WALL);
+
+        blueTerracottaPool.slab(ModBlocks.BLUE_TERRACOTTA_SLAB);
+        blueTerracottaPool.stairs(ModBlocks.BLUE_TERRACOTTA_STAIRS);
+        blueTerracottaPool.wall(ModBlocks.BLUE_TERRACOTTA_WALL);
+
+        purpleTerracottaPool.slab(ModBlocks.PURPLE_TERRACOTTA_SLAB);
+        purpleTerracottaPool.stairs(ModBlocks.PURPLE_TERRACOTTA_STAIRS);
+        purpleTerracottaPool.wall(ModBlocks.PURPLE_TERRACOTTA_WALL);
+
+        magentaTerracottaPool.slab(ModBlocks.MAGENTA_TERRACOTTA_SLAB);
+        magentaTerracottaPool.stairs(ModBlocks.MAGENTA_TERRACOTTA_STAIRS);
+        magentaTerracottaPool.wall(ModBlocks.MAGENTA_TERRACOTTA_WALL);
+
+        pinkTerracottaPool.slab(ModBlocks.PINK_TERRACOTTA_SLAB);
+        pinkTerracottaPool.stairs(ModBlocks.PINK_TERRACOTTA_STAIRS);
+        pinkTerracottaPool.wall(ModBlocks.PINK_TERRACOTTA_WALL);
+
+        brownTerracottaPool.slab(ModBlocks.BROWN_TERRACOTTA_SLAB);
+        brownTerracottaPool.stairs(ModBlocks.BROWN_TERRACOTTA_STAIRS);
+        brownTerracottaPool.wall(ModBlocks.BROWN_TERRACOTTA_WALL);
     }
 
     @Override

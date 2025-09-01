@@ -35,6 +35,23 @@
     "custommod:purple_concrete_wall",
     "custommod:magenta_concrete_wall",
     "custommod:pink_concrete_wall",
-    "custommod:brown_concrete_wall"
+    "custommod:brown_concrete_wall",
+    "custommod:terracotta_wall",
+    "custommod:white_terracotta_wall",
+    "custommod:light_gray_terracotta_wall",
+    "custommod:gray_terracotta_wall",
+    "custommod:black_terracotta_wall",
+    "custommod:red_terracotta_wall",
+    "custommod:orange_terracotta_wall",
+    "custommod:yellow_terracotta_wall",
+    "custommod:lime_terracotta_wall",
+    "custommod:green_terracotta_wall",
+    "custommod:cyan_terracotta_wall",
+    "custommod:light_blue_terracotta_wall",
+    "custommod:blue_terracotta_wall",
+    "custommod:purple_terracotta_wall",
+    "custommod:magenta_terracotta_wall",
+    "custommod:pink_terracotta_wall",
+    "custommod:brown_terracotta_wall"
   ]
 }
