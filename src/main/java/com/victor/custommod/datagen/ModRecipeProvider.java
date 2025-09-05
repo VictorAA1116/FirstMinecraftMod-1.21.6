@@ -158,6 +158,55 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createStairsRecipe(ModBlocks.BROWN_TERRACOTTA_STAIRS, Ingredient.ofItem(Blocks.BROWN_TERRACOTTA))
                         .criterion(hasItem(Blocks.BROWN_TERRACOTTA), conditionsFromItem(Blocks.BROWN_TERRACOTTA))
                         .offerTo(exporter);
+                createStairsRecipe(ModBlocks.WHITE_GLAZED_TERRACOTTA_STAIRS, Ingredient.ofItem(Blocks.WHITE_GLAZED_TERRACOTTA))
+                        .criterion(hasItem(Blocks.WHITE_GLAZED_TERRACOTTA), conditionsFromItem(Blocks.WHITE_GLAZED_TERRACOTTA))
+                        .offerTo(exporter);
+                createStairsRecipe(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS, Ingredient.ofItem(Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA))
+                        .criterion(hasItem(Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA), conditionsFromItem(Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA))
+                        .offerTo(exporter);
+                createStairsRecipe(ModBlocks.GRAY_GLAZED_TERRACOTTA_STAIRS, Ingredient.ofItem(Blocks.GRAY_GLAZED_TERRACOTTA))
+                        .criterion(hasItem(Blocks.GRAY_GLAZED_TERRACOTTA), conditionsFromItem(Blocks.GRAY_GLAZED_TERRACOTTA))
+                        .offerTo(exporter);
+                createStairsRecipe(ModBlocks.BLACK_GLAZED_TERRACOTTA_STAIRS, Ingredient.ofItem(Blocks.BLACK_GLAZED_TERRACOTTA))
+                        .criterion(hasItem(Blocks.BLACK_GLAZED_TERRACOTTA), conditionsFromItem(Blocks.BLACK_GLAZED_TERRACOTTA))
+                        .offerTo(exporter);
+                createStairsRecipe(ModBlocks.RED_GLAZED_TERRACOTTA_STAIRS, Ingredient.ofItem(Blocks.RED_GLAZED_TERRACOTTA))
+                        .criterion(hasItem(Blocks.RED_GLAZED_TERRACOTTA), conditionsFromItem(Blocks.RED_GLAZED_TERRACOTTA))
+                        .offerTo(exporter);
+                createStairsRecipe(ModBlocks.ORANGE_GLAZED_TERRACOTTA_STAIRS, Ingredient.ofItem(Blocks.ORANGE_GLAZED_TERRACOTTA))
+                        .criterion(hasItem(Blocks.ORANGE_GLAZED_TERRACOTTA), conditionsFromItem(Blocks.ORANGE_GLAZED_TERRACOTTA))
+                        .offerTo(exporter);
+                createStairsRecipe(ModBlocks.YELLOW_GLAZED_TERRACOTTA_STAIRS, Ingredient.ofItem(Blocks.YELLOW_GLAZED_TERRACOTTA))
+                        .criterion(hasItem(Blocks.YELLOW_GLAZED_TERRACOTTA), conditionsFromItem(Blocks.YELLOW_GLAZED_TERRACOTTA))
+                        .offerTo(exporter);
+                createStairsRecipe(ModBlocks.LIME_GLAZED_TERRACOTTA_STAIRS, Ingredient.ofItem(Blocks.LIME_GLAZED_TERRACOTTA))
+                        .criterion(hasItem(Blocks.LIME_GLAZED_TERRACOTTA), conditionsFromItem(Blocks.LIME_GLAZED_TERRACOTTA))
+                        .offerTo(exporter);
+                createStairsRecipe(ModBlocks.GREEN_GLAZED_TERRACOTTA_STAIRS, Ingredient.ofItem(Blocks.GREEN_GLAZED_TERRACOTTA))
+                        .criterion(hasItem(Blocks.GREEN_GLAZED_TERRACOTTA), conditionsFromItem(Blocks.GREEN_GLAZED_TERRACOTTA))
+                        .offerTo(exporter);
+                createStairsRecipe(ModBlocks.CYAN_GLAZED_TERRACOTTA_STAIRS, Ingredient.ofItem(Blocks.CYAN_GLAZED_TERRACOTTA))
+                        .criterion(hasItem(Blocks.CYAN_GLAZED_TERRACOTTA), conditionsFromItem(Blocks.CYAN_GLAZED_TERRACOTTA))
+                        .offerTo(exporter);
+                createStairsRecipe(ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_STAIRS, Ingredient.ofItem(Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA))
+                        .criterion(hasItem(Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA), conditionsFromItem(Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA))
+                        .offerTo(exporter);
+                createStairsRecipe(ModBlocks.BLUE_GLAZED_TERRACOTTA_STAIRS, Ingredient.ofItem(Blocks.BLUE_GLAZED_TERRACOTTA))
+                        .criterion(hasItem(Blocks.BLUE_GLAZED_TERRACOTTA), conditionsFromItem(Blocks.BLUE_GLAZED_TERRACOTTA))
+                        .offerTo(exporter);
+                createStairsRecipe(ModBlocks.PURPLE_GLAZED_TERRACOTTA_STAIRS, Ingredient.ofItem(Blocks.PURPLE_GLAZED_TERRACOTTA))
+                        .criterion(hasItem(Blocks.PURPLE_GLAZED_TERRACOTTA), conditionsFromItem(Blocks.PURPLE_GLAZED_TERRACOTTA))
+                        .offerTo(exporter);
+                createStairsRecipe(ModBlocks.MAGENTA_GLAZED_TERRACOTTA_STAIRS, Ingredient.ofItem(Blocks.MAGENTA_GLAZED_TERRACOTTA))
+                        .criterion(hasItem(Blocks.MAGENTA_GLAZED_TERRACOTTA), conditionsFromItem(Blocks.MAGENTA_GLAZED_TERRACOTTA))
+                        .offerTo(exporter);
+                createStairsRecipe(ModBlocks.PINK_GLAZED_TERRACOTTA_STAIRS, Ingredient.ofItem(Blocks.PINK_GLAZED_TERRACOTTA))
+                        .criterion(hasItem(Blocks.PINK_GLAZED_TERRACOTTA), conditionsFromItem(Blocks.PINK_GLAZED_TERRACOTTA))
+                        .offerTo(exporter);
+                createStairsRecipe(ModBlocks.BROWN_GLAZED_TERRACOTTA_STAIRS, Ingredient.ofItem(Blocks.BROWN_GLAZED_TERRACOTTA))
+                        .criterion(hasItem(Blocks.BROWN_GLAZED_TERRACOTTA), conditionsFromItem(Blocks.BROWN_GLAZED_TERRACOTTA))
+                        .offerTo(exporter);
+
 
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_WALL, Blocks.CALCITE);
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_WALL, ModBlocks.POLISHED_CALCITE);
@@ -215,6 +264,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_TERRACOTTA_WALL, Blocks.PINK_TERRACOTTA);
                 offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_TERRACOTTA_WALL, Blocks.BROWN_TERRACOTTA);
 
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_GLAZED_TERRACOTTA_WALL, Blocks.WHITE_GLAZED_TERRACOTTA);
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_WALL, Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA);
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_GLAZED_TERRACOTTA_WALL, Blocks.GRAY_GLAZED_TERRACOTTA);
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_GLAZED_TERRACOTTA_WALL, Blocks.BLACK_GLAZED_TERRACOTTA);
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_GLAZED_TERRACOTTA_WALL, Blocks.RED_GLAZED_TERRACOTTA);
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_GLAZED_TERRACOTTA_WALL, Blocks.ORANGE_GLAZED_TERRACOTTA);
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_GLAZED_TERRACOTTA_WALL, Blocks.YELLOW_GLAZED_TERRACOTTA);
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_GLAZED_TERRACOTTA_WALL, Blocks.LIME_GLAZED_TERRACOTTA);
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_GLAZED_TERRACOTTA_WALL, Blocks.GREEN_GLAZED_TERRACOTTA);
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_GLAZED_TERRACOTTA_WALL, Blocks.CYAN_GLAZED_TERRACOTTA);
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_WALL, Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA);
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_GLAZED_TERRACOTTA_WALL, Blocks.BLUE_GLAZED_TERRACOTTA);
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_GLAZED_TERRACOTTA_WALL, Blocks.PURPLE_GLAZED_TERRACOTTA);
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_GLAZED_TERRACOTTA_WALL, Blocks.MAGENTA_GLAZED_TERRACOTTA);
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_GLAZED_TERRACOTTA_WALL, Blocks.PINK_GLAZED_TERRACOTTA);
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_GLAZED_TERRACOTTA_WALL, Blocks.BROWN_GLAZED_TERRACOTTA);
+
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_SLAB, Blocks.CALCITE);
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE_SLAB, ModBlocks.POLISHED_CALCITE);
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_BRICK_SLAB, ModBlocks.CALCITE_BRICKS);
@@ -260,6 +326,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_TERRACOTTA_SLAB, Blocks.MAGENTA_TERRACOTTA);
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_TERRACOTTA_SLAB, Blocks.PINK_TERRACOTTA);
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_TERRACOTTA_SLAB, Blocks.BROWN_TERRACOTTA);
+
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB, Blocks.WHITE_GLAZED_TERRACOTTA);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB, Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB, Blocks.GRAY_GLAZED_TERRACOTTA);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_GLAZED_TERRACOTTA_SLAB, Blocks.BLACK_GLAZED_TERRACOTTA);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_GLAZED_TERRACOTTA_SLAB, Blocks.RED_GLAZED_TERRACOTTA);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB, Blocks.ORANGE_GLAZED_TERRACOTTA);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB, Blocks.YELLOW_GLAZED_TERRACOTTA);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_GLAZED_TERRACOTTA_SLAB, Blocks.LIME_GLAZED_TERRACOTTA);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_GLAZED_TERRACOTTA_SLAB, Blocks.GREEN_GLAZED_TERRACOTTA);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_GLAZED_TERRACOTTA_SLAB, Blocks.CYAN_GLAZED_TERRACOTTA);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB, Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_GLAZED_TERRACOTTA_SLAB, Blocks.BLUE_GLAZED_TERRACOTTA);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB, Blocks.PURPLE_GLAZED_TERRACOTTA);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB, Blocks.MAGENTA_GLAZED_TERRACOTTA);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_GLAZED_TERRACOTTA_SLAB, Blocks.PINK_GLAZED_TERRACOTTA);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_GLAZED_TERRACOTTA_SLAB, Blocks.BROWN_GLAZED_TERRACOTTA);
 
                 createButtonRecipe(ModBlocks.CALCITE_BUTTON, Ingredient.ofItem(Blocks.CALCITE))
                         .criterion(hasItem(Blocks.CALCITE), conditionsFromItem(Blocks.CALCITE))
@@ -478,6 +561,70 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_TERRACOTTA_STAIRS, Blocks.BROWN_TERRACOTTA, 1);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_TERRACOTTA_SLAB, Blocks.BROWN_TERRACOTTA, 2);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_TERRACOTTA_WALL, Blocks.BROWN_TERRACOTTA, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_GLAZED_TERRACOTTA_STAIRS, Blocks.WHITE_GLAZED_TERRACOTTA, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB, Blocks.WHITE_GLAZED_TERRACOTTA, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_GLAZED_TERRACOTTA_WALL, Blocks.WHITE_GLAZED_TERRACOTTA, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS, Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB, Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_WALL, Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_GLAZED_TERRACOTTA_STAIRS, Blocks.GRAY_GLAZED_TERRACOTTA, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB, Blocks.GRAY_GLAZED_TERRACOTTA, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_GLAZED_TERRACOTTA_WALL, Blocks.GRAY_GLAZED_TERRACOTTA, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_GLAZED_TERRACOTTA_STAIRS, Blocks.BLACK_GLAZED_TERRACOTTA, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_GLAZED_TERRACOTTA_SLAB, Blocks.BLACK_GLAZED_TERRACOTTA, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_GLAZED_TERRACOTTA_WALL, Blocks.BLACK_GLAZED_TERRACOTTA, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_GLAZED_TERRACOTTA_STAIRS, Blocks.RED_GLAZED_TERRACOTTA, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_GLAZED_TERRACOTTA_SLAB, Blocks.RED_GLAZED_TERRACOTTA, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_GLAZED_TERRACOTTA_WALL, Blocks.RED_GLAZED_TERRACOTTA, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_GLAZED_TERRACOTTA_STAIRS, Blocks.ORANGE_GLAZED_TERRACOTTA, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB, Blocks.ORANGE_GLAZED_TERRACOTTA, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_GLAZED_TERRACOTTA_WALL, Blocks.ORANGE_GLAZED_TERRACOTTA, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_GLAZED_TERRACOTTA_STAIRS, Blocks.YELLOW_GLAZED_TERRACOTTA, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB, Blocks.YELLOW_GLAZED_TERRACOTTA, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_GLAZED_TERRACOTTA_WALL, Blocks.YELLOW_GLAZED_TERRACOTTA, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_GLAZED_TERRACOTTA_STAIRS, Blocks.LIME_GLAZED_TERRACOTTA, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_GLAZED_TERRACOTTA_SLAB, Blocks.LIME_GLAZED_TERRACOTTA, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_GLAZED_TERRACOTTA_WALL, Blocks.LIME_GLAZED_TERRACOTTA, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_GLAZED_TERRACOTTA_STAIRS, Blocks.GREEN_GLAZED_TERRACOTTA, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_GLAZED_TERRACOTTA_SLAB, Blocks.GREEN_GLAZED_TERRACOTTA, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_GLAZED_TERRACOTTA_WALL, Blocks.GREEN_GLAZED_TERRACOTTA, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_GLAZED_TERRACOTTA_STAIRS, Blocks.CYAN_GLAZED_TERRACOTTA, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_GLAZED_TERRACOTTA_SLAB, Blocks.CYAN_GLAZED_TERRACOTTA, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_GLAZED_TERRACOTTA_WALL, Blocks.CYAN_GLAZED_TERRACOTTA, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_STAIRS, Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB, Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_WALL, Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_GLAZED_TERRACOTTA_STAIRS, Blocks.BLUE_GLAZED_TERRACOTTA, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_GLAZED_TERRACOTTA_SLAB, Blocks.BLUE_GLAZED_TERRACOTTA, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_GLAZED_TERRACOTTA_WALL, Blocks.BLUE_GLAZED_TERRACOTTA, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_GLAZED_TERRACOTTA_STAIRS, Blocks.PURPLE_GLAZED_TERRACOTTA, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB, Blocks.PURPLE_GLAZED_TERRACOTTA, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_GLAZED_TERRACOTTA_WALL, Blocks.PURPLE_GLAZED_TERRACOTTA, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_GLAZED_TERRACOTTA_STAIRS, Blocks.MAGENTA_GLAZED_TERRACOTTA, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB, Blocks.MAGENTA_GLAZED_TERRACOTTA, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_GLAZED_TERRACOTTA_WALL, Blocks.MAGENTA_GLAZED_TERRACOTTA, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_GLAZED_TERRACOTTA_STAIRS, Blocks.PINK_GLAZED_TERRACOTTA, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_GLAZED_TERRACOTTA_SLAB, Blocks.PINK_GLAZED_TERRACOTTA, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_GLAZED_TERRACOTTA_WALL, Blocks.PINK_GLAZED_TERRACOTTA, 1);
+
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_GLAZED_TERRACOTTA_STAIRS, Blocks.BROWN_GLAZED_TERRACOTTA, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_GLAZED_TERRACOTTA_SLAB, Blocks.BROWN_GLAZED_TERRACOTTA, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_GLAZED_TERRACOTTA_WALL, Blocks.BROWN_GLAZED_TERRACOTTA, 1);
 
 
 

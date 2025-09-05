@@ -212,6 +212,70 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BROWN_TERRACOTTA_SLAB);
                         entries.add(ModBlocks.BROWN_TERRACOTTA_STAIRS);
                         entries.add(ModBlocks.BROWN_TERRACOTTA_WALL);
+
+                        entries.add(ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.WHITE_GLAZED_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.WHITE_GLAZED_TERRACOTTA_WALL);
+
+                        entries.add(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_WALL);
+
+                        entries.add(ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.GRAY_GLAZED_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.GRAY_GLAZED_TERRACOTTA_WALL);
+
+                        entries.add(ModBlocks.BLACK_GLAZED_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.BLACK_GLAZED_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.BLACK_GLAZED_TERRACOTTA_WALL);
+
+                        entries.add(ModBlocks.RED_GLAZED_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.RED_GLAZED_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.RED_GLAZED_TERRACOTTA_WALL);
+
+                        entries.add(ModBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.ORANGE_GLAZED_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.ORANGE_GLAZED_TERRACOTTA_WALL);
+
+                        entries.add(ModBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.YELLOW_GLAZED_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.YELLOW_GLAZED_TERRACOTTA_WALL);
+
+                        entries.add(ModBlocks.LIME_GLAZED_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.LIME_GLAZED_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.LIME_GLAZED_TERRACOTTA_WALL);
+
+                        entries.add(ModBlocks.GREEN_GLAZED_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.GREEN_GLAZED_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.GREEN_GLAZED_TERRACOTTA_WALL);
+
+                        entries.add(ModBlocks.CYAN_GLAZED_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.CYAN_GLAZED_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.CYAN_GLAZED_TERRACOTTA_WALL);
+
+                        entries.add(ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_WALL);
+
+                        entries.add(ModBlocks.BLUE_GLAZED_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.BLUE_GLAZED_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.BLUE_GLAZED_TERRACOTTA_WALL);
+
+                        entries.add(ModBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.PURPLE_GLAZED_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.PURPLE_GLAZED_TERRACOTTA_WALL);
+
+                        entries.add(ModBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.MAGENTA_GLAZED_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.MAGENTA_GLAZED_TERRACOTTA_WALL);
+
+                        entries.add(ModBlocks.PINK_GLAZED_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.PINK_GLAZED_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.PINK_GLAZED_TERRACOTTA_WALL);
+
+                        entries.add(ModBlocks.BROWN_GLAZED_TERRACOTTA_SLAB);
+                        entries.add(ModBlocks.BROWN_GLAZED_TERRACOTTA_STAIRS);
+                        entries.add(ModBlocks.BROWN_GLAZED_TERRACOTTA_WALL);
                     })
                     .build());
 

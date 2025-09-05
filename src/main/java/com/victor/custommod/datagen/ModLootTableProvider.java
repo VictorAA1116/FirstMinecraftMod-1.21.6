@@ -216,6 +216,66 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BROWN_TERRACOTTA_SLAB, slabDrops(ModBlocks.BROWN_TERRACOTTA_SLAB));
         addDrop(ModBlocks.BROWN_TERRACOTTA_STAIRS);
         addDrop(ModBlocks.BROWN_TERRACOTTA_WALL);
+
+        addDrop(ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB, slabDrops(ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB));
+        addDrop(ModBlocks.WHITE_GLAZED_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.WHITE_GLAZED_TERRACOTTA_WALL);
+
+        addDrop(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB, slabDrops(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB));
+        addDrop(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_WALL);
+
+        addDrop(ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB, slabDrops(ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB));
+        addDrop(ModBlocks.GRAY_GLAZED_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.GRAY_GLAZED_TERRACOTTA_WALL);
+
+        addDrop(ModBlocks.BLACK_GLAZED_TERRACOTTA_SLAB, slabDrops(ModBlocks.BLACK_GLAZED_TERRACOTTA_SLAB));
+        addDrop(ModBlocks.BLACK_GLAZED_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.BLACK_GLAZED_TERRACOTTA_WALL);
+
+        addDrop(ModBlocks.RED_GLAZED_TERRACOTTA_SLAB, slabDrops(ModBlocks.RED_GLAZED_TERRACOTTA_SLAB));
+        addDrop(ModBlocks.RED_GLAZED_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.RED_GLAZED_TERRACOTTA_WALL);
+
+        addDrop(ModBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB, slabDrops(ModBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB));
+        addDrop(ModBlocks.ORANGE_GLAZED_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.ORANGE_GLAZED_TERRACOTTA_WALL);
+
+        addDrop(ModBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB, slabDrops(ModBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB));
+        addDrop(ModBlocks.YELLOW_GLAZED_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.YELLOW_GLAZED_TERRACOTTA_WALL);
+
+        addDrop(ModBlocks.LIME_GLAZED_TERRACOTTA_SLAB, slabDrops(ModBlocks.LIME_GLAZED_TERRACOTTA_SLAB));
+        addDrop(ModBlocks.LIME_GLAZED_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.LIME_GLAZED_TERRACOTTA_WALL);
+
+        addDrop(ModBlocks.GREEN_GLAZED_TERRACOTTA_SLAB, slabDrops(ModBlocks.GREEN_GLAZED_TERRACOTTA_SLAB));
+        addDrop(ModBlocks.GREEN_GLAZED_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.GREEN_GLAZED_TERRACOTTA_WALL);
+
+        addDrop(ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB, slabDrops(ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB));
+        addDrop(ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_WALL);
+
+        addDrop(ModBlocks.BLUE_GLAZED_TERRACOTTA_SLAB, slabDrops(ModBlocks.BLUE_GLAZED_TERRACOTTA_SLAB));
+        addDrop(ModBlocks.BLUE_GLAZED_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.BLUE_GLAZED_TERRACOTTA_WALL);
+
+        addDrop(ModBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB, slabDrops(ModBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB));
+        addDrop(ModBlocks.PURPLE_GLAZED_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.PURPLE_GLAZED_TERRACOTTA_WALL);
+
+        addDrop(ModBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB, slabDrops(ModBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB));
+        addDrop(ModBlocks.MAGENTA_GLAZED_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.MAGENTA_GLAZED_TERRACOTTA_WALL);
+
+        addDrop(ModBlocks.PINK_GLAZED_TERRACOTTA_SLAB, slabDrops(ModBlocks.PINK_GLAZED_TERRACOTTA_SLAB));
+        addDrop(ModBlocks.PINK_GLAZED_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.PINK_GLAZED_TERRACOTTA_WALL);
+
+        addDrop(ModBlocks.BROWN_GLAZED_TERRACOTTA_SLAB, slabDrops(ModBlocks.BROWN_GLAZED_TERRACOTTA_SLAB));
+        addDrop(ModBlocks.BROWN_GLAZED_TERRACOTTA_STAIRS);
+        addDrop(ModBlocks.BROWN_GLAZED_TERRACOTTA_WALL);
     }
 
     /*
