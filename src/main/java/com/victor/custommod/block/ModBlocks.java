@@ -609,6 +609,10 @@ public class ModBlocks {
             properties -> new WallBlock(properties.mapColor(MapColor.TERRACOTTA_BROWN).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.25F, 4.2F).sounds(BlockSoundGroup.STONE)));
 
+    public static final Block WHITE_GLAZED_TERRACOTTA_TEXTURE = registerBlock("white_glazed_terracotta_texture",
+            properties -> new Block(properties.mapColor(DyeColor.WHITE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
     public static final Block WHITE_GLAZED_TERRACOTTA_STAIRS = registerBlock("white_glazed_terracotta_stairs",
             properties -> new StairsBlock(Blocks.WHITE_GLAZED_TERRACOTTA.getDefaultState(),properties.mapColor(DyeColor.WHITE).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
@@ -620,6 +624,10 @@ public class ModBlocks {
     public static final Block WHITE_GLAZED_TERRACOTTA_WALL = registerBlock("white_glazed_terracotta_wall",
             properties -> new WallBlock(properties.mapColor(DyeColor.WHITE).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
+
+    public static final Block LIGHT_GRAY_GLAZED_TERRACOTTA_TEXTURE = registerBlock("light_gray_glazed_terracotta_texture",
+            properties -> new Block(properties.mapColor(DyeColor.LIGHT_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
 
     public static final Block LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS = registerBlock("light_gray_glazed_terracotta_stairs",
             properties -> new StairsBlock(Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA.getDefaultState(),properties.mapColor(DyeColor.LIGHT_GRAY).instrument(NoteBlockInstrument.BASEDRUM)
@@ -633,6 +641,10 @@ public class ModBlocks {
             properties -> new WallBlock(properties.mapColor(DyeColor.LIGHT_GRAY).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
 
+    public static final Block GRAY_GLAZED_TERRACOTTA_TEXTURE = registerBlock("gray_glazed_terracotta_texture",
+            properties -> new Block(properties.mapColor(DyeColor.GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
     public static final Block GRAY_GLAZED_TERRACOTTA_STAIRS = registerBlock("gray_glazed_terracotta_stairs",
             properties -> new StairsBlock(Blocks.GRAY_GLAZED_TERRACOTTA.getDefaultState(),properties.mapColor(DyeColor.GRAY).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
@@ -644,6 +656,10 @@ public class ModBlocks {
     public static final Block GRAY_GLAZED_TERRACOTTA_WALL = registerBlock("gray_glazed_terracotta_wall",
             properties -> new WallBlock(properties.mapColor(DyeColor.GRAY).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
+
+    public static final Block BLACK_GLAZED_TERRACOTTA_TEXTURE = registerBlock("black_glazed_terracotta_texture",
+            properties -> new Block(properties.mapColor(DyeColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
 
     public static final Block BLACK_GLAZED_TERRACOTTA_STAIRS = registerBlock("black_glazed_terracotta_stairs",
             properties -> new StairsBlock(Blocks.BLACK_GLAZED_TERRACOTTA.getDefaultState(),properties.mapColor(DyeColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM)
@@ -657,6 +673,10 @@ public class ModBlocks {
             properties -> new WallBlock(properties.mapColor(DyeColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
 
+    public static final Block RED_GLAZED_TERRACOTTA_TEXTURE = registerBlock("red_glazed_terracotta_texture",
+            properties -> new Block(properties.mapColor(DyeColor.RED).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
     public static final Block RED_GLAZED_TERRACOTTA_STAIRS = registerBlock("red_glazed_terracotta_stairs",
             properties -> new StairsBlock(Blocks.RED_GLAZED_TERRACOTTA.getDefaultState(),properties.mapColor(DyeColor.RED).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
@@ -668,6 +688,10 @@ public class ModBlocks {
     public static final Block RED_GLAZED_TERRACOTTA_WALL = registerBlock("red_glazed_terracotta_wall",
             properties -> new WallBlock(properties.mapColor(DyeColor.RED).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
+
+    public static final Block ORANGE_GLAZED_TERRACOTTA_TEXTURE = registerBlock("orange_glazed_terracotta_texture",
+            properties -> new Block(properties.mapColor(DyeColor.ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
 
     public static final Block ORANGE_GLAZED_TERRACOTTA_STAIRS = registerBlock("orange_glazed_terracotta_stairs",
             properties -> new StairsBlock(Blocks.ORANGE_GLAZED_TERRACOTTA.getDefaultState(),properties.mapColor(DyeColor.ORANGE).instrument(NoteBlockInstrument.BASEDRUM)
@@ -681,6 +705,10 @@ public class ModBlocks {
             properties -> new WallBlock(properties.mapColor(DyeColor.ORANGE).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
 
+    public static final Block YELLOW_GLAZED_TERRACOTTA_TEXTURE = registerBlock("yellow_glazed_terracotta_texture",
+            properties -> new Block(properties.mapColor(DyeColor.YELLOW).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
     public static final Block YELLOW_GLAZED_TERRACOTTA_STAIRS = registerBlock("yellow_glazed_terracotta_stairs",
             properties -> new StairsBlock(Blocks.YELLOW_GLAZED_TERRACOTTA.getDefaultState(),properties.mapColor(DyeColor.YELLOW).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
@@ -692,6 +720,10 @@ public class ModBlocks {
     public static final Block YELLOW_GLAZED_TERRACOTTA_WALL = registerBlock("yellow_glazed_terracotta_wall",
             properties -> new WallBlock(properties.mapColor(DyeColor.YELLOW).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
+
+    public static final Block LIME_GLAZED_TERRACOTTA_TEXTURE = registerBlock("lime_glazed_terracotta_texture",
+            properties -> new Block(properties.mapColor(DyeColor.LIME).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
 
     public static final Block LIME_GLAZED_TERRACOTTA_STAIRS = registerBlock("lime_glazed_terracotta_stairs",
             properties -> new StairsBlock(Blocks.LIME_GLAZED_TERRACOTTA.getDefaultState(),properties.mapColor(DyeColor.LIME).instrument(NoteBlockInstrument.BASEDRUM)
@@ -705,6 +737,10 @@ public class ModBlocks {
             properties -> new WallBlock(properties.mapColor(DyeColor.LIME).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
 
+    public static final Block GREEN_GLAZED_TERRACOTTA_TEXTURE = registerBlock("green_glazed_terracotta_texture",
+            properties -> new Block(properties.mapColor(DyeColor.GREEN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
     public static final Block GREEN_GLAZED_TERRACOTTA_STAIRS = registerBlock("green_glazed_terracotta_stairs",
             properties -> new StairsBlock(Blocks.GREEN_GLAZED_TERRACOTTA.getDefaultState(),properties.mapColor(DyeColor.GREEN).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
@@ -716,6 +752,10 @@ public class ModBlocks {
     public static final Block GREEN_GLAZED_TERRACOTTA_WALL = registerBlock("green_glazed_terracotta_wall",
             properties -> new WallBlock(properties.mapColor(DyeColor.GREEN).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
+
+    public static final Block CYAN_GLAZED_TERRACOTTA_TEXTURE = registerBlock("cyan_glazed_terracotta_texture",
+            properties -> new Block(properties.mapColor(DyeColor.CYAN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
 
     public static final Block CYAN_GLAZED_TERRACOTTA_STAIRS = registerBlock("cyan_glazed_terracotta_stairs",
             properties -> new StairsBlock(Blocks.CYAN_GLAZED_TERRACOTTA.getDefaultState(),properties.mapColor(DyeColor.CYAN).instrument(NoteBlockInstrument.BASEDRUM)
@@ -729,6 +769,10 @@ public class ModBlocks {
             properties -> new WallBlock(properties.mapColor(DyeColor.CYAN).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
 
+    public static final Block LIGHT_BLUE_GLAZED_TERRACOTTA_TEXTURE = registerBlock("light_blue_glazed_terracotta_texture",
+            properties -> new Block(properties.mapColor(DyeColor.LIGHT_BLUE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
     public static final Block LIGHT_BLUE_GLAZED_TERRACOTTA_STAIRS = registerBlock("light_blue_glazed_terracotta_stairs",
             properties -> new StairsBlock(Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA.getDefaultState(),properties.mapColor(DyeColor.LIGHT_BLUE).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
@@ -740,6 +784,10 @@ public class ModBlocks {
     public static final Block LIGHT_BLUE_GLAZED_TERRACOTTA_WALL = registerBlock("light_blue_glazed_terracotta_wall",
             properties -> new WallBlock(properties.mapColor(DyeColor.LIGHT_BLUE).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
+
+    public static final Block BLUE_GLAZED_TERRACOTTA_TEXTURE = registerBlock("blue_glazed_terracotta_texture",
+            properties -> new Block(properties.mapColor(DyeColor.BLUE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
 
     public static final Block BLUE_GLAZED_TERRACOTTA_STAIRS = registerBlock("blue_glazed_terracotta_stairs",
             properties -> new StairsBlock(Blocks.BLUE_GLAZED_TERRACOTTA.getDefaultState(),properties.mapColor(DyeColor.BLUE).instrument(NoteBlockInstrument.BASEDRUM)
@@ -753,6 +801,10 @@ public class ModBlocks {
             properties -> new WallBlock(properties.mapColor(DyeColor.BLUE).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
 
+    public static final Block PURPLE_GLAZED_TERRACOTTA_TEXTURE = registerBlock("purple_glazed_terracotta_texture",
+            properties -> new Block(properties.mapColor(DyeColor.PURPLE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
     public static final Block PURPLE_GLAZED_TERRACOTTA_STAIRS = registerBlock("purple_glazed_terracotta_stairs",
             properties -> new StairsBlock(Blocks.PURPLE_GLAZED_TERRACOTTA.getDefaultState(),properties.mapColor(DyeColor.PURPLE).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
@@ -764,6 +816,10 @@ public class ModBlocks {
     public static final Block PURPLE_GLAZED_TERRACOTTA_WALL = registerBlock("purple_glazed_terracotta_wall",
             properties -> new WallBlock(properties.mapColor(DyeColor.PURPLE).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
+
+    public static final Block MAGENTA_GLAZED_TERRACOTTA_TEXTURE = registerBlock("magenta_glazed_terracotta_texture",
+            properties -> new Block(properties.mapColor(DyeColor.MAGENTA).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
 
     public static final Block MAGENTA_GLAZED_TERRACOTTA_STAIRS = registerBlock("magenta_glazed_terracotta_stairs",
             properties -> new StairsBlock(Blocks.MAGENTA_GLAZED_TERRACOTTA.getDefaultState(),properties.mapColor(DyeColor.MAGENTA).instrument(NoteBlockInstrument.BASEDRUM)
@@ -777,6 +833,10 @@ public class ModBlocks {
             properties -> new WallBlock(properties.mapColor(DyeColor.MAGENTA).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
 
+    public static final Block PINK_GLAZED_TERRACOTTA_TEXTURE = registerBlock("pink_glazed_terracotta_texture",
+            properties -> new Block(properties.mapColor(DyeColor.PINK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
     public static final Block PINK_GLAZED_TERRACOTTA_STAIRS = registerBlock("pink_glazed_terracotta_stairs",
             properties -> new StairsBlock(Blocks.PINK_GLAZED_TERRACOTTA.getDefaultState(),properties.mapColor(DyeColor.PINK).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
@@ -788,6 +848,10 @@ public class ModBlocks {
     public static final Block PINK_GLAZED_TERRACOTTA_WALL = registerBlock("pink_glazed_terracotta_wall",
             properties -> new WallBlock(properties.mapColor(DyeColor.PINK).instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool().strength(1.4F).sounds(BlockSoundGroup.STONE).pistonBehavior(PistonBehavior.PUSH_ONLY)));
+
+    public static final Block BROWN_GLAZED_TERRACOTTA_TEXTURE = registerBlock("brown_glazed_terracotta_texture",
+            properties -> new Block(properties.mapColor(DyeColor.BROWN).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
 
     public static final Block BROWN_GLAZED_TERRACOTTA_STAIRS = registerBlock("brown_glazed_terracotta_stairs",
             properties -> new StairsBlock(Blocks.BROWN_GLAZED_TERRACOTTA.getDefaultState(),properties.mapColor(DyeColor.BROWN).instrument(NoteBlockInstrument.BASEDRUM)
@@ -1011,66 +1075,82 @@ public class ModBlocks {
             entries.add(ModBlocks.BROWN_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.BROWN_TERRACOTTA_SLAB);
 
+            entries.add(ModBlocks.WHITE_GLAZED_TERRACOTTA_TEXTURE);
             entries.add(ModBlocks.WHITE_GLAZED_TERRACOTTA_WALL);
             entries.add(ModBlocks.WHITE_GLAZED_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.WHITE_GLAZED_TERRACOTTA_SLAB);
 
+            entries.add(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_TEXTURE);
             entries.add(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_WALL);
             entries.add(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB);
 
+            entries.add(ModBlocks.GRAY_GLAZED_TERRACOTTA_TEXTURE);
             entries.add(ModBlocks.GRAY_GLAZED_TERRACOTTA_WALL);
             entries.add(ModBlocks.GRAY_GLAZED_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.GRAY_GLAZED_TERRACOTTA_SLAB);
 
+            entries.add(ModBlocks.BLACK_GLAZED_TERRACOTTA_TEXTURE);
             entries.add(ModBlocks.BLACK_GLAZED_TERRACOTTA_WALL);
             entries.add(ModBlocks.BLACK_GLAZED_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.BLACK_GLAZED_TERRACOTTA_SLAB);
 
+            entries.add(ModBlocks.RED_GLAZED_TERRACOTTA_TEXTURE);
             entries.add(ModBlocks.RED_GLAZED_TERRACOTTA_WALL);
             entries.add(ModBlocks.RED_GLAZED_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.RED_GLAZED_TERRACOTTA_SLAB);
 
+            entries.add(ModBlocks.ORANGE_GLAZED_TERRACOTTA_TEXTURE);
             entries.add(ModBlocks.ORANGE_GLAZED_TERRACOTTA_WALL);
             entries.add(ModBlocks.ORANGE_GLAZED_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB);
 
+            entries.add(ModBlocks.YELLOW_GLAZED_TERRACOTTA_TEXTURE);
             entries.add(ModBlocks.YELLOW_GLAZED_TERRACOTTA_WALL);
             entries.add(ModBlocks.YELLOW_GLAZED_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB);
 
+            entries.add(ModBlocks.LIME_GLAZED_TERRACOTTA_TEXTURE);
             entries.add(ModBlocks.LIME_GLAZED_TERRACOTTA_WALL);
             entries.add(ModBlocks.LIME_GLAZED_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.LIME_GLAZED_TERRACOTTA_SLAB);
 
+            entries.add(ModBlocks.GREEN_GLAZED_TERRACOTTA_TEXTURE);
             entries.add(ModBlocks.GREEN_GLAZED_TERRACOTTA_WALL);
             entries.add(ModBlocks.GREEN_GLAZED_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.GREEN_GLAZED_TERRACOTTA_SLAB);
 
+            entries.add(ModBlocks.CYAN_GLAZED_TERRACOTTA_TEXTURE);
             entries.add(ModBlocks.CYAN_GLAZED_TERRACOTTA_WALL);
             entries.add(ModBlocks.CYAN_GLAZED_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.CYAN_GLAZED_TERRACOTTA_SLAB);
 
+            entries.add(ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_TEXTURE);
             entries.add(ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_WALL);
             entries.add(ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB);
 
+            entries.add(ModBlocks.BLUE_GLAZED_TERRACOTTA_TEXTURE);
             entries.add(ModBlocks.BLUE_GLAZED_TERRACOTTA_WALL);
             entries.add(ModBlocks.BLUE_GLAZED_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.BLUE_GLAZED_TERRACOTTA_SLAB);
 
+            entries.add(ModBlocks.PURPLE_GLAZED_TERRACOTTA_TEXTURE);
             entries.add(ModBlocks.PURPLE_GLAZED_TERRACOTTA_WALL);
             entries.add(ModBlocks.PURPLE_GLAZED_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB);
 
+            entries.add(ModBlocks.MAGENTA_GLAZED_TERRACOTTA_TEXTURE);
             entries.add(ModBlocks.MAGENTA_GLAZED_TERRACOTTA_WALL);
             entries.add(ModBlocks.MAGENTA_GLAZED_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB);
 
+            entries.add(ModBlocks.PINK_GLAZED_TERRACOTTA_TEXTURE);
             entries.add(ModBlocks.PINK_GLAZED_TERRACOTTA_WALL);
             entries.add(ModBlocks.PINK_GLAZED_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.PINK_GLAZED_TERRACOTTA_SLAB);
 
+            entries.add(ModBlocks.BROWN_GLAZED_TERRACOTTA_TEXTURE);
             entries.add(ModBlocks.BROWN_GLAZED_TERRACOTTA_WALL);
             entries.add(ModBlocks.BROWN_GLAZED_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.BROWN_GLAZED_TERRACOTTA_SLAB);

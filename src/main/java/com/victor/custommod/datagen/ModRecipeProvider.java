@@ -1,5 +1,6 @@
 package com.victor.custommod.datagen;
 
+import com.nimbusds.oauth2.sdk.id.Identifier;
 import com.victor.custommod.block.ModBlocks;
 import com.victor.custommod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -628,28 +629,28 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
-                createShaped(RecipeCategory.MISC, ModBlocks.POLISHED_CALCITE, 4)
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CALCITE, 4)
                         .pattern("RR")
                         .pattern("RR")
                         .input('R', Blocks.CALCITE)
                         .criterion(hasItem(Blocks.CALCITE), conditionsFromItem(Blocks.CALCITE))
                         .offerTo(exporter);
 
-                createShaped(RecipeCategory.MISC, ModBlocks.CALCITE_BRICKS, 4)
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_BRICKS, 4)
                         .pattern("RR")
                         .pattern("RR")
                         .input('R', ModBlocks.POLISHED_CALCITE)
                         .criterion(hasItem(ModBlocks.POLISHED_CALCITE), conditionsFromItem(ModBlocks.POLISHED_CALCITE))
                         .offerTo(exporter);
 
-                createShaped(RecipeCategory.MISC, ModBlocks.POLISHED_END_STONE, 4)
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_END_STONE, 4)
                         .pattern("RR")
                         .pattern("RR")
                         .input('R', Blocks.END_STONE)
                         .criterion(hasItem(Blocks.END_STONE), conditionsFromItem(Blocks.END_STONE))
                         .offerTo(exporter);
 
-                createShaped(RecipeCategory.MISC, Blocks.END_STONE_BRICKS, 4)
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Blocks.END_STONE_BRICKS, 4)
                         .pattern("RR")
                         .pattern("RR")
                         .input('R', ModBlocks.POLISHED_END_STONE)
