@@ -1155,6 +1155,12 @@ public class ModBlocks {
             entries.add(ModBlocks.BROWN_GLAZED_TERRACOTTA_STAIRS);
             entries.add(ModBlocks.BROWN_GLAZED_TERRACOTTA_SLAB);
         });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(entries ->
+        {
+            entries.add(ModBlocks.GOLD_TRAPDOOR);
+            entries.add(ModBlocks.GOLD_DOOR);
+        });
     }
 }
 
