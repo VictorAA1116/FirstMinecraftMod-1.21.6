@@ -81,6 +81,11 @@ public class ModItemGroups {
                         entries.add(ModBlocks.QUARTZ_BRICK_STAIRS);
                         entries.add(ModBlocks.QUARTZ_BRICK_WALL);
 
+                        entries.add(ModBlocks.CUT_SANDSTONE_STAIRS);
+                        entries.add(ModBlocks.CUT_SANDSTONE_WALL);
+                        entries.add(ModBlocks.CUT_RED_SANDSTONE_STAIRS);
+                        entries.add(ModBlocks.CUT_RED_SANDSTONE_WALL);
+
                         entries.add(ModBlocks.WHITE_CONCRETE_SLAB);
                         entries.add(ModBlocks.WHITE_CONCRETE_STAIRS);
                         entries.add(ModBlocks.WHITE_CONCRETE_WALL);

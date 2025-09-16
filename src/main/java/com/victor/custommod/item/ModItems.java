@@ -5,6 +5,7 @@ import com.victor.custommod.entity.ModEntities;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -33,8 +34,8 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.SPAWN_EGGS).register(entries ->
         {
-            entries.add(CAPYBARA_SPAWN_EGG);
-            entries.add(PENGUIN_SPAWN_EGG);
+            entries.addAfter(Items.CAMEL_SPAWN_EGG, CAPYBARA_SPAWN_EGG);
+            entries.addAfter(Items.PARROT_SPAWN_EGG, PENGUIN_SPAWN_EGG);
         });
     }
 }

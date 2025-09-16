@@ -32,6 +32,10 @@
 
   "block.custommod.smooth_sandstone_wall": "Smooth Sandstone Wall",
   "block.custommod.smooth_red_sandstone_wall": "Smooth Red Sandstone Wall",
+  "block.custommod.cut_sandstone_stairs": "Cut Sandstone Stairs",
+  "block.custommod.cut_sandstone_wall": "Cut Sandstone Wall",
+  "block.custommod.cut_red_sandstone_stairs": "Cut Red Sandstone Stairs",
+  "block.custommod.cut_red_sandstone_wall": "Cut Red Sandstone Wall",
 
   "block.custommod.prismarine_brick_wall": "Prismarine Brick Wall",
   "block.custommod.dark_prismarine_wall": "Dark Prismarine Wall",

@@ -56,6 +56,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.GOLD_TRAPDOOR)
                 .add(ModBlocks.GOLD_DOOR)
 
+                .add(ModBlocks.CUT_SANDSTONE_STAIRS)
+                .add(ModBlocks.CUT_RED_SANDSTONE_STAIRS)
+
                 .add(ModBlocks.WHITE_CONCRETE_SLAB)
                 .add(ModBlocks.WHITE_CONCRETE_STAIRS)
 
@@ -210,6 +213,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PACKED_MUD_WALL)
                 .add(ModBlocks.SMOOTH_SANDSTONE_WALL)
                 .add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL)
+                .add(ModBlocks.CUT_SANDSTONE_WALL)
+                .add(ModBlocks.CUT_RED_SANDSTONE_WALL)
                 .add(ModBlocks.PURPUR_WALL)
                 .add(ModBlocks.PRISMARINE_BRICK_WALL)
                 .add(ModBlocks.DARK_PRISMARINE_WALL)
@@ -314,6 +319,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.GOLD_TRAPDOOR)
                 .add(ModBlocks.GOLD_DOOR)
 
+                .add(ModBlocks.CUT_SANDSTONE_STAIRS)
+                .add(ModBlocks.CUT_RED_SANDSTONE_STAIRS)
+
                 .add(ModBlocks.WHITE_CONCRETE_SLAB)
                 .add(ModBlocks.WHITE_CONCRETE_STAIRS)
 
@@ -468,6 +476,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PACKED_MUD_WALL)
                 .add(ModBlocks.SMOOTH_SANDSTONE_WALL)
                 .add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL)
+                .add(ModBlocks.CUT_SANDSTONE_WALL)
+                .add(ModBlocks.CUT_RED_SANDSTONE_WALL)
                 .add(ModBlocks.PURPUR_WALL)
                 .add(ModBlocks.PRISMARINE_BRICK_WALL)
                 .add(ModBlocks.DARK_PRISMARINE_WALL)
@@ -551,6 +561,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PACKED_MUD_WALL)
                 .add(ModBlocks.SMOOTH_SANDSTONE_WALL)
                 .add(ModBlocks.SMOOTH_RED_SANDSTONE_WALL)
+                .add(ModBlocks.CUT_SANDSTONE_WALL)
+                .add(ModBlocks.CUT_RED_SANDSTONE_WALL)
                 .add(ModBlocks.PURPUR_WALL)
                 .add(ModBlocks.PRISMARINE_BRICK_WALL)
                 .add(ModBlocks.DARK_PRISMARINE_WALL)
