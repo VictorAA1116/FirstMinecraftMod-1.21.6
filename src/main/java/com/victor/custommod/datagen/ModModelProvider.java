@@ -100,12 +100,12 @@ public class ModModelProvider extends FabricModelProvider {
         calcitePool.stairs(ModBlocks.CALCITE_STAIRS);
         calcitePool.slab(ModBlocks.CALCITE_SLAB);
         calcitePool.wall(ModBlocks.CALCITE_WALL);
-        calcitePool.button(ModBlocks.CALCITE_BUTTON);
-        calcitePool.pressurePlate(ModBlocks.CALCITE_PRESSURE_PLATE);
 
         polishedCalcitePool.stairs(ModBlocks.POLISHED_CALCITE_STAIRS);
         polishedCalcitePool.slab(ModBlocks.POLISHED_CALCITE_SLAB);
         polishedCalcitePool.wall(ModBlocks.POLISHED_CALCITE_WALL);
+        polishedCalcitePool.button(ModBlocks.POLISHED_CALCITE_BUTTON);
+        polishedCalcitePool.pressurePlate(ModBlocks.POLISHED_CALCITE_PRESSURE_PLATE);
 
         calciteBrickPool.stairs(ModBlocks.CALCITE_BRICK_STAIRS);
         calciteBrickPool.slab(ModBlocks.CALCITE_BRICK_SLAB);

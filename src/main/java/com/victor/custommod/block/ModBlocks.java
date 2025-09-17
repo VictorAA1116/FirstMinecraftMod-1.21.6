@@ -31,14 +31,6 @@ public class ModBlocks {
     public static final Block CALCITE_WALL = registerBlock("calcite_wall",
             properties -> new WallBlock(properties.mapColor(MapColor.TERRACOTTA_WHITE).strength(1f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
-    public static final Block CALCITE_BUTTON = registerBlock("calcite_button",
-            properties -> new ButtonBlock(BlockSetType.STONE, 20,
-                    properties.strength(1f).sounds(BlockSoundGroup.CALCITE).noCollision()));
-
-    public static final Block CALCITE_PRESSURE_PLATE = registerBlock("calcite_pressure_plate",
-            properties -> new PressurePlateBlock(BlockSetType.STONE,
-                    properties.mapColor(MapColor.TERRACOTTA_WHITE).strength(1f).sounds(BlockSoundGroup.CALCITE)));
-
     public static final Block POLISHED_CALCITE = registerBlock("polished_calcite",
             properties -> new Block(properties.mapColor(MapColor.TERRACOTTA_WHITE).strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
@@ -51,6 +43,14 @@ public class ModBlocks {
 
     public static final Block POLISHED_CALCITE_WALL = registerBlock("polished_calcite_wall",
             properties -> new WallBlock(properties.mapColor(MapColor.TERRACOTTA_WHITE).strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+
+    public static final Block POLISHED_CALCITE_BUTTON = registerBlock("polished_calcite_button",
+            properties -> new ButtonBlock(BlockSetType.STONE, 20,
+                    properties.strength(1f).sounds(BlockSoundGroup.CALCITE).noCollision()));
+
+    public static final Block POLISHED_CALCITE_PRESSURE_PLATE = registerBlock("polished_calcite_pressure_plate",
+            properties -> new PressurePlateBlock(BlockSetType.STONE,
+                    properties.mapColor(MapColor.TERRACOTTA_WHITE).strength(1f).sounds(BlockSoundGroup.CALCITE)));
 
     public static final Block CALCITE_BRICKS = registerBlock("calcite_bricks",
             properties -> new Block(properties.mapColor(MapColor.TERRACOTTA_WHITE).strength(2f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
@@ -903,15 +903,15 @@ public class ModBlocks {
             entries.addAfter(Blocks.CALCITE, ModBlocks.CALCITE_STAIRS);
             entries.addAfter(ModBlocks.CALCITE_STAIRS, ModBlocks.CALCITE_SLAB);
             entries.addAfter(ModBlocks.CALCITE_SLAB, ModBlocks.CALCITE_WALL);
-            entries.addAfter(ModBlocks.CALCITE_WALL, ModBlocks.CALCITE_PRESSURE_PLATE);
-            entries.addAfter(ModBlocks.CALCITE_PRESSURE_PLATE, ModBlocks.CALCITE_BUTTON);
 
-            entries.addAfter(ModBlocks.CALCITE_BUTTON, ModBlocks.POLISHED_CALCITE);
+            entries.addAfter(ModBlocks.CALCITE_WALL, ModBlocks.POLISHED_CALCITE);
             entries.addAfter(ModBlocks.POLISHED_CALCITE, ModBlocks.POLISHED_CALCITE_STAIRS);
             entries.addAfter(ModBlocks.POLISHED_CALCITE_STAIRS, ModBlocks.POLISHED_CALCITE_SLAB);
             entries.addAfter(ModBlocks.POLISHED_CALCITE_SLAB, ModBlocks.POLISHED_CALCITE_WALL);
+            entries.addAfter(ModBlocks.POLISHED_CALCITE_WALL, ModBlocks.POLISHED_CALCITE_PRESSURE_PLATE);
+            entries.addAfter(ModBlocks.POLISHED_CALCITE_PRESSURE_PLATE, ModBlocks.POLISHED_CALCITE_BUTTON);
 
-            entries.addAfter(ModBlocks.POLISHED_CALCITE_WALL, ModBlocks.CALCITE_BRICKS);
+            entries.addAfter(ModBlocks.POLISHED_CALCITE_BUTTON, ModBlocks.CALCITE_BRICKS);
             entries.addAfter(ModBlocks.CALCITE_BRICKS, ModBlocks.CALCITE_BRICK_STAIRS);
             entries.addAfter(ModBlocks.CALCITE_BRICK_STAIRS, ModBlocks.CALCITE_BRICK_SLAB);
             entries.addAfter(ModBlocks.CALCITE_BRICK_SLAB, ModBlocks.CALCITE_BRICK_WALL);

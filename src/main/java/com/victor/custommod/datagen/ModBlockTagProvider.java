@@ -23,6 +23,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.POLISHED_CALCITE)
                 .add(ModBlocks.POLISHED_CALCITE_SLAB)
                 .add(ModBlocks.POLISHED_CALCITE_STAIRS)
+                .add(ModBlocks.POLISHED_CALCITE_PRESSURE_PLATE)
+                .add(ModBlocks.POLISHED_CALCITE_BUTTON)
 
                 .add(ModBlocks.CALCITE_BRICKS)
                 .add(ModBlocks.CALCITE_BRICK_SLAB)

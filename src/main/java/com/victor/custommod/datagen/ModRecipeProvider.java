@@ -353,11 +353,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_GLAZED_TERRACOTTA_SLAB, Blocks.PINK_GLAZED_TERRACOTTA);
                 offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_GLAZED_TERRACOTTA_SLAB, Blocks.BROWN_GLAZED_TERRACOTTA);
 
-                createButtonRecipe(ModBlocks.CALCITE_BUTTON, Ingredient.ofItem(Blocks.CALCITE))
-                        .criterion(hasItem(Blocks.CALCITE), conditionsFromItem(Blocks.CALCITE))
+                createButtonRecipe(ModBlocks.POLISHED_CALCITE_BUTTON, Ingredient.ofItem(ModBlocks.POLISHED_CALCITE))
+                        .criterion(hasItem(ModBlocks.POLISHED_CALCITE), conditionsFromItem(ModBlocks.POLISHED_CALCITE))
                         .offerTo(exporter);
 
-                offerPressurePlateRecipe(ModBlocks.CALCITE_PRESSURE_PLATE, Blocks.CALCITE);
+                offerPressurePlateRecipe(ModBlocks.POLISHED_CALCITE_PRESSURE_PLATE, ModBlocks.POLISHED_CALCITE);
                 offerPressurePlateRecipe(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE, Blocks.POLISHED_DEEPSLATE);
 
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CALCITE_STAIRS, Blocks.CALCITE, 1);

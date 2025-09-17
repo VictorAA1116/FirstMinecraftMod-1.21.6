@@ -19,13 +19,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CALCITE_STAIRS);
                         entries.add(ModBlocks.CALCITE_SLAB);
                         entries.add(ModBlocks.CALCITE_WALL);
-                        entries.add(ModBlocks.CALCITE_PRESSURE_PLATE);
-                        entries.add(ModBlocks.CALCITE_BUTTON);
 
                         entries.add(ModBlocks.POLISHED_CALCITE);
                         entries.add(ModBlocks.POLISHED_CALCITE_STAIRS);
                         entries.add(ModBlocks.POLISHED_CALCITE_SLAB);
                         entries.add(ModBlocks.POLISHED_CALCITE_WALL);
+                        entries.add(ModBlocks.POLISHED_CALCITE_PRESSURE_PLATE);
+                        entries.add(ModBlocks.POLISHED_CALCITE_BUTTON);
 
                         entries.add(ModBlocks.CALCITE_BRICKS);
                         entries.add(ModBlocks.CALCITE_BRICK_WALL);
