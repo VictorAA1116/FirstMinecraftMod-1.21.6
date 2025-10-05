@@ -17,15 +17,16 @@ import java.util.function.Function;
 
 public class ModItems {
     public static final Item CAPYBARA_SPAWN_EGG = registerItem("capybara_spawn_egg",
-            setting -> new SpawnEggItem(ModEntities.CAPYBARA, setting));
+            SpawnEggItem::new, (new Item.Settings().spawnEgg(ModEntities.CAPYBARA)));
 
     public static final Item PENGUIN_SPAWN_EGG = registerItem("penguin_spawn_egg",
-            setting -> new SpawnEggItem(ModEntities.PENGUIN, setting));
+            SpawnEggItem::new, (new Item.Settings().spawnEgg(ModEntities.PENGUIN)));
 
-    private static Item registerItem(String name, Function<Item.Settings, Item> function)
+    private static Item registerItem(String id, Function<Item.Settings, Item> factory, Item.Settings settings)
     {
-        return Registry.register(Registries.ITEM, Identifier.of(CustomMod.MOD_ID, name),
-                function.apply(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CustomMod.MOD_ID, name)))));
+        return Items.register(id, factory, settings);
+                //Registry.register(Registries.ITEM, Identifier.of(CustomMod.MOD_ID, id),
+        //                factory.apply(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CustomMod.MOD_ID, id)))));
     }
 
     public static void registerModItems()

@@ -108,7 +108,7 @@ public class CapybaraEntity extends TameableEntity {
                     return actionResult;
                 }
             }
-        } else if (!this.getWorld().isClient && itemStack.isOf(Items.MELON_SLICE)) {
+        } else if (!this.getEntityWorld().isClient() && itemStack.isOf(Items.MELON_SLICE)) {
             itemStack.decrementUnlessCreative(1, player);
             this.tryTame(player);
             return ActionResult.SUCCESS_SERVER;
@@ -123,9 +123,9 @@ public class CapybaraEntity extends TameableEntity {
             this.navigation.stop();
             this.setTarget((LivingEntity)null);
             this.setSitting(true);
-            this.getWorld().sendEntityStatus(this, (byte)7);
+            this.getEntityWorld().sendEntityStatus(this, (byte)7);
         } else {
-            this.getWorld().sendEntityStatus(this, (byte)6);
+            this.getEntityWorld().sendEntityStatus(this, (byte)6);
         }
 
     }
@@ -133,7 +133,7 @@ public class CapybaraEntity extends TameableEntity {
     @Override
     public void tick() {
         super.tick();
-        if (this.getWorld().isClient()) {
+        if (this.getEntityWorld().isClient()) {
             this.setupAnimationStates();
         }
     }

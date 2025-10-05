@@ -3,9 +3,11 @@ package com.victor.custommod.entity.client;
 import com.victor.custommod.CustomMod;
 import com.victor.custommod.entity.custom.PenguinEntity;
 import net.minecraft.client.render.VertexConsumerProvider;
+import net.minecraft.client.render.command.OrderedRenderCommandQueue;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.render.entity.state.ItemHolderEntityRenderState;
+import net.minecraft.client.render.state.CameraRenderState;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
@@ -22,7 +24,7 @@ public class PenguinRenderer extends MobEntityRenderer<PenguinEntity, PenguinRen
     }
 
     @Override
-    public void render( PenguinRenderState state, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
+    public void render(PenguinRenderState state, MatrixStack matrixStack, OrderedRenderCommandQueue orderedRenderCommandQueue, CameraRenderState cameraRenderState) {
 
         if(state.baby) {
             matrixStack.scale(0.5f, 0.5f, 0.5f);
@@ -31,7 +33,7 @@ public class PenguinRenderer extends MobEntityRenderer<PenguinEntity, PenguinRen
             matrixStack.scale(1f, 1f, 1f);
         }
 
-        super.render(state, matrixStack, vertexConsumerProvider, i);
+        super.render(state, matrixStack, orderedRenderCommandQueue, cameraRenderState );
     }
 
     @Override

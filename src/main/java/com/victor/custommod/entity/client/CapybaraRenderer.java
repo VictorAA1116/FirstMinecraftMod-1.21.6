@@ -3,8 +3,10 @@ package com.victor.custommod.entity.client;
 import com.victor.custommod.CustomMod;
 import com.victor.custommod.entity.custom.CapybaraEntity;
 import net.minecraft.client.render.VertexConsumerProvider;
+import net.minecraft.client.render.command.OrderedRenderCommandQueue;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
+import net.minecraft.client.render.state.CameraRenderState;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
@@ -18,8 +20,8 @@ public class CapybaraRenderer extends MobEntityRenderer<CapybaraEntity, Capybara
         return Identifier.of(CustomMod.MOD_ID, "textures/entity/capybara/capybara.png");
     }
 
-    @Override
-    public void render(CapybaraRenderState state, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
+
+    public void render(CapybaraRenderState state, MatrixStack matrixStack, OrderedRenderCommandQueue orderedRenderCommandQueue, CameraRenderState cameraRenderState) {
         if(state.baby) {
             matrixStack.scale(0.5f, 0.5f, 0.5f);
         }
@@ -27,7 +29,7 @@ public class CapybaraRenderer extends MobEntityRenderer<CapybaraEntity, Capybara
             matrixStack.scale(1f, 1f, 1f);
         }
 
-        super.render(state, matrixStack, vertexConsumerProvider, i);
+        super.render(state, matrixStack, orderedRenderCommandQueue, cameraRenderState);
     }
 
     @Override
