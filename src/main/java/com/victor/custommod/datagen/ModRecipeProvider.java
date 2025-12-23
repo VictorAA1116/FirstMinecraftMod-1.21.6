@@ -1,20 +1,18 @@
 package com.victor.custommod.datagen;
 
-import com.nimbusds.oauth2.sdk.id.Identifier;
+//import com.nimbusds.oauth2.sdk.id.Identifier;
 import com.victor.custommod.block.ModBlocks;
-import com.victor.custommod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import org.jetbrains.annotations.NotNull;
 
-import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
@@ -23,7 +21,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     @Override
-    protected RecipeGenerator getRecipeGenerator(RegistryWrapper.WrapperLookup wrapperLookup, RecipeExporter recipeExporter) {
+    protected @NotNull RecipeGenerator getRecipeGenerator(RegistryWrapper.@NotNull WrapperLookup wrapperLookup, @NotNull RecipeExporter recipeExporter) {
         return new RecipeGenerator(wrapperLookup, recipeExporter) {
             @Override
             public void generate() {
