@@ -44,6 +44,8 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool quartzPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.QUARTZ_TEXTURE);
         BlockStateModelGenerator.BlockTexturePool cutSandstonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.CUT_SANDSTONE);
         BlockStateModelGenerator.BlockTexturePool cutRedSandstonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.CUT_RED_SANDSTONE);
+        BlockStateModelGenerator.BlockTexturePool cutSandWallPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CUT_SANDSTONE_TEXTURE);
+        BlockStateModelGenerator.BlockTexturePool cutRedSandWallPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CUT_RED_SANDSTONE_TEXTURE);
 
         BlockStateModelGenerator.BlockTexturePool whiteConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.WHITE_CONCRETE);
         BlockStateModelGenerator.BlockTexturePool lightGrayConcretePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.LIGHT_GRAY_CONCRETE);
@@ -162,9 +164,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.GOLD_DOOR);
 
         cutSandstonePool.stairs(ModBlocks.CUT_SANDSTONE_STAIRS);
-        //cutSandstonePool.wall(ModBlocks.CUT_SANDSTONE_WALL);
+        cutSandWallPool.wall(ModBlocks.CUT_SANDSTONE_WALL);
         cutRedSandstonePool.stairs(ModBlocks.CUT_RED_SANDSTONE_STAIRS);
-        //cutRedSandstonePool.wall(ModBlocks.CUT_RED_SANDSTONE_WALL);
+        cutRedSandWallPool.wall(ModBlocks.CUT_RED_SANDSTONE_WALL);
 
         whiteConcretePool.slab(ModBlocks.WHITE_CONCRETE_SLAB);
         whiteConcretePool.stairs(ModBlocks.WHITE_CONCRETE_STAIRS);

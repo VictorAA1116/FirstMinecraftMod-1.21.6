@@ -124,12 +124,20 @@ public class ModBlocks {
             properties -> new WallBlock(properties.mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
                     .strength(0.8F).sounds(BlockSoundGroup.STONE)));
 
+    public static final Block CUT_SANDSTONE_TEXTURE = registerBlock("cut_sandstone_texture",
+            properties -> new Block(properties.mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
     public static final Block CUT_RED_SANDSTONE_STAIRS = registerBlock("cut_red_sandstone_stairs",
             properties -> new StairsBlock(Blocks.CUT_SANDSTONE.getDefaultState(), properties.mapColor(MapColor.ORANGE).requiresTool()
                     .strength(0.8F).sounds(BlockSoundGroup.STONE).instrument(NoteBlockInstrument.BASEDRUM)));
 
     public static final Block CUT_RED_SANDSTONE_WALL = registerBlock("cut_red_sandstone_wall",
             properties -> new WallBlock(properties.mapColor(MapColor.ORANGE).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
+                    .strength(0.8F).sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CUT_RED_SANDSTONE_TEXTURE = registerBlock("cut_red_sandstone_texture",
+            properties -> new Block(properties.mapColor(MapColor.PALE_YELLOW).instrument(NoteBlockInstrument.BASEDRUM).requiresTool()
                     .strength(0.8F).sounds(BlockSoundGroup.STONE)));
 
     public static final Block PRISMARINE_BRICK_WALL = registerBlock("prismarine_brick_wall",
