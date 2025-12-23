@@ -69,7 +69,8 @@ public class CapybaraEntity extends TameableEntity {
         else {
             --this.idleAnimationTimeout;
         }
-        if (!this.isSitting() && this.isTamed() && !this.isSwimming()) {
+
+        if (this.isInSittingPose() && this.isTamed() && !this.isSwimming()) {
             this.sitAnimationState.start(this.age);
         }
         else {
@@ -84,7 +85,6 @@ public class CapybaraEntity extends TameableEntity {
         } else {
             this.getAttributeInstance(EntityAttributes.MAX_HEALTH).setBaseValue(15.0F);
         }
-
     }
 
     public ActionResult interactMob(PlayerEntity player, Hand hand) {

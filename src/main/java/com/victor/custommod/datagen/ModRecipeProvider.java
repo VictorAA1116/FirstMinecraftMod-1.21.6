@@ -1,6 +1,5 @@
 package com.victor.custommod.datagen;
 
-//import com.nimbusds.oauth2.sdk.id.Identifier;
 import com.victor.custommod.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
